@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skyscanner</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style !important>
+        body {
+            overflow-x: hidden;
+            padding-bottom: 0px;
+        }
+
+        .koi {
+            background: rgba(5, 32, 61, 255);
+        }
+
+
+
+        .navb {
+            background: rgba(5, 32, 61, 255);
+        }
+
+        .navb .op {
+            margin: 10px;
+            color: white;
+            font-size: 28px;
+        }
+
+        .fa-heart {
+            visibility: hidden;
+            position: absolute;
+        }
+
+        .navbar-brand span {
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .navb button {
+            background: none;
+            border: none;
+
+            margin: 0px 10px;
+
+        }
+
+        .c span {
+            color: white;
+            font-size: 23px;
+
+        }
+
+        .navb {
+            margin-top: 50px;
+        }
+
+        .navb .user {
+            color: white;
+            font-size: 28px;
+        }
+
+        .nj {
+            margin-right: 10px;
+        }
+
+        .fa-bars:hover {
+            border: 3px solid rgba(74, 74, 251, 0.6);
+            padding: 1px 2px;
+            border-radius: 6px;
+        }
+
+        .navbar {
+            background: rgba(5, 32, 61, 255);
+        }
+
+
+        * {
+            padding: 0;
+        }
+
+        .mer {
+            margin: 0px 0px 0px 0px;
+        }
+
+        .yer {
+            visibility: hidden;
+            position: absolute;
+        }
+
+
+
+        .fih {}
+
+        .fih h1 {
+            color: white;
+            margin: 30px 0px 0px 0px;
+
+        }
+
+        .jac {
+            margin: 30px 0px 0px 0px;
+        }
+
+        .jac button {
+            padding: 1.5px 12px;
+            border: 1px solid rgba(202, 202, 202, 0.704);
+            border-radius: 5px;
+            background: none;
+        }
+
+        .bg-text-light {
+            color: white;
+        }
+
+        /* .lac{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        } */
+        .lac .mao {
+            background: white;
+            margin: 2px;
+            padding: 10px 0px;
+            border-radius: 10px 0px 0px 10px;
+            width: 220px;
+        }
+
+        .lac .mao:hover {
+            border: 3px solid rgba(74, 74, 251, 0.6);
+        }
+
+        .lac .mao1 {
+            background: white;
+            margin: 2px;
+            padding: 10px 0px;
+            border-radius: 0px 10px 10px 0px;
+            width: 220px;
+        }
+
+        .lac .mao1:hover {
+            border: 3px solid rgba(74, 74, 251, 0.6);
+        }
+
+        .mau {
+            background: white;
+            margin: 2px;
+            padding: 10px 0px;
+            border-radius: 0px;
+            width: 220px;
+        }
+
+        .mau:hover {
+            border: 3px solid rgba(74, 74, 251, 0.6);
+        }
+
+        .lac {
+            margin-top: 40px;
+            margin-left: 10px;
+        }
+
+        .lac p {
+            color: black;
+            margin: 0px 0px 0px 0px;
+
+        }
+
+        .lac button {
+            padding: 19px 20px;
+            margin: 0px 50px 0px 0px;
+            border-radius: 10px;
+            border: none;
+            background: rgba(0, 97, 227, 255);
+            color: white;
+        }
+
+        .great {
+            background: none;
+            margin: 1px;
+            padding: 10px px 10px 0px;
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        .ott {
+            visibility: hidden;
+            position: absolute;
+        }
+
+        .uat {
+            margin-top: 30px;
+        }
+
+        .uat a {
+            text-decoration: none;
+            color: rgba(5, 32, 61, 255);
+        }
+
+        .rat {
+            /* background: rgba(5, 32, 61, 255);
+            
+            margin: 0px 10px 0px 0px;
+            padding: ; */
+            width: 100%;
+        }
+
+        .rat button {
+            width: 100%;
+            text-align: left;
+            background: rgba(5, 32, 61, 255);
+
+            margin: 0px 10px 0px 0px;
+            padding: 25px 0px 25px 20px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .rat span {
+            color: white;
+        }
+
+        .rat .fa-solid {
+            margin-right: 10px;
+            color: white;
+        }
+
+        .gat {
+            margin: 30px 0px 0px 0px;
+        }
+
+        .fari {
+            border-radius: 15px 15px 15px 15px;
+            background-image: url(bac2.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .imgtec {
+            width: fit-content;
+            height: fit-content;
+
+            padding: 0;
+
+        }
+
+        .imgtec p {
+            color: white;
+            font-weight: bold;
+        }
+
+        .imgtec button {
+            margin: 60px 0px 0px 0px;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 20px;
+        }
+
+        .jat {
+
+            background-position-y: -130px;
+            height: 450px;
+            border-radius: 15px 15px 15px 15px;
+            margin: 30px 0px 0px 0px;
+            padding: 90px 0px 0px 20px;
+
+        }
+
+        .min {
+            margin: 30px 0px 0px 0px;
+        }
+
+        .moi {
+            margin: 35px 0px 0px 0px;
+        }
+
+        .place {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px 25px;
+        }
+
+        .marp>.moo {
+            color: blue;
+            text-decoration: none;
+
+        }
+
+        .iop {
+            display: flex;
+            box-shadow: 0px 0px 5px black;
+            border-radius: 10px;
+            height: 90px;
+        }
+
+        .opi {
+            width: 28%;
+            height: 90px;
+        }
+
+        .opi img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+        .marp {
+            padding: 20px 0px 20px 10px;
+        }
+
+
+
+        .uop {
+            margin: 30px 0px 0px 0px;
+        }
+
+        .poi {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        .accordion-header h5>a {
+            font-size: 20px;
+        }
+
+        .look {
+            text-decoration: underline;
+
+        }
+
+        .loi {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .mag {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .mag a:hover {
+            text-decoration: underline;
+            /* cursor: pointer; */
+        }
+
+        .imgp {
+            width: 25px;
+            height: 25px;
+        }
+
+        .imgp img {
+            border-radius: 100%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .polk {
+            background: rgba(5, 32, 61, 255);
+        }
+
+        .btp button {
+            display: flex;
+            background: none;
+            justify-content: center;
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 0px 9px;
+        }
+
+        .imk {
+            width: 15px;
+            padding-top: 7px;
+        }
+
+        .imk img {
+            width: 100%;
+            border: 1px solid white;
+        }
+
+        .pi {
+            padding: 5.5px 0px 0px 5px;
+        }
+
+        button a {
+            font-size: 10px;
+            color: whitesmoke;
+            text-decoration: none;
+        }
+
+        .ptp a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .ptp a:hover {
+            text-decoration: underline;
+        }
+
+        .otp a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .otp a:hover {
+            text-decoration: underline;
+        }
+
+
+        .polk {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 30px 0px 0px 30px;
+        }
+
+        .lokp {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .lokp hr {
+            border: 2px solid white;
+            display: none;
+        }
+
+
+        .btp,
+        .ptp,
+        .otp,
+        .utp {
+            margin: 120px;
+            width: 100%;
+        }
+
+        .lip p {
+            color: white;
+
+        }
+
+        .lip a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .lip a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /* .lip{
+            background: rgba(5, 32, 61, 255)
+        }
+        .kip{
+            background: rgba(5, 32, 61, 255)
+        }
+        .kip>.accordion-header{
+            background: rgba(5, 32, 61, 255)
+        }
+        .kip>.accordion-collaspse{
+            background: rgba(5, 32, 61, 255)
+        }
+        .kip>.accordion-button{
+            background: rgba(5, 32, 61, 255)
+        }
+        .kip>.accordion-body{
+            background: rgba(5, 32, 61, 255)
+        } */
+        .checkbox {
+            margin-left: 10px;
+            margin-top: 30px;
+        }
+
+
+        .checkbox label {
+            color: white;
+            font-size: 18px;
+            margin-left: 6px;
+        }
+
+        .buy {
+            width: 100%;
+            background: rgba(5, 32, 61, 255);
+            padding-bottom: 20px;
+        }
+
+        .buy h5 {
+            color: white;
+            text-align: center;
+            margin: auto;
+            font-size: 15px;
+        }
+
+        .arrows2 {
+            z-index: ;
+        }
+
+        .arrows span {
+            background: white;
+            font-size: 20px;
+
+            width: 10px;
+            height: 50px;
+            top: 50px;
+            left: 10px;
+            padding: 5px 10px;
+            border-radius: 100%;
+            visibility: hidden;
+            position: absolute;
+
+        }
+
+        .arrows2 span {
+            background: white;
+            font-size: 20px;
+            position: relative;
+            width: 10px;
+            height: 50px;
+            top: 90px;
+            left: 206px;
+            padding: 5px 10px;
+            border-radius: 100%;
+            border: 2px solid rgb(5, 32, 61, 255);
+
+
+        }
+
+
+
+        @media screen and (max-width:768px) {
+            .fih h1 {
+                display: none;
+            }
+
+            .navbar-brand span {
+                font-size: 15px;
+                padding: 0px 0px 0px 0px;
+            }
+
+            .navb {
+                margin: 0;
+            }
+
+            .navb .op {
+                margin: 0px;
+                color: white;
+                font-size: 20px;
+            }
+
+            .navb .user {
+                font-size: 20px;
+            }
+
+            .c span {
+                font-size: 20px;
+            }
+
+            .c img {
+                z-index: -5;
+            }
+
+            .fa-earth-americas {
+                display: none;
+            }
+
+            .fa-heart {
+                visibility: visible;
+                position: relative;
+            }
+
+            .fa-bars {
+                margin: 0;
+                padding: 0;
+            }
+
+            .fa-bars:hover {
+                border: none;
+                padding: 0px;
+                border-radius: 6px;
+            }
+
+            .jac {
+                margin: 25px 0px 10px 0px;
+            }
+
+            .lac {
+                display: none;
+            }
+
+            .mer {
+                padding: 0px 0px 0px 37px;
+                width: fit-content;
+                margin: 30px 0px 0px 0px;
+
+
+            }
+
+            .fat {
+                margin-right: 8px;
+            }
+
+            .fa-regular {
+                font-size: 12px;
+
+            }
+
+            .yer {
+                padding: 0px 0px 0px 0px;
+                visibility: visible;
+                position: relative;
+
+
+
+                width: 100%;
+
+
+            }
+
+            .yer div {
+
+                background: white;
+                margin-top: px;
+                padding: 5px 0px 5px 10px;
+
+            }
+
+            .po {
+                margin-top: 2px;
+            }
+
+            .lp {
+                margin-right: px;
+                border-right: 2.5px solid;
+                border-radius: 0px 0px 0px 10px;
+            }
+
+            .kg {
+                border-radius: 10px 10px 0px 0px;
+            }
+
+            .ki {
+                border-radius: 0px 0px 10px 0px;
+            }
+
+            .ott {
+
+                padding: 0px 0px 0px 35px;
+                visibility: visible;
+                position: relative;
+            }
+
+            .ot {
+
+                width: 100%;
+            }
+
+            .ot button {
+                width: 100%;
+                background: rgba(0, 97, 227, 255);
+                border: none;
+                border-radius: 5px;
+                padding: 7px 0px;
+                color: white;
+            }
+
+            .uat {
+                margin: 30px 0px 0px 0px;
+
+
+            }
+
+            .uat .row {
+                margin: 0px 0px 0px 0px;
+            }
+
+            .uat a {
+                text-decoration: none;
+                color: rgba(5, 32, 61, 255);
+            }
+
+            .rat {
+                /* background: rgba(5, 32, 61, 255);
+
+                margin: 0px 10px 0px 0px;
+                padding: ;
+                width: 100%; */
+                margin: 0px 0px 0px 0px;
+            }
+
+            .rat button {
+                width: 100%;
+                text-align: left;
+                background: rgba(5, 32, 61, 255);
+
+                margin: 0px 10px 0px 0px;
+                padding: 25px 0px 25px 5px;
+                border-radius: 10px;
+                border: none;
+            }
+
+            .rat span {
+                color: white;
+                display: block;
+            }
+
+            .rat .qa {
+                margin-top: 24px;
+            }
+
+            .rat .fa-solid {
+                margin-right: 10px;
+                color: white;
+            }
+
+            .fari {
+                border-radius: 15px 15px 15px 15px;
+                background-image: url(bac2.avif);
+
+            }
+
+            .imgtec {
+                width: fit-content;
+                height: fit-content;
+
+
+                padding: 0;
+
+            }
+
+            .imgtec p {
+                color: white;
+                font-weight: bold;
+
+            }
+
+            .imgtec button {
+
+                display: none;
+            }
+
+            .jat {
+
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-y: -130px;
+                height: 450px;
+                border-radius: 15px 15px 15px 15px;
+                margin: 30px 0px 0px 0px;
+                padding: 30px 0px 0px 20px;
+
+            }
+
+            .place {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 10px;
+            }
+
+            .iop {
+                display: flex;
+                box-shadow: 0px 0px 1px black;
+                border-radius: 10px;
+                height: 90px;
+            }
+
+            .opi {
+                width: 32%;
+                height: 90px;
+            }
+
+            .opi img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px 0px 0px 10px;
+            }
+
+            .marp {
+                padding: 20px 0px 10px 10px;
+            }
+
+            .poi {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+
+            .loi {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+
+            .polk {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .lokp {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .btp,
+            .ptp,
+            .otp,
+            .utp {
+                margin: 0px;
+                width: 100%;
+            }
+
+            .lokp hr {
+                border: 2px solid rgb(255, 255, 255);
+                display: block;
+            }
+
+            .arrows {
+                z-index: 9;
+
+            }
+
+            .arrows span {
+                background: white;
+                visibility: visible;
+
+                font-size: 20px;
+                position: relative;
+                width: 10px;
+                height: 50px;
+                top: 80px;
+                left: 480%;
+                padding: 5px 10px;
+                border-radius: 100%;
+                border: 2px solid rgb(5, 32, 61, 255);
+
+            }
+
+            .arrows2 span {
+                background: white;
+                font-size: 20px;
+                visibility: hidden;
+                position: absolute;
+                width: 10px;
+                height: 50px;
+                top: 50px;
+                left: 10px;
+                padding: 5px 10px;
+                border-radius: 100%;
+                border: 2px solid rgb(5, 32, 61, 255);
+
+
+            }
+
+
+
+
+
+        }
+
+        @media screen and (max-width:1200px) {
+            .polk {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .lokp {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .btp,
+            .ptp,
+            .otp,
+            .utp {
+                margin: 0px;
+                width: 100%;
+            }
+
+            .lokp hr {
+                border: 2px solid rgb(255, 255, 255);
+                display: block;
+            }
+
+
+            /* .arrows2 span {
+                background: white;
+                font-size: 20px;
+                visibility: hidden;
+                position: absolute;
+                width: 10px;
+                height: 50px;
+                top: 50px;
+                left: 10px;
+                padding: 5px 10px;
+                border-radius: 100%;
+                border: 2px solid rgb(5, 32, 61, 255);
+
+
+            } */
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="container-fluid  koi">
+
+        <div class="row">
+            <div class="col">
+                <nav class="col navbar align-items-center container">
+                    <div class="container-fluid navb">
+                        <a class="navbar-brand align-items-center" href="#">
+                            <img src="logo sky.jpg" alt="Logo" width="50" height="40"
+                                class="d-inline-block align-text-center">
+                            <span class="align-text-center">skyscanner</span>
+                        </a>
+                        <div class="d-flex align-items-center c">
+                            <i class="fa-solid fa-earth-americas op"></i>
+                            <i class="fa-solid fa-heart op"></i>
+                            <button>
+                                <i class="fa-solid fa-circle-user user"></i> <span>Login</span>
+                            </button>
+                            <div class="btn-group">
+                                <div class="btn" data-bs-toggle="dropdown">
+                                    <i class="fa-solid fa-bars op"></i>
+
+
+                                </div>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li class="dropdown-item"><i class="fa-solid fa-aeroplane nj"></i> flight</li>
+                                    <li class="dropdown-item"><i class="fa-solid fa-hotel nj"></i> hotels</li>
+                                    <li class="dropdown-item"><i class="fa-solid fa-car-side nj"></i>Car hire</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row container-fluid fih">
+                        <div class="col k2">
+                            <h1>Millions of cheap flights. One simple search.</h1>
+                        </div>
+                    </div>
+                    <div class="row container-fluid jac">
+                        <div class="col">
+                            <button class="bg-light">flights</button>
+                            <button class="bg-text-light">Hotels</button>
+                            <button class="bg-text-light">Car hire</button>
+                        </div>
+                    </div>
+                    <div class="arrows">
+                        <span>
+                            <i class="fa-solid fa-arrow-up" style="color: rgb(5, 32, 61, 255);"></i>
+                            <i class="fa-solid fa-arrow-down" style="color:rgb(5, 32, 61, 255);"></i>
+                        </span>
+
+                    </div>
+
+
+                    <div class="arrows2">
+                        <span>
+                            <i class="fa-solid fa-arrow-up" style="color: rgb(5, 32, 61);"></i>
+                            <i class="fa-solid fa-arrow-down" style="color: rgb(5, 32, 61);"></i>
+                        </span>
+
+                    </div>
+
+                    <div class="container mer ">
+                        <div class="row yer">
+                            <div class="col-12 kg"><i class="fa-regular fa-circle fat"></i><span>Lagos (LOS)</span>
+                            </div>
+                            <div class="col-12 po"><i class="fa-solid fa-location-dot fat"></i><span>Choose
+                                    destination</span></div>
+                            <div class="col-6 po lp"><i class="fa-solid fa-calendar-days fat"></i><span>Choose
+                                    dates</span></div>
+                            <div class="col-6  po ki"><i class="fa-solid fa-user fat"></i><span> 1 Adult</span></div>
+                        </div>
+                    </div>
+
+                    <div class="grid text-center row container- lac align-items-center">
+                        <div class="g-col-4  mao">
+                            <p>from</p>
+                            <p class="h6">Country,cities or airport</p>
+                        </div>
+                        <div class="g-col-4  mau">
+                            <p>to</p>
+                            <p class="h6">lagos(LOS)</p>
+                        </div>
+                        <div class=" g-col-4 mau">
+                            <p>Depart</p>
+                            <p class="h6">Add date</p>
+                        </div>
+                        <div class="g-col-4 mau">
+                            <p>Return</p>
+                            <p class="h6">Add date</p>
+                        </div>
+                        <div class="g-col-4 mao1">
+                            <p>Travellers and cabin class</p>
+                            <p class="h6">1 Adult, Economy</p>
+                        </div>
+                        <div class="g-col-4 great">
+                            <button>search</button>
+                        </div>
+
+                    </div>
+                    <div class="row container checkbox align-items-center">
+                        <div class="col"><input type="checkbox"><label for="">Direct Flights</label></div>
+                    </div>
+                    <div class="row container ott">
+                        <div class="col-12 ot">
+                            <button>search</button>
+                        </div>
+
+
+                    </div>
+                </nav>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="container uat">
+        <div class="row container-fluid">
+            <div class="col rat">
+                <a href="#"><button><i class="fa-solid fa-hotel"></i><span class="qa">Hotels</span></button></a>
+            </div>
+            <div class="col rat">
+                <a href="#"><button><i class="fa-solid fa-car-side"></i><span class="qa">Car hire</span></button></a>
+            </div>
+            <div class="col rat">
+                <a href="#"><button><i class="fa-solid fa-earth"></i><span>Explore everywhere</span></button></a>
+            </div>
+        </div>
+
+        <div class="container gat">
+            <div class="row container-fluid fari">
+                <div class="col-12 jat">
+                    <div class="imgtec">
+                        <p>Can’t decide where to go?</p>
+                        <p class="h1">Explore every destination </p>
+                        <a href="#"><button>Search flights everywhere</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container min">
+            <div class="col-12 container-fluid">
+                <h3>The most popular flights right now</h3>
+                <p>Other travellers are loving these destinations. Search and compare flights, hotels, and car hire and
+                    join them on the adventure.</p>
+            </div>
+        </div>
+
+        <div class="container moi">
+            <div class="container-fluid place">
+                <div class="iop">
+                    <div class="opi">
+                        <img src="destinations pic/rome-italy.webp" alt="">
+                    </div>
+                    <div class="marp">
+                        <h7>Rome</h4>
+                            <p class=""><a href="#" class="text-primary">Flights</a> <a href="#"
+                                    class="text-primary">hotels</a> <a href="#" class="text-primary">Car hire</a></p>
+                    </div>
+                </div>
+
+                <div class="iop">
+                    <div class="opi">
+                        <img src="destinations pic/barcelona-spain.webp" alt="">
+                    </div>
+                    <div class="marp">
+                        <h7>barcelona</h4>
+                            <p>
+                                <a href="#" class="text-primary">Flights</a> <a href="#" class="text-primary">hotels</a>
+                                <a href="#" class="text-primary">Car hire</a>
+                            </p>
+                    </div>
+                </div>
+
+                <div class="iop">
+                    <div class="opi">
+                        <img src="destinations pic/paris-france.webp" alt="">
+                    </div>
+                    <div class="marp">
+                        <h7>Paris</h4>
+                            <p><a href="#" class="text-primary">Flights</a> <a href="#" class="text-primary">hotels</a>
+                                <a href="#" class="text-primary">Car hire</a>
+                            </p>
+                    </div>
+                </div>
+
+                <div class="iop">
+                    <div class="opi">
+                        <img src="destinations pic/buenos-aires-argentina.webp" alt="">
+                    </div>
+                    <div class="marp">
+                        <h7>Argentina</h4>
+                            <p><a href="#" class="text-primary">Flights</a> <a href="#" class="text-primary">hotels</a>
+                                <a href="#" class="text-primary">Car hire</a>
+                            </p>
+                    </div>
+                </div>
+
+                <div class="iop">
+                    <div class="opi">
+                        <img src="destinations pic/hoi-an-vietnam.webp" alt="">
+                    </div>
+                    <div class="marp">
+                        <h7>Vietnam</h4>
+                            <p><a href="#" class="text-primary">Flights</a> <a href="#" class="text-primary">hotels</a>
+                                <a href="#" class="text-primary">Car hire</a>
+                            </p>
+                    </div>
+                </div>
+
+                <div class="iop">
+                    <div class="opi">
+                        <img src="destinations pic/london-england.webp" alt="">
+                    </div>
+                    <div class="marp">
+                        <h7>london</h4>
+                            <p><a href="#" class="text-primary">Flights</a> <a href="#" class="text-primary">hotels</a>
+                                <a href="#" class="text-primary">Car hire</a>
+                            </p>
+                    </div>
+                </div>
+
+                <div class="iop">
+                    <div class="opi">
+                        <img src="destinations pic/cape-town-south-africa.webp" alt="">
+                    </div>
+                    <div class="marp">
+                        <h7>Cape-Town</h4>
+                            <p><a href="#" class="text-primary">Flights</a> <a href="#" class="text-primary">hotels</a>
+                                <a href="#" class="text-primary">Car hire</a>
+                            </p>
+                    </div>
+                </div>
+
+                <div class="iop">
+                    <div class="opi">
+                        <img src="destinations pic/queenstown-australia.webp" alt="">
+                    </div>
+                    <div class="marp">
+                        <h7>Australia</h4>
+                            <p><a href="#" class="text-primary">Flights</a> <a href="#" class="text-primary">hotels</a>
+                                <a href="#" class="text-primary">Car hire</a>
+                            </p>
+                    </div>
+                </div>
+
+                <div class="iop">
+                    <div class="opi">
+                        <img src="destinations pic/seoul south korea.webp" alt="">
+                    </div>
+                    <div class="marp">
+                        <h7>South-korea</h4>
+                            <p><a href="#" class="text-primary">Flights</a> <a href="#" class="text-primary">hotels</a>
+                                <a href="#" class="text-primary">Car hire</a>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+        </div>
+
+
+        <div class="container uop">
+            <div class="container-fluid accordion accordion-flush" id="accordionFlushExample">
+                <div class="container-fluid">
+                    <h4>Book cheap flights, hotels and car hire with Skyscanner</h4>
+                </div>
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#firstcontent">
+                            <a href="#">
+                                <h5>Join 100 million savvy travellers as you compare flights, hotels and cars from
+                                    hundreds of providers. Here’s how.</h5>
+                            </a>
+                        </button>
+                    </h2>
+                    <div id="firstcontent" class="accordion-collapse collapse">
+                        <div class="accordion-body poi">
+                            <div>
+                                <h5>Search Everywhere. Go anywhere.</h5>
+                                <p>Fancy a trip but don’t mind where? Or perhaps you want to discover somewhere <br>
+                                    new. Search ‘Everywhere’ for the cheapest flight anywhere on any given day.</p>
+                                <h5>Save money and time</h5>
+                                <p>Whether it's the fastest route or the smartest stay, find it in a few taps. Then pick
+                                    <br> your preferred provider or hotel based on real traveller ratings and book with
+                                    no <br> added fees.
+                                </p>
+                                <h5>Book flights that emit less CO2</h5>
+                                <p>Look for flights with lower CO₂ emissions. Since we began displaying this <br>
+                                    information, over 10 million travellers have found a plane ticket with lower
+                                    emissions <br> for their route.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h5>Find the cheapest day to fly</h5>
+                                <p>If you have a destination in mind and want to find the cheapest flight, choose <br>
+                                    ‘Cheapest month’ when you search. Then find flights on the cheapest day.</p>
+                                <h5>Track prices and book when it's best</h5>
+                                <p>Not quite ready to book? No pressure – with Price Alerts, we’ll watch the price of
+                                    <br> plane tickets for you, and let you know via email or the app if they rise or
+                                    fall.
+                                </p>
+                                <h5>Keep it flexible</h5>
+                                <p>We understand how important it is to have flexible plans. Look for hotels and car
+                                    hire <br> options with free cancellation so you can book now and amend later if you
+                                    need to.</p>
+                            </div>
+
+                            <div class="look text-primary">
+                                <p><a href="#" class="text-primary">Explore flight deals <i
+                                            class="fa-solid fa-arrow-right"></i></a></p>
+                                <p><a href="#" class="text-primary">Compare cheap hotels <i
+                                            class="fa-solid fa-arrow-right"></i></a></p>
+                                <p><a href="#" class="text-primary">Compare cheap car hire <i
+                                            class="fa-solid fa-arrow-right"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#secondcontent">
+                            <h5><a href="#">Our international sites</a></h5>
+                        </button>
+                    </h2>
+                    <div id="secondcontent" class="accordion-collapse collapse">
+                        <div class="accordion-body loi">
+                            <div class="coun-list1">
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="gb.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(GB) Cheap flights</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="dk.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(DK) Flybilletter</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="de.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(DE) Deutschland - Flüge</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="it.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(IT) Italia - voli</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="nl.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(NL) Vliegtickets</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="ru.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(RU) Россия - авиабилеты</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="ch.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(CH) Schweiz - Flüge</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="us.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(US) USA - flights</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="count-list2">
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="au.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(AU) Australia - Cheap flights</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="fi.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(FI) Suomi - lennot</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="in.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(IN) India - Flight tickets</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="jp.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(JP) 日本 - 航空券</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="no.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(NO) Billige flybilletter</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="es.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(ES) España - vuelos</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="tr.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(TR) Türkiye - uçak biletleri</a></p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="count-list3">
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="cn.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(CN) 中国 - 机票</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="fr.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(FR) France - vols</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="ie.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(IE) Ireland - flights</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="mx.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(MX) México - vuelos</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="pl.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(PL) Polska – tanie loty</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="se.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(SE) Sverige - flyg</a></p>
+                                    </div>
+                                </div>
+                                <div class="mag">
+                                    <div class="imgp">
+                                        <img src="ae.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p><a href="" class="text-primary">(AE) United Arab Emirates - flights</a></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid polk">
+        <div class="container lokp">
+            <div class="btp">
+                <button>
+
+                    <div class="imk">
+                        <img src="uk-down.png" alt="">
+                    </div>
+                    <div class="pi">
+                        <p><a href="">United Kingdom · English (UK) · ₦ NGN</a></p>
+                    </div>
+
+                </button>
+
+
+                <p>
+                    <hr>
+                </p>
+            </div>
+
+            <div class="ptp">
+                <p><a href="">Help</a></p>
+                <p><a href="">Privacy Settings</a></p>
+                <p><a href="">Log in</a></p>
+
+                <p>
+                    <hr>
+                </p>
+            </div>
+
+            <div class="otp">
+                <p><a href="">Cookie policy</a></p>
+                <p><a href="">Privacy Policy</a></p>
+                <p><a href="">Terms of Service</a></p>
+                <p><a href="">Company Details</a></p>
+
+                <p>
+                    <hr>
+                </p>
+            </div>
+
+            <div class="utp">
+                <div class="accordion lip" id="accordionPanelsExample"
+                    style="background: rgba(5, 32, 61, 255); border: none;">
+                    <div class="accordion-item kip" style="background: rgba(5, 32, 61, 255);border: none;">
+                        <h2 class="accordion-header" style="border: none;">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" style="background: rgba(5, 32, 61, 255);">
+                                <span style="color: white;">Explore</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                            style="background: rgba(5, 32, 61, 255);">
+                            <div class="accordion-body" style="background: rgba(5, 32, 61, 255);color: white;">
+                                <p><a href="#">Domestic flights</a></p>
+                                <p><a href="#">cities</a></p>
+                                <p><a href="#">Airports</a></p>
+                                <p><a href="#">Countries/regions</a></p>
+                                <p><a href="#">Airlines</a></p>
+                                <p><a href="#">flights</a></p>
+                                <p><a href="#">Hotels</a></p>
+                                <p><a href="#">cCar hire</a></p>
+                                <p><a href="#">App</a></p>
+                                <p><a href="#">Sitemap</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item kip" style="background: rgba(5, 32, 61, 255); border: none;">
+                        <h2 class="accordion-header" style="background: rgba(5, 32, 61, 255);">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" style="background: rgba(5, 32, 61, 255);">
+                                <span style="color: white;">Company</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            style="background: rgba(5, 32, 61, 255);">
+                            <div class="accordion-body" style="background: rgba(5, 32, 61, 255); color: white;">
+                                <p><a href="#">About us</a></p>
+                                <p><a href="#">Why Skyscrapper?</a></p>
+                                <p><a href="#">Media</a></p>
+                                <p><a href="#">Our people</a></p>
+                                <p><a href="#">Accessibility</a></p>
+                                <p><a href="#">Sustainability</a></p>
+                                <p><a href="#">Jobs</a></p>
+                                <p><a href="#">Travel features & News</a></p>
+                                <p><a href="#">legal notices</a></p>
+                                <p><a href="#">modern slaves</a></p>
+                                <p><a href="#">Security</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item kip" style="background: rgba(5, 32, 61, 255); border: none;">
+                        <h2 class="accordion-header" style="background: rgba(5, 32, 61, 255);">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree"
+                                style="background: rgba(5, 32, 61, 255);">
+                                <span style="color: white;">Partners</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            style="background: rgba(5, 32, 61, 255);">
+                            <div class="accordion-body" style="background: rgba(5, 32, 61, 255);">
+                                <p><a href="#">work with us</a></p>
+                                <p><a href="#">Advertise With Us</a></p>
+                                <p><a href="#">Travel insights</a></p>
+                                <p><a href="#">Affiliates</a></p>
+                                <p><a href="#">Travel APIS</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item kip" style="background: rgba(5, 32, 61, 255); border: none;">
+                        <h2 class="accordion-header" style="">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapsefour"
+                                style="background: rgba(5, 32, 61, 255); color: white;">
+                                <span style="color: white;">Trips</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse"
+                            style="background: rgba(5, 32, 61, 255);">
+                            <div class="accordion-body" style="background: rgba(5, 32, 61, 255);">
+                                <p>Flights</p>
+                                <p>Hotels</p>
+                                <p>Car hire</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item kip" style="background: rgba(5, 32, 61, 255); border: none;">
+                        <h2 class="accordion-header" style="background: rgba(5, 32, 61, 255);">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapsefive" style="background: rgba(5, 32, 61, 255);">
+                                <span style="color: white;">International Sites</span>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse"
+                            style="background: rgba(5, 32, 61, 255);">
+                            <div class="accordion-body" style="background: rgba(5, 32, 61, 255);">
+                                <p><a href="#">(AU) Australia - Cheap flights</a></p>
+                                <p><a href="#">(CN) 中国 - 机票</a></p>
+                                <p><a href="#">(DK) Flybilletter</a></p>
+                                <p><a href="#">(FI) Suomi - lennot</a></p>
+                                <p><a href="#">(FR) France - vols</a></p>
+                                <p><a href="#">(DE) Deutschland - Flüge</a></p>
+                                <p><a href="#">(IN) India - Flight tickets</a></p>
+                                <p><a href="#">(IE) Ireland - flights</a></p>
+                                <p><a href="#">(IT) Italia - voli</a></p>
+                                <p><a href="#">(JP) 日本 - 航空券</a></p>
+                                <p><a href="#">(MX) México - vuelos</a></p>
+                                <p><a href="#">(NL) Vliegtickets</a></p>
+                                <p><a href="#">(NO) Billige flybilletter</a></p>
+                                <p><a href="#">(PL) Polska – tanie loty</a></p>
+                                <p><a href="#">(RU) Россия - авиабилеты</a></p>
+                                <p><a href="#">(ES) España - vuelos</a></p>
+                                <p><a href="#">(SE) Sverige - flyg</a></p>
+                                <p><a href="#">(CH) Schweiz - Flüge</a></p>
+                                <p><a href="#">(TR) Türkiye - uçak biletleri</a></p>
+                                <p><a href="#">(AE) United Arab Emirates - flights</a></p>
+                                <p><a href="#">(GB) Cheap flights</a></p>
+                                <p><a href="#">(US) USA - flights</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="buy">
+        <h5>Compare and book cheap flights from anywhere, to everywhere <br>&copy; Skyscanner Ltd 2002-2023</h5>
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
