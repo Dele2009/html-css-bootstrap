@@ -499,6 +499,7 @@
             width: 100%;
             background: rgba(5, 32, 61, 255);
             padding-bottom: 20px;
+            margin-bottom: 100px;
         }
 
         .buy h5 {
@@ -526,15 +527,21 @@
             position: absolute;
 
         }
+        .arrows2{
+            position: relative;
+        }
 
         .arrows2 span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background: white;
             font-size: 20px;
             position: relative;
-            width: 10px;
+            width: 50px;
             height: 50px;
-            top: 90px;
-            left: 206px;
+            top: 100px;
+            left: 209px;
             padding: 5px 10px;
             border-radius: 100%;
             border: 2px solid rgb(5, 32, 61, 255);
@@ -558,6 +565,13 @@
             width: 5%;
         }
 
+        .page-link {
+            font-size: 20px;
+            padding: 9px 20px;
+        }
+
+        
+        
 
 
         @media screen and (max-width:768px) {
@@ -856,15 +870,18 @@
             }
 
             .arrows span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 background: white;
                 visibility: visible;
 
                 font-size: 20px;
-                position: relative;
-                width: 10px;
+                position: absolute;
+                width: 50px;
                 height: 50px;
-                top: 80px;
-                left: 430%;
+                top: 20px;
+                left: 75%;
                 padding: 5px 10px;
                 border-radius: 100%;
                 border: 2px solid rgb(5, 32, 61, 255);
@@ -950,6 +967,11 @@
             .lokp hr {
                 border: 2px solid rgb(255, 255, 255);
                 display: block;
+            }
+
+            .page-link {
+                font-size: 20px;
+                padding: 9px 20px;
             }
 
 
@@ -1057,13 +1079,7 @@
                             <button class="bg-text-light">Car hire</button>
                         </div>
                     </div>
-                    <div class="arrows">
-                        <span>
-                            <i class="fa-solid fa-arrow-up" style="color: rgb(5, 32, 61, 255);"></i>
-                            <i class="fa-solid fa-arrow-down" style="color:rgb(5, 32, 61, 255);"></i>
-                        </span>
-
-                    </div>
+                    
 
 
                     <div class="arrows2">
@@ -1076,10 +1092,22 @@
 
                     <div class="container mer ">
                         <div class="row yer">
-                            <div class="col-12 kg"><i class="fa-regular fa-circle fat"></i><span>Lagos (LOS)</span>
+                            <div class="col-12 kg">
+                                <i class="fa-regular fa-circle fat"></i><span>Lagos (LOS)</span>
                             </div>
-                            <div class="col-12 po"><i class="fa-solid fa-location-dot fat"></i><span>Choose
-                                    destination</span></div>
+                            <div class="arrows text-center">
+                                <span>
+                                    <i class="fa-solid fa-arrow-up" style="color: rgb(5, 32, 61, 255);"></i>
+                                    <i class="fa-solid fa-arrow-down" style="color:rgb(5, 32, 61, 255);"></i>
+                                   
+                                </span>
+                                
+        
+                            </div>
+                            <div class="col-12 po">
+                                <i class="fa-solid fa-location-dot fat"></i><span>Choose
+                                    destination</span>
+                            </div>
                             <div class="col-6 po lp"><i class="fa-solid fa-calendar-days fat"></i><span>Choose
                                     dates</span></div>
                             <div class="col-6  po ki"><i class="fa-solid fa-user fat"></i><span> 1 Adult</span></div>
@@ -1725,10 +1753,11 @@
 
     </div>
 
-    
+
 
 
     <nav aria-label="Page navigation example">
+        <h3 class="text-center">OTHER PROJECTS</h3>
         <ul class="pagination justify-content-center">
             <li class="page-item disabled">
                 <a class="page-link">Previous</a>
