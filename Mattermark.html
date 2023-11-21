@@ -154,33 +154,38 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 0px;
+            margin: auto
+            
         }
 
         .div1 {
             background-image: url(investors.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            width: 300px;
+            width: 400px;
             height: 200px;
             border-radius: 25px;
+            margin:auto;
         }
 
         .div2 {
             background-image: url(sales.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            width: 300px;
+            width: 400px;
             height: 200px;
             border-radius: 25px;
+            margin:auto;
         }
 
         .div3 {
             background-image: url(profservices.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            width: 300px;
+            width: 400px;
             height: 200px;
             border-radius: 25px;
+            margin:auto;
         }
 
 
@@ -242,7 +247,7 @@
             font-size: 20px;
         }
 
-        .miy{
+        .miy {
             margin: 50px 0px 80px 0px;
         }
 
@@ -268,10 +273,12 @@
             text-decoration: none;
             color: white;
         }
-        .hi .fa-brands{
+
+        .hi .fa-brands {
             font-size: 25px;
             color: white;
         }
+
         .fade {
             display: flex;
             justify-content: space-evenly;
@@ -287,17 +294,55 @@
         .bi {
             width: 5%;
         }
-       
-        .page-link{
+
+        .page-link {
             font-size: 20px;
             padding: 9px 20px;
-            
+
         }
 
 
 
 
 
+
+        @media screen and (max-width:1200px) {
+            .jay {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 50px;
+            }
+
+            .div1 {
+                background-image: url(investors.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 400px;
+                height: 200px;
+                border-radius: 25px;
+                margin: auto;
+            }
+
+            .div2 {
+                background-image: url(sales.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 400px;
+                height: 200px;
+                border-radius: 25px;
+                margin: auto;
+            }
+
+            .div3 {
+                background-image: url(profservices.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 400px;
+                height: 200px;
+                border-radius: 25px;
+                margin: auto;
+            }
+        }
 
         @media screen and (max-width:768px) {
 
@@ -379,6 +424,36 @@
                 color: white;
             }
 
+            .div1 {
+                background-image: url(investors.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 270px;
+                height: 200px;
+                border-radius: 25px;
+                margin: auto;
+            }
+
+            .div2 {
+                background-image: url(sales.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 270px;
+                height: 200px;
+                border-radius: 25px;
+                margin: auto;
+            }
+
+            .div3 {
+                background-image: url(profservices.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 270px;
+                height: 200px;
+                border-radius: 25px;
+                margin: auto;
+            }
+
             .fade {
                 display: flex;
                 justify-content: space-evenly;
@@ -395,10 +470,10 @@
                 width: 12%;
             }
 
-            .page-link{
-            font-size: 20px;
-            padding: 9px 20px;
-        }
+            .page-link {
+                font-size: 20px;
+                padding: 9px 20px;
+            }
         }
     </style>
 </head>
