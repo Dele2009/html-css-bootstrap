@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Mattermark</title>
+    <style>
+        body {
+            overflow-x: hidden;
+            padding: 0px 0px 60px 0px;
+        }
+
+        .nav-b .navbar-brand {
+            width: 300px;
+        }
+
+        .nav-b img {
+            width: 100%;
+
+        }
+
+        .fa-bars {
+            font-size: 30px;
+        }
+
+
+        .lo {
+            background: rgb(8, 152, 125);
+        }
+
+        .lo h5 {
+            color: white;
+        }
+
+        .lo a {
+            color: white;
+        }
+
+        .kal h1 {
+            font-size: 65px;
+            color: rgb(33, 51, 115);
+        }
+
+        .cal h1 {
+            margin: 0px 0px 40px 0px;
+        }
+
+        .kil a {
+            text-decoration: none;
+            color: white;
+            background: rgb(0, 188, 212);
+            padding: 15px 25px;
+            border-radius: 3px;
+            margin: 0px 0px 0px 0px;
+        }
+
+        .kil p {
+            font-size: 11 px;
+        }
+
+        .jik .row {
+            width: fit-content;
+        }
+
+        .jik .row .col-3 {
+            width: 150px;
+        }
+
+        .jik .row img {
+            width: 100%;
+        }
+
+        .gik .row {
+            width: fit-content;
+        }
+
+        .gik .row .col-4 {
+            width: 150px;
+        }
+
+        .gik .row img {
+            width: 100%;
+        }
+
+        .mit {
+            margin: 60px 30px 0px 30px;
+        }
+
+        .nit {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 100px;
+
+        }
+
+        .nit h3 {
+            font-size: 30px;
+        }
+
+        .nit .mai {
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .rt {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0px;
+        }
+
+        .jk {
+            width: 60%;
+            /* display: flex;
+            justify-content: center; */
+            margin: auto;
+        }
+
+        .jk img {
+            width: 100%;
+            /* display: flex; */
+        }
+
+        .mah {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0px;
+            margin: 50px 0px 0px 0px;
+
+        }
+
+        .hk {
+            width: 70%;
+            margin: auto;
+        }
+
+        .hk img {
+            width: 100%;
+        }
+
+        .nay {
+            margin-top: 50px;
+        }
+
+        .call {
+            margin-top: 50px;
+        }
+
+        .jay {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 0px;
+        }
+
+        .div1 {
+            background-image: url(investors.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 400px;
+            height: 200px;
+            border-radius: 25px;
+        }
+
+        .div2 {
+            background-image: url(sales.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 400px;
+            height: 200px;
+            border-radius: 25px;
+        }
+
+        .div3 {
+            background-image: url(profservices.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 400px;
+            height: 200px;
+            border-radius: 25px;
+        }
+
+
+
+        .inner {
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 179, 255, 0.382);
+            text-align: center;
+            color: white;
+            padding: 90px;
+            border-radius: 25px;
+
+        }
+
+        .inner .norm {
+            visibility: hidden;
+            position: absolute;
+        }
+
+        .inner:hover {
+            padding: 50px;
+            background: rgba(0, 110, 255, 0.542);
+            transition: all 1s 0s ease-in-out;
+        }
+
+        .inner:hover .norm {
+            visibility: visible;
+            position: relative;
+            text-align: center;
+            transition: all 1s 0s ease-in-out;
+        }
+
+        .may {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 80px;
+            margin-top: 50px;
+        }
+
+        .may h1 {
+            font-size: 40px;
+            color: rgb(33, 51, 115);
+        }
+
+        /* .may p{
+            font-size: 25px;
+        } */
+        .may a {
+            text-decoration: none;
+            color: white;
+            background: lime;
+            font-size: 25px;
+            padding: 10px 10px;
+            border-radius: 10px;
+        }
+
+        .may ul li {
+            font-size: 20px;
+        }
+
+        .miy{
+            margin: 50px 0px 80px 0px;
+        }
+
+        .jcp {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0px;
+            margin-top: 90px;
+        }
+
+        .hi {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 150px;
+            margin-top: 50px;
+        }
+
+        .hi h5 {
+            color: rgb(179, 178, 178);
+        }
+
+        .hi a {
+            text-decoration: none;
+            color: white;
+        }
+        .hi .fa-brands{
+            font-size: 25px;
+            color: white;
+        }
+        .fade {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0;
+        }
+
+        .lik {
+            display: inline-block;
+            font-size: 35px;
+        }
+
+        .bi {
+            width: 5%;
+        }
+       
+        .page-link{
+            font-size: 20px;
+            padding: 9px 20px;
+            
+        }
+
+
+
+
+
+
+        @media screen and (max-width:768px) {
+
+            .jik,
+            .gik {
+                display: none;
+            }
+
+            .nav-b .navbar-brand {
+                width: 170px;
+            }
+
+            .nav-b img {
+                width: 100%;
+
+            }
+
+            .fa-bars {
+                font-size: 19px;
+            }
+
+            .nit {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .rt {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 0px;
+            }
+
+            .rt p {
+                text-align: center;
+            }
+
+            .mah p {
+                text-align: center;
+            }
+
+            .mah {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 0px;
+            }
+
+            .jay {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 40px;
+            }
+
+            .may {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 80px;
+            }
+
+            .jcp {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 0px;
+                margin-top: 0px;
+            }
+
+            .hi {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 50px;
+                margin-top: 0px;
+            }
+
+            .hi h5 {
+                color: rgb(179, 178, 178);
+            }
+
+            .hi a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .fade {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 0;
+            }
+
+            .lik {
+                display: inline-block;
+                font-size: 17px;
+            }
+
+            .bi {
+                width: 12%;
+            }
+
+            .page-link{
+            font-size: 20px;
+            padding: 9px 20px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check-circle-fill" viewBox="0 0 16 16">
+            <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+        </symbol>
+        <symbol id="info-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+        </symbol>
+        <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+            <path
+                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </symbol>
+    </svg>
+
+
+
+    <div class="alert alert-success alert-dismissible-bottom fade show " role="alert">
+        <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Info:" style="color: blue;">
+            <use xlink:href="#info-fill" />
+        </svg>
+        <div class="lik text-center" style="color: black;">
+            CAVEAT: This is a student's project and not any sort of attempt to clone the existing webpage
+            <button type="button" class="btn-close text-danger" data-bs-dismiss="alert" aria-label="Close"
+                style="position: relative; top: 30px; float: right;"></button>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid text-center lo p-2">
+        <h5>We are excited to announce that Mattermark has re-launched as an independent company! <a href="">Learn More
+                →</a></h4>
+    </div>
+
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid nav-b">
+                <a class="navbar-brand" href="#">
+                    <img src="logo-cyan-light-bg.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler border-0" type="button" style="background: none;"
+                    data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02">
+                    <span class=""><i class="fa-solid fa-bars" style=""></i></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end">
+                        <li class="nav-item dropdown">
+
+
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">SOLUTIONS</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light border-0">
+                                <li><a class="dropdown-item" href="#">LIST BUILDING</a></li>
+                                <li><a class="dropdown-item" href="#">LEAD ENRICHMENT</a></li>
+                                <li><a class="dropdown-item" href="#">DEVELOPER TOOLS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+
+
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">INTEGRATIONS</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light border-0">
+                                <li><a class="dropdown-item" href="#">SALESFORCE</a></li>
+                                <li><a class="dropdown-item" href="#">MICROSOFT EXCEL</a></li>
+                                <li><a class="dropdown-item" href="#">GOOGLE SHEETS</a></li>
+                                <li><a class="dropdown-item" href="#">BROWSER EXTENTION</a></li>
+                                <li><a class="dropdown-item" href="#">IPHONE APP</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRICING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LOGIN</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container text-center kal">
+        <h1>Data-Driven Deal Making</h1>
+    </div>
+
+    <div class="container text-center cal">
+        <h1>Discover, prospect, and track the world’s fastest-growing companies and investors.</h1>
+    </div>
+
+    <div class="container">
+        <div class="row kil ">
+            <div class="col-12 text-center">
+                <a href="#">Start Free 14-Day Trial</a>
+                <p class="mt-3">No commitment, no credit card required.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container jik mt-4">
+        <div class="row m-auto">
+            <div class="col-3" style="width: 90px;"><img src="fuel_trns.png" alt=""></div>
+            <div class="col-3"><img src="hcptrns.png" alt=""></div>
+            <div class="col-3" style="width: 190px;"><img src="fundersclub_wide.png" alt=""></div>
+            <div class="col-3" style="width: 120px;"><img src="ludlow-new.png" alt=""></div>
+        </div>
+    </div>
+
+    <div class="container gik mt-4">
+        <div class="row m-auto">
+            <div class="col-4" style="width: 70px;"><img src="usv-logo.png" alt=""></div>
+            <div class="col-4"><img src="trident_trns.png" alt=""></div>
+            <div class="col-4" style="width: 180px;"><img src="northbridge-logo.png" alt=""></div>
+        </div>
+    </div>
+
+
+    <div class="container nit">
+        <div>
+            <div class="mai" style="margin: 0px 0px 20px 0px;">
+                <img src="profile.jpg" alt="" class="">
+            </div>
+            <div>
+                <h3 class="text-center">Company Profiles</h3>
+                <p class="text-center">80+ fields per company including geography, industry, revenue, personnel,
+                    funding, and employee
+                    growth.</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="mai">
+                <img src="arrow.jpg" alt="" class="">
+            </div>
+            <div>
+                <h3 class="text-center">Key Personnel</h3>
+                <p class="text-center">Identify the right contact based on title, function, and seniority.</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="mai">
+                <img src="signal.jpg" alt="" class="">
+            </div>
+            <div>
+                <h3 class="text-center">Growth Signals</h3>
+                <p class="text-center">Get smarter about outreach by monitoring changes in team size, web traffic, media
+                    mentions and more.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-body-tertiary">
+        <div class="row container-fluid">
+            <div class="col-12 text-center">
+                <h1>Using Data You Can Trust</h1>
+            </div>
+        </div>
+        <div class="container rt">
+            <div>
+                <p class="h4">Where We Get Our Data</p>
+                <p class="">
+                    We leverage machine learning, web crawlers, primary sources, and natural language processing to
+                    extract data from millions of news articles and websites daily.
+
+                    Our team of in-house analysts verify the data every day - so you can close deals with conviction.
+                </p>
+            </div>
+
+            <div class="jk">
+                <img src="mm_data_diagram.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-fluid mah">
+            <div class="hk">
+                <img src="opportunity.png" alt="">
+            </div>
+            <div>
+                <p class="h4">Discover new opportunities</p>
+                <p class="">
+                    The world’s business information in one place, filterable and sortable. Mattermark makes it faster
+                    and
+                    easier to source the best deals.
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-fluid mah">
+
+            <div>
+                <p class="h4">Track Success</p>
+                <p class="">
+                    Search company and investor profiles for deep insights into their growth and performance over time.
+                    Break the cycle of doing business without good data.
+                </p>
+            </div>
+
+            <div class="hk">
+                <img src="growth.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-fluid mah">
+            <div class="hk">
+                <img src="informed.png" alt="">
+            </div>
+
+            <div>
+                <p class="h4">Stay Informed</p>
+                <p class="">
+                    There are 300+ million private companies in the world. Saved Searches, Custom Lists, and News
+                    Notifications make it possible to keep tabs on the ones that matter most to you.
+                </p>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-fluid mah">
+
+            <div>
+                <p class="h4">Automatically Enrich Leads in Salesforce</p>
+                <p class="">
+                    Get actionable insights by syncing over 80 informative fields to help warm leads and power
+                    conversations from first touch to deal close. Get all the relevant information from inside
+                    Salesforce, and apply triggers and actions to any lead, opportunity, or other object. Learn More
+                </p>
+            </div>
+
+            <div class="hk">
+                <img src="home-valuesection-salesforce.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-fluid mah">
+            <div class="hk">
+                <img src="home-valuesection-api.png" alt="">
+            </div>
+
+            <div>
+                <p class="h4">Customize your Experience with API</p>
+                <p class="">
+                    Our API provides data on millions of companies. In just minutes, you can integrate Mattermark with
+                    your products, systems, and business processes. Create your own models and scoring algorithms to fit
+                    your business. Learn More
+                </p>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-fluid mah">
+
+            <div>
+                <p class="h4">Export Mattermark Data to Spreadsheets</p>
+                <p class="">
+                    Pull Mattermark data directly into Google Sheets or Microsoft Excel to add live updated company
+                    Growth Scores, location, funding, employee count, and more into your spreadsheets. Learn More
+                </p>
+            </div>
+
+            <div class="hk">
+                <img src="home-valuesection-spreadsheet.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid bg-body-tertiary">
+        <div class="row container-fluid">
+            <div class="col-12 text-center call">
+                <h1>Deal Professionals Use Our Data</h1>
+            </div>
+        </div>
+        <div class="container nay">
+            <div class="container-fluid jay">
+                <div class="div1">
+                    <div class="inner">
+                        <p class="h5">INVESTORS</p>
+                        <p class="norm">Surface new companies and better deals, faster</p>
+                    </div>
+
+                </div>
+                <div class="div2">
+                    <div class="inner">
+                        <p class="h5">SALES / BD</p>
+                        <p class="norm">
+                            Dramatically reduce prospecting time and identify future customers with Mattermark.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="div3">
+                    <div class="inner">
+                        <p class="h5">PROFESSIONAL SERVICES</p>
+                        <p class="norm">Research markets, understand competitive landscapes, and deliver to clients
+                            quicker</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-fluid may">
+            <div>
+                <h1>4 Million Companies
+                    20 Million Key Contacts
+                </h1>
+                <p style="font-size: 25px;">Start contacting your target list today
+
+                </p>
+                <a href="#">Start Free 14-Day Trial</a>
+                <p style="font-size: 12px;margin-top: 9px;">No commitment, no credit card required.</p>
+
+            </div>
+            <div>
+                <h1 style="font-size: 30px;color: rgb(33,51,115)">Right data. Right format. Right now</h1>
+
+                <ul>
+                    <li>Developer Tools (REST and GraphQL APIs)</li>
+                    <li>Web-based Data Browser (CSV and PDF)</li>
+                    <li>Spreadsheet Plugins (Excel and Sheets)</li>
+                    <li>Browser Extension (Google Chrome)</li>
+                    <li>Mobile (iPhone lookup app)</li>
+                    <li>CRM Integration (Salesforce)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid miy" style="background: rgb(53, 53, 53);">
+        <div class="container jcp">
+            <div class="ui">
+                <a href="#"><img src="mm-logo-white.png" alt="" width="280px" height="70px"></a>
+                <p style="color: white;">Mattermark, Inc. <br>
+                    61 Moraga Way Suite 6 <br>
+                    Orinda, CA 94563</p>
+
+            </div>
+            <div class="">
+                <div class="container hi">
+                    <div>
+                        <h5>SOLUTIONS</h5>
+                        <p><a href="#">Prospect Discovery</a></p>
+                        <p><a href="#">Lead Enrichment</a></p>
+                        <p><a href="#">Developer API</a></p>
+
+                    </div>
+                    <div>
+                        <h5>INTEGRATIONS</h5>
+                        <p><a href="#">Salesforce</a></p>
+                        <p><a href="#">MS Excel</a></p>
+                        <p><a href="#">Google Sheets</a></p>
+                        <p><a href="#">iOS App</a></p>
+                        <p><a href="#">Chrome Extension</a></p>
+                    </div>
+                    <div>
+                        <h5>COMPANY</h5>
+                        <p><a href="#">Lists</a></p>
+                        <p><a href="#">Newsletters</a></p>
+                        <p><a href="#">Webinars</a></p>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div>
+                        <h5>SUPPORT</h5>
+                        <p><a href="#">
+                                Help Center</a></p>
+                        <p><a href="#">Email Us
+                            </a></p>
+                        <p><a href="#">
+                                Privacy
+                            </a></p>
+                        <p><a href="#">Terms</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <nav aria-label="Page navigation example">
+        <h3 class="text-center">OTHER PROJECTS</h3>
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="chipotle.html">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="Aptible.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="chipotle.html">3</a></li>
+            <li class="page-item active"><a class="page-link" href="Mattermark.html">4</a></li>
+
+        </ul>
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#">5</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">6</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">7</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">8</a></li>
+            <li class="page-item ">
+                <a class="page-link disabled" href="Aptible.html">Next</a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
