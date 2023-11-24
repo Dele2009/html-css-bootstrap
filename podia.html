@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            background: rgb(253, 251, 249);
+            padding: 180px 0px 0px 0px;
+        }
+
+        .navbar-brand {
+            font-size: 35px;
+            font-weight: bolder;
+            color: rgb(75, 42, 173);
+        }
+
+        .nav-link {
+            font-size: 18px;
+        }
+
+        .nav-footer h4 a {
+            background: none;
+            font-weight: 500;
+            color: black;
+            font-size: 23px;
+
+        }
+
+        .nav-footer a {
+            color: white;
+            text-decoration: none;
+            background: rgb(75, 42, 173);
+            padding: 10px 20px;
+            margin: 0px 10px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 40px;
+        }
+
+        .nav-footer button {
+            font-size: 20px;
+            visibility: hidden;
+            position: relative;
+        }
+
+        .modal {
+            visibility: hidden;
+            position: absolute;
+        }
+
+        .fade {
+            visibility: hidden;
+            position: absolute;
+        }
+
+        .ray {}
+
+        .ray h1 {
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .mac {}
+
+        .mac p {
+            font-size: 20px;
+
+        }
+
+        .jav a {
+            color: white;
+            text-decoration: none;
+            background: rgb(75, 42, 173);
+            padding: 10px 20px;
+            margin: 0px 5px;
+            font-size: 25px;
+            font-weight: bold;
+            border-radius: 40px;
+        }
+
+        .web {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .weg {
+            padding: 20px;
+        }
+
+
+        /* wed image desktop */
+        .wed {
+            width: 100%;
+
+        }
+
+        .wed .container-fluid {
+            width: 100%;
+
+        }
+
+        .wed img {
+            width: 100%;
+
+        }
+
+        /* wed 2 img mobile */
+        .wed2 {
+            width: 100%;
+            visibility: hidden;
+            position: absolute;
+
+        }
+
+        .wed2 .container-fluid {
+            width: 100%;
+
+        }
+
+        .wed2 img {
+            width: 100%;
+
+        }
+
+        .bill {
+            margin-top: 60px;
+            width: fit-content;
+
+        }
+
+        .bill button {
+            z-index: 2;
+            font-size: 20px;
+
+        }
+
+        .bill .accordion-body {
+            font-size: 16px;
+        }
+
+
+
+
+        .hay {}
+
+        .hay h1 {
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .pac {}
+
+        .pac p {
+            font-size: 25px;
+
+        }
+
+        .order-2 {
+            width: 50%;
+            margin-top: ;
+        }
+
+        .order-2 img {
+            width: 100%;
+        }
+
+        .uij {
+            width: 80%;
+            height: 450px;
+        }
+
+        .uij img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .mkl {}
+
+        .mikp {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0;
+            padding: 30px;
+            background: rgb(245, 239, 235);
+            margin: 80px 0px 0px 0px;
+            border-radius: 20px;
+        }
+
+        .mikp button {
+            color: white;
+            text-decoration: none;
+            background: rgb(75, 42, 173);
+            padding: 10px 20px;
+            margin: 30px 0px 0px 0px;
+            font-size: 25px;
+            font-weight: bold;
+            border-radius: 40px;
+        }
+
+        .mikp button:hover {
+            background: rgb(52, 28, 124);
+        }
+
+        .nlake {
+
+            margin-top: 40px;
+            padding-top: 20px;
+        }
+
+        .nlake h1 {
+            font-size: 40px;
+        }
+
+        .nlake h4 {
+            font-size: ;
+            color: rgb(116, 113, 113);
+        }
+
+        .man {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 50px;
+            padding-top: 60px;
+        }
+
+        .man .plk {
+            width: 45%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .man img {
+            width: 100%;
+        }
+
+        .man a {
+            text-align: center;
+            margin: auto;
+        }
+
+        .mad {
+            box-shadow: 0px 0px 7px black;
+            background: white;
+        }
+
+        .jul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mad h5 {
+            margin: 20px 0px 0px 0px;
+        }
+
+        .mad p {
+            margin: 20px 0px 0px 0px;
+        }
+
+        .mad a {
+            margin: 20px 0px 0px 0px;
+        }
+
+        .mad a:hover .fa-arrow-right {
+            padding-left: 10px;
+            transition: all 1s 0s ease;
+        }
+
+        .nak {
+            margin-top: 50px;
+            background: rgb(32, 20, 69);
+            border-radius: 20px;
+            height: fit-content;
+            padding: 35px;
+        }
+
+        .nak h3,
+        h5 {
+            margin-top: 40px;
+            color: white;
+        }
+
+        .ah {
+            width: fit-content;
+            margin: auto;
+            padding-top: 40px;
+        }
+
+        .ah a {
+            text-decoration: none;
+            color: white;
+            background-color: rgb(148, 132, 198);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .ah a:hover {
+            background: rgb(89, 50, 205);
+        }
+
+        .nm {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .nm a {
+            margin: 0px 10px;
+            color: grey;
+
+        }
+
+        .mort {
+            margin-top: 40px;
+            background: rgb(245, 239, 235);
+            margin-bottom: 50px;
+
+        }
+
+        .mor {
+            padding: 50px;
+        }
+
+        .poil {
+            display: none;
+        }
+
+        .fade {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0;
+        }
+
+        .lik {
+            display: inline-block;
+            font-size: 35px;
+        }
+
+        .bi {
+            width: 5%;
+        }
+
+       
+
+
+        .page-link {
+            font-size: 20px;
+            padding: 9px 20px;
+        }
+
+
+
+
+        @media screen and (max-width:1200px) {
+            body {
+                background: rgb(253, 251, 249);
+                padding: 100px 0px 50px 0px;
+            }
+
+            .nav-item {
+                visibility: hidden;
+                position: absolute;
+            }
+
+            .nav-footer h4 a {
+                background: none;
+                font-weight: 500;
+                color: black;
+                font-size: 20px;
+                visibility: visible;
+                position: relative;
+                margin-top: 0px;
+
+
+            }
+
+            .nav-footer a {
+                visibility: hidden;
+                position: absolute;
+                color: white;
+                text-decoration: none;
+                background: rgb(75, 42, 173);
+                padding: 2px 2px;
+                margin: 0px 5px;
+                font-size: 20px;
+                font-weight: normal;
+                border-radius: 40px;
+            }
+
+            .nav-footer button {
+                font-size: 20px;
+                visibility: visible;
+                position: relative;
+            }
+
+            .modal {
+                visibility: visible;
+                position: absolute;
+
+            }
+
+            .fade {
+                visibility: visible;
+                position: absolute;
+            }
+
+
+            .modal-body .nav-item {
+                visibility: visible;
+                position: relative;
+            }
+
+            .modal-body .dropdown-menu {
+                position: relative;
+            }
+
+            .modal-footer button {
+                color: white;
+                text-decoration: none;
+                background: rgb(75, 42, 173);
+                padding: 10px 2px;
+                margin: 0px 5px;
+                font-size: 20px;
+                font-weight: bold;
+                border-radius: 40px;
+            }
+
+            .mat {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .li {
+                list-style-type: none;
+                list-style: none;
+
+            }
+
+            .mat h5 {
+                color: rgb(160, 141, 134);
+            }
+
+            .mat a {
+                text-decoration: none;
+                color: rgb(97, 93, 91);
+
+            }
+
+            .kat {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .ray h1 {
+                font-size: 40px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+            }
+
+            .jav a {
+                color: white;
+                text-decoration: none;
+                background: rgb(75, 42, 173);
+                padding: 10px 20px;
+                margin: 0px 5px;
+                font-size: 18px;
+                font-weight: bold;
+                border-radius: 40px;
+            }
+
+            /* wed image desktop */
+            .wed {
+                width: 100%;
+                visibility: hidden;
+                position: absolute;
+
+            }
+
+            .wed .container-fluid {
+                width: 100%;
+
+            }
+
+            .wed img {
+                width: 100%;
+
+            }
+
+            /* wed 2 img mobile */
+            .wed2 {
+                width: 100%;
+                visibility: visible;
+                position: relative;
+
+            }
+
+            .wed2 .container-fluid {
+                width: 100%;
+
+            }
+
+            .wed2 img {
+                width: 100%;
+
+            }
+
+
+            .bill {
+                margin-top: 60px;
+
+            }
+
+            .bill button {
+                z-index: 2;
+                font-size: 15px;
+
+            }
+
+            .bill .accordion-body {
+                font-size: 16px;
+            }
+
+            .hay {}
+
+            .hay h1 {
+                font-size: 25px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+            }
+
+            .pac {}
+
+            .pac p {
+                font-size: 17px;
+
+            }
+
+            .order-2 {
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            .order-2 img {
+                width: 100%;
+            }
+
+
+
+
+            .man {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 50px;
+                padding-top: 60px;
+            }
+
+            .mkl {
+                margin: auto;
+            }
+
+            .mikp {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 0;
+                padding: 30px;
+                background: rgb(245, 239, 235);
+                margin: 80px 0px 0px 0px;
+                border-radius: 20px;
+                width: fit-content;
+            }
+
+            .uij {
+                margin: auto;
+                width: 100%;
+                height: 300px;
+            }
+
+            .uij img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .imk {
+
+                width: 80%;
+            }
+
+            .imk img {
+                width: 100%;
+                padding-bottom: 10px;
+            }
+
+            .mort {
+                margin-top: 40px;
+                background: rgb(245, 239, 235);
+                display: none;
+
+            }
+
+            .poil {
+                display: block;
+                background: rgb(245, 239, 235);
+                padding: 25px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            .fade {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 0;
+            }
+
+            .lik {
+
+                display: inline-block;
+                font-size: 17px;
+            }
+
+            .bi {
+                width: 12%;
+            }
+
+            .page-link {
+                font-size: 20px;
+                padding: 9px 20px;
+            }
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+   
+
+    <nav class="w-100 navbar-expand-lg " style="position: fixed;top: 0px;z-index: 4; background: rgb(255, 255, 255);">
+        <div class="container">
+            <div class="container-fluid d-flex align-items-center justify-space-between p-3 ">
+
+                <a class="navbar-brand" href="#">podia</a>
+
+                <div class="" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
+
+
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Website
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <div class="web ">
+
+                                    <div class="weg ">
+
+                                        <h5>PLATFORM</h5>
+                                        <li> <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Website
+                                                builder</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Website
+                                                examples</a></li>
+                                    </div>
+
+
+
+
+                                    <div class="weg ">
+                                        <h5>FEATURE</h5>
+                                        <li> <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Landing
+                                                pages</a></li>
+                                        <li> <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Link in bio
+                                                pages</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Portfolio
+                                                websites</a>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Integrations</a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+
+                        </li>
+
+
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Email
+                            </a>
+                            <ul class="dropdown-menu">
+                                <div class="web ">
+
+                                    <div class="weg ">
+
+                                        <h5>PLATFORM</h5>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">
+                                                Email marketing</a>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Email
+                                                examples</a></li>
+                                    </div>
+
+
+
+
+                                    <div class="weg ">
+                                        <h5>FEATURE</h5>
+                                        <li><a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Email
+                                                templates</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Email
+                                                designer</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Email
+                                                forms</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Email
+                                                analytics</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Newsletters</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Automations</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Segmentation</a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                sell
+                            </a>
+                            <ul class="dropdown-menu">
+                                <div class="web ">
+
+                                    <div class="weg ">
+
+                                        <h5>PLATFORM</h5>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Online
+                                                courses</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Digital
+                                                downloads </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Community</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Checkout
+                                            </a>
+                                        </li>
+                                    </div>
+
+
+
+
+                                    <div class="weg ">
+                                        <h5>FEATURE</h5>
+                                        <li> <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Multimedia
+                                                products</a></li>
+                                        <li>
+                                        </li>
+                                        <a class="dropdown-item" href="#"
+                                            style="text-decoration: none;color: rgb(97,93,91);">Presell
+                                            products</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Upsells</a>
+                                        </li>
+                                        <li> <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Coaching</a> </li>
+
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Webinars</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Affiliates</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" href="#">Pricing</a>
+                        </li>
+
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Resources
+                            </a>
+                            <ul class="dropdown-menu">
+                                <div class="web ">
+
+                                    <div class="weg ">
+
+                                        <h5>FREE RESOURSES</h5>
+                                        <li>
+                                            <a class=" dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Resource
+                                                center</a>
+                                        </li>
+                                        <li> <a class=" dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Hire a
+                                                Podia Pro</a></li>
+
+                                        <li>
+                                            <a class=" dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Creator
+                                                Advice Library</a>
+                                        </li>
+                                        <li>
+                                            <a class=" dropdown-item" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Podia demo
+                                                site
+                                            </a>
+                                        </li>
+                                    </div>
+
+
+
+
+                                    <div class="weg ">
+
+                                        <li> <a class="" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Creator
+                                                stories</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Free
+                                                tools</a>
+                                        </li>
+
+                                        <li>
+                                            <a class="" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Podia
+                                                Creator Community</a>
+                                        </li>
+                                        <li>
+                                            <a class="" href="#"
+                                                style="text-decoration: none;color: rgb(97,93,91);">Help
+                                                center</a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="d-flex justify-content-end align-items-center w-100 nav-footer" role="search">
+                    <h4><a href="">Login</a></h4>
+                    <a href="#">Sign up free</a>
+
+                    <button type="button" class=" dropdown-toggle border-0 bg-body-light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="background: none;">menu
+                    </button>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable  modal-fullscreen-xl-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title text-center-left fs-5" id="exampleModalLabel">MENU</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class=" mb-2 ">
+                        <div class="container-fluid mt-4 mb-3">
+
+
+                            <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                                class=" accordion-button d-inline-flex gap-1 w-100" href="#website" role="button"
+                                data-bs-toggle="collapse" data-bs-target="#website" aria-expanded="false">
+                                <div class="w-100"
+                                    style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                                    Website <i class="fa-solid fa-caret-down text-dark"></i>
+                                </div>
+                            </button>
+
+                            <div class="website collapse mat" id="website">
+                                <div class="kat pt-4">
+                                    <h5>PLATFORM</h5>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Website
+                                        builder</a>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Website
+                                        examples</a>
+
+
+                                </div>
+
+                                <div class="kat pt-4">
+                                    <h5>FEATURES</h5>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Landing
+                                        pages</a>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Link in bio
+                                        pages</a>
+
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Portfolio
+                                        websites</a>
+                                    <a class="" href="#"
+                                        style="text-decoration: none;color: rgb(97,93,91);">Integrations</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid mt-4 mb-3">
+
+
+                            <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                                class=" accordion-button d-inline-flex gap-1 w-100" href="#email" role="button"
+                                data-bs-toggle="collapse" data-bs-target="#email" aria-expanded="false">
+                                <div class="w-100"
+                                    style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                                    Email <i class="fa-solid fa-caret-down text-dark"></i>
+                                </div>
+                            </button>
+
+                            <div class="website collapse mat" id="email">
+                                <div class="kat pt-4">
+                                    <h5>PLATFORM</h5>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">
+                                        Email marketing</a>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Email
+                                        examples</a>
+
+
+                                </div>
+
+                                <div class="kat pt-4">
+                                    <h5>FEATURES</h5>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Email
+                                        templates</a>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Email
+                                        designer</a>
+
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Email
+                                        forms</a>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Email
+                                        analytics</a>
+                                    <a class="" href="#"
+                                        style="text-decoration: none;color: rgb(97,93,91);">Newsletters</a>
+                                    <a class="" href="#"
+                                        style="text-decoration: none;color: rgb(97,93,91);">Automations</a>
+                                    <a class="" href="#"
+                                        style="text-decoration: none;color: rgb(97,93,91);">Segmentation</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid mt-4 mb-3">
+
+
+                            <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                                class=" accordion-button d-inline-flex gap-1 w-100" href="#sell" role="button"
+                                data-bs-toggle="collapse" data-bs-target="#sell" aria-expanded="false">
+                                <div class="w-100"
+                                    style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                                    Sell <i class="fa-solid fa-caret-down text-dark"></i>
+                                </div>
+                            </button>
+
+                            <div class="website collapse mat" id="sell">
+                                <div class="kat pt-4">
+                                    <h5>PLATFORM</h5>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Online
+                                        courses</a>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Digital
+                                        downloads </a>
+                                    <a class="" href="#"
+                                        style="text-decoration: none;color: rgb(97,93,91);">Community</a>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Checkout
+                                    </a>
+
+
+                                </div>
+
+                                <div class="kat pt-4">
+                                    <h5>FEATURES</h5>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Multimedia
+                                        products</a>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Presell
+                                        products</a>
+
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Upsells</a>
+                                    <a class="" href="#"
+                                        style="text-decoration: none;color: rgb(97,93,91);">Coaching</a>
+                                    <a class="" href="#"
+                                        style="text-decoration: none;color: rgb(97,93,91);">Webinars</a>
+                                    <a class="" href="#"
+                                        style="text-decoration: none;color: rgb(97,93,91);">Affiliates</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid mt-4 mb-3">
+                            <div class="d-inline-flex gap-1 w-100" style="font-size: 25px; color: black;">
+                                <h4><a href="#" style="color: black;text-decoration: none;">Pricing</a></h4>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid mt-4 mb-3" style="background:;">
+
+
+                            <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                                class=" accordion-button d-inline-flex gap-1 w-100" href="#Reso" role="button"
+                                data-bs-toggle="collapse" data-bs-target="#Reso" aria-expanded="false">
+                                <div class="w-100"
+                                    style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                                    Resourses <i class="fa-solid fa-caret-down text-dark"></i>
+                                </div>
+                            </button>
+
+                            <div class="website collapse mat" id="Reso">
+                                <div class="kat pt-4">
+                                    <h5>FREE RESOURSES</h5>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Resource
+                                        center</a>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Hire a
+                                        Podia Pro</a>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Creator
+                                        Advice Library</a>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Podia demo
+                                        site
+                                    </a>
+
+
+                                </div>
+
+                                <div class="kat pt-4">
+
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Creator
+                                        stories</a>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Free
+                                        tools</a>
+
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Podia
+                                        Creator Community</a>
+                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Help
+                                        center</a>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="" class="w-100"><button href="" class="w-100 border-0" style="">Sign up free</button></a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="container">
+        <div class="container-fluid ray">
+            <h1 class="text-center">Your website, email marketing, and products. All under one roof.</h1>
+        </div>
+        <div class="container-fluid mac">
+            <p class="text-center">Thousands of people like you use Podia to bring their entire business into a single
+                platform. Podia is free. And as you grow, it has all the tools you’ll need to keep growing.</p>
+        </div>
+        <div class="container-fluid text-center mt-5 jav w-100">
+            <a href="#" class="">Get your free account</a>
+        </div>
+    </div>
+
+    <div class="container wed">
+        <div class="container-fluid">
+            <img src="home-chart-desktop.svg" alt="">
+        </div>
+    </div>
+
+    <div class="container wed2">
+        <div class="container-fluid">
+            <img src="home-chart-tablet.svg" alt="">
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="container-fluid hay">
+            <h1 class="text-center">Give your website, email marketing, and products a clean, professional look that’s
+                easy to build yourself.</h1>
+        </div>
+        <div class="container-fluid pac">
+            <p class="text-center">You should be able to spend your time creating, not figuring out yet another piece of
+                tech. Podia puts your website, email marketing, and digital products in one platform that’s easy to use.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="container bill">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6  order-xl-2">
+                        <p>WEBSITE BUILDER</p>
+                        <h2>You could have a beautiful, free website in the next 10 minutes</h2>
+                        <h4>Your website is free, easy, and beautiful. Podia handles the tech out of the box, so you can
+                            set up your site and get back to work.</h4>
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button onclick="mat()" class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Sell straight from your website
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Podia manages your checkout and sales. Then your
+                                        customers just log in to access your products, courses, and communities.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button onclick="kat()" class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        No code or design skills needed
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Change the buttons, add a section, add a whole new
+                                        page—making your website is as easy as typing, and just takes a few minutes.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button onclick="nat()" class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Make your website feel like you
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Color schemes, brand styles, logos, a stock photo
+                                        integration, and loads of section types let you make a website that matches your
+                                        brand.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mt-5 container-fluid">
+                            <a href="#" class=""
+                                style="background: rgb(204, 204, 204); color: black;text-decoration: none;padding: 10px 20px;border-radius: 50px;margin-top: 90px;">See
+                                More</a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-6 order-2 ">
+                        <img src="home-website_builder-checkout.png" alt="" id="jav" class="">
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container bill">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6  order-xl-2">
+                        <p>Email Marketing</p>
+                        <h2>Beautiful email marketing in the same place as everything else</h2>
+                        <h4>Why figure out how to stitch a whole bunch of different tools together when you can do
+                            everything in one place? Podia Email puts your email marketing in the same place as your
+                            website, digital products, courses, and community.</h4>
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button onclick="mag()" class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#one" aria-expanded="falsefathone">
+                                        Send beautiful emails with premade templates
+                                    </button>
+                                </h2>
+                                <div id="one" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Beautiful emails should be easy to make. Podia lets you
+                                        customize fonts, colors, design, images, and everything else, so that you can
+                                        send emails that feel like yours.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button onclick="kag()" class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#Two" aria-expanded="false"
+                                        aria-controls="Two">
+                                        Keep all your data in one place (for easy segmentation)
+                                    </button>
+                                </h2>
+                                <div id="Two" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">When your sales are in the same place as your email, you
+                                        can segment based on products, community, activity, and anything else in your
+                                        account. No more stitching together tools that don’t like talking to each other,
+                                        and no other tools to learn.
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button onclick="nag()" class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#Three" aria-expanded="false"
+                                        aria-controls="Three">
+                                        Automate emails and see exactly how much each message makes
+                                    </button>
+                                </h2>
+                                <div id="Three" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Color schemes, brand styles, logos, a stock photo
+                                        Podia lets you automate emails based on tags and triggers, so that it’s easy to
+                                        welcome your subscribers and launch your products. But because everything is in
+                                        one place, it can even do more than that — and show you exactly how much money
+                                        you make from each email.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mt-5 container-fluid">
+                            <a href="#" class=""
+                                style="background: rgb(204, 204, 204); color: black;text-decoration: none;padding: 10px 20px;border-radius: 50px;margin-top: 90px;">See
+                                More</a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-6 order-2 ">
+                        <img src="Automate___Income_off_each_email__HOME_.png" alt="" id="kav" class="">
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container bill">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6  order-xl-2">
+                        <p>DIGITAL PRODUCTS</p>
+                        <h2>Your products are easy to sell and easy for your customers to buy. Podia takes care of
+                            hosting products, taking payments, and getting products to your customers.</h2>
+                        <h4>Your website is free, easy, and beautiful. Podia handles the tech out of the box, so you can
+                            set up your site and get back to work.</h4>
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button onclick="map()" class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fath" aria-expanded="false"
+                                        aria-controls="fath">
+                                        Online courses
+                                    </button>
+                                </h2>
+                                <div id="fath" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">A clean, professional course builder makes your courses
+                                        look amazing. And all the lessons, files, and video uploads are handled for you.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button onclick="kap()" class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#path" aria-expanded="false"
+                                        aria-controls="path">
+                                        Digital downloads
+                                    </button>
+                                </h2>
+                                <div id="path" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Podia makes it easy to spin up a sales page and sell
+                                        ebooks, templates, audio files, video files, spreadsheets, or any other file
+                                        type.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button onclick="nap()" class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#gath" aria-expanded="false"
+                                        aria-controls="gath">
+                                        Coaching and consultations
+                                    </button>
+                                </h2>
+                                <div id="gath" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Book (and charge for) your one-on-one sessions with Podia. Everything gets taken
+                                        care of in one place.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button onclick="tap()" class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#lath" aria-expanded="false"
+                                        aria-controls="lath">
+                                        Webinars and workshops
+                                    </button>
+                                </h2>
+                                <div id="lath" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Run your webinar and workshop sales through your Podia site, so that your
+                                        audience can pay and register all in one place.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" mt-5 container-fluid">
+                            <a href="#" class=""
+                                style="background: rgb(204, 204, 204); color: black;text-decoration: none;padding: 10px 20px;border-radius: 50px;margin-top: 90px;">See
+                                More</a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-6 order-2 ">
+                        <img src="home-digital_products-webinars.png" alt="" id="jap" class="">
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container bill">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6  order-xl-2">
+                        <p>COMMUNITY</p>
+                        <h2>The community you want, without worrying about integrations or “the algorithm”</h2>
+                        <h4>Where can you have the best conversations on the internet? In your community. Podia gives
+                            you the flexibility to make paid communities, free communities, and memberships on a
+                            platform you own.</h4>
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button onclick="mal()" class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#cath" aria-expanded="false"
+                                        aria-controls="cath">
+                                        Set up plan tiers with different rewards
+                                    </button>
+                                </h2>
+                                <div id="cath" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Free plans, paid plans, you decide. You can make as many
+                                        plans with as many prices as you want.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button onclick="kal()" class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#math" aria-expanded="false"
+                                        aria-controls="math">
+                                        Have amazing, multimedia conversations
+                                    </button>
+                                </h2>
+                                <div id="math" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">You decide the discussion topics for your community.
+                                        Then you and your members can post text, images, videos, and over 1900 types of
+                                        embeddable content.
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button onclick="nal()" class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#nath" aria-expanded="false"
+                                        aria-controls="nath">
+                                        Give members access to your products
+
+                                    </button>
+                                </h2>
+                                <div id="nath" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Bundle your products together with community plans, so that you can build your
+                                        community around your work as a creator.</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class=" mt-5 container-fluid">
+                            <a href="#" class=""
+                                style="background: rgb(204, 204, 204); color: black;text-decoration: none;padding: 10px 20px;border-radius: 50px;margin-top: 90px;">See
+                                More</a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-6 order-2 ">
+                        <img src="home-community-hero.png" alt="" id="jal" class="">
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mkl">
+        <div class=" container-fluid mikp">
+            <div class="uij ">
+                <img src="photo-joseph.jfif" alt="">
+            </div>
+            <div class="">
+                <p>WEBSITE BUILDER</p>
+                <h2>Your website is free forever</h2>
+                <h4>"Podia makes website building so fun. I feel like I could set up a site in an afternoon, and it
+                    would look great. And there’s something to be said for how pretty it is. It’s the best-looking one
+                    by far."</h4>
+                <p><small>— Joseph D’Amico, Flex Lessons</small></p>
+                <a href="" class=""><button class="border-0" style="">Start making it now</button></a>
+                <div>
+                    <div class="imk mt-5"><img src="example-review.svg" alt=""></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container-fluid nlake">
+            <h1 class="text-center">Friendly support, 7 days a week. Whenever you need help, it’s here for you.</h2>
+                <h4 class="text-center">Sometimes the fastest way to get answers is to ask someone. Podia has hundreds
+                    of articles and resources, a support team that’s available 7 days a week, and a community of
+                    thousands of creators like you to ask for help.</h4>
+        </div>
+    </div>
+
+    <div class="container man">
+        <div class="container-fluid">
+            <div class="mad " style="width: fit-content;height: 380px; padding: 20px;border-radius: 20px;">
+                <div class="plk" style="margin: auto;">
+                    <img src="headshot-courtney.png" alt="" style="border-radius: 50%;">
+                </div>
+                <h5 class="text-center">Chat support, 7 days a week</h5>
+                <p class="text-center">Talk to a real person to get help with whatever you need.</p>
+                <div class="jul">
+                    <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="mad" style="width: fit-content;height: 380px; padding: 20px;border-radius: 20px;">
+                <div class="plk" style="margin: auto;width: 43%;">
+                    <img src="headshot-ryan.png" alt="" style="border-radius: 50%;width: 100%;">
+                </div>
+                <h5 class="text-center">Creator Community</h5>
+                <p class="text-center">Join thousands of others navigating the creator journey just like you.</p>
+                <div class="jul">
+                    <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="mad " style="width: fit-content;height: 380px; padding: 20px;border-radius: 20px;">
+                <div class="plk" style="margin: auto;">
+                    <img src="Rodrigo.jpg" alt="" style="border-radius: 50%;">
+                </div>
+                <h5 class="text-center">Help on demand
+                </h5>
+                <p class="text-center">Hundreds of articles and videos any time you need them.</p>
+                <div class="jul">
+                    <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="container-fluid nak">
+            <h3 class="text-center " style="font-size: 40px;">Get your free Podia account</h3>
+            <h5 class="text-center ">Join the 150,000+ creators who use Podia to create websites, sell digital products,
+                and build online communities.</h5>
+            <div class="ah">
+                <a href="#" class="">Sign up free</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid mort">
+        <div class="container mor">
+            <div class="nm">
+                <h4>Platform
+
+                    </h1>
+                    <p><a href="">pricing</a></p>
+                    <p><a href="">sign up free</a></p>
+                    <p><a href="">community</a></p>
+                    <p><a href="">website builder</a></p>
+                    <p><a href="">digital products</a></p>
+                    <p><a href="">email marketing</a></p>
+            </div>
+            <div class="nm">
+                <h4>Support
+
+                    </h1>
+                    <p><a href="">contact us</a></p>
+                    <p><a href="">help center</a></p>
+                    <p><a href="">hire a podia pro</a></p>
+                    <p><a href=""> creator community</a></p>
+                    <p><a href="">podia 101</a></p>
+
+            </div>
+            <div class="nm">
+                <h4>Features</h1>
+                    <p><a href="">online courses</a></p>
+                    <p><a href="">downloads</a></p>
+                    <p><a href="">webinars</a></p>
+                    <p><a href="">Coaching/a></p>
+                    <p><a href="">All features</a></p>
+
+            </div>
+            <div class="nm">
+                <h4>Compare
+
+                    </h1>
+                    <p><a href="">Kajabi</a></p>
+                    <p><a href="">Teachable</a></p>
+                    <p><a href="">Thinkific</a></p>
+                    <p><a href="">Patreon</a></p>
+                    <p><a href="">Gumroad</a></p>
+                    <p><a href="">Podia alternatives</a></p>
+            </div>
+            <div class="nm">
+                <h4>Resources
+
+                    </h1>
+                    <p><a href="">Examples</a></p>
+                    <p><a href="">Demo</a></p>
+                    <p><a href="">Creator stories</a></p>
+                    <p><a href="">Blog</a></p>
+                    <p><a href="">Free tools</a></p>
+                    <p><a href="">All resources</a></p>
+            </div>
+            <div class="nm">
+                <h4>Podia</h1>
+                    <p><a href="">Jobs</a></p>
+                    <p><a href="">About</a></p>
+                    <p><a href="">Branding</a></p>
+                    <p><a href="">Reviews</a></p>
+                    <p><a href="">Refer-a-creator</a></p>
+                    <p><a href="">Affiliates</a></p>
+            </div>
+            <div class="nm">
+                <h4>Social
+
+                    </h1>
+                    <p><a href="">
+                            Twitter</a></p>
+                    <p><a href="">Facebook</a></p>
+                    <p><a href="">Instagram</a></p>
+                    <p><a href="">YouTube</a></p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container poil">
+        <div class="container-fluid mt-4 mb-3">
+
+
+            <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                class=" accordion-button d-inline-flex gap-1 w-100" href="#kiu" role="button" data-bs-toggle="collapse"
+                data-bs-target="#kiu" aria-expanded="false">
+                <div class="w-100"
+                    style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                    Platform<i class="fa-solid fa-caret-down text-dark"></i>
+                </div>
+            </button>
+
+            <div class="website collapse mat" id="kiu">
+                <p><a href="">pricing</a></p>
+                <p><a href="">sign up free</a></p>
+                <p><a href="">community</a></p>
+                <p><a href="">website builder</a></p>
+                <p><a href="">digital products</a></p>
+                <p><a href="">email marketing</a></p>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-4 mb-3">
+
+
+            <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                class=" accordion-button d-inline-flex gap-1 w-100" href="#kjsk" role="button" data-bs-toggle="collapse"
+                data-bs-target="#kjsk" aria-expanded="false">
+                <div class="w-100"
+                    style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                    Support<i class="fa-solid fa-caret-down text-dark"></i>
+                </div>
+            </button>
+
+            <div class="website collapse mat" id="kjsk">
+                <p><a href="">contact us</a></p>
+                <p><a href="">help center</a></p>
+                <p><a href="">hire a podia pro</a></p>
+                <p><a href=""> creator community</a></p>
+                <p><a href="">podia 101</a></p>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-4 mb-3">
+
+
+            <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                class=" accordion-button d-inline-flex gap-1 w-100" href="#uiy" role="button" data-bs-toggle="collapse"
+                data-bs-target="#uiy" aria-expanded="false">
+                <div class="w-100"
+                    style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                    Features<i class="fa-solid fa-caret-down text-dark"></i>
+                </div>
+            </button>
+
+            <div class="website collapse mat" id="uiy">
+                <p><a href="">online courses</a></p>
+                <p><a href="">downloads</a></p>
+                <p><a href="">webinars</a></p>
+                <p><a href="">Coaching/a></p>
+                <p><a href="">All features</a></p>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-4 mb-3">
+
+
+            <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                class=" accordion-button d-inline-flex gap-1 w-100" href="#kipl" role="button" data-bs-toggle="collapse"
+                data-bs-target="#kipl" aria-expanded="false">
+                <div class="w-100"
+                    style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                    Compare<i class="fa-solid fa-caret-down text-dark"></i>
+                </div>
+            </button>
+
+            <div class="website collapse mat" id="kipl">
+                <p><a href="">Kajabi</a></p>
+                <p><a href="">Teachable</a></p>
+                <p><a href="">Thinkific</a></p>
+                <p><a href="">Patreon</a></p>
+                <p><a href="">Gumroad</a></p>
+                <p><a href="">Podia alternatives</a></p>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-4 mb-3">
+
+
+            <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                class=" accordion-button d-inline-flex gap-1 w-100" href="#kiuy" role="button" data-bs-toggle="collapse"
+                data-bs-target="#kiuy" aria-expanded="false">
+                <div class="w-100"
+                    style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                    Resources<i class="fa-solid fa-caret-down text-dark"></i>
+                </div>
+            </button>
+
+            <div class="website collapse mat" id="kiuy">
+                <p><a href="">Examples</a></p>
+                <p><a href="">Demo</a></p>
+                <p><a href="">Creator stories</a></p>
+                <p><a href="">Blog</a></p>
+                <p><a href="">Free tools</a></p>
+                <p><a href="">All resources</a></p>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-4 mb-3">
+
+
+            <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                class=" accordion-button d-inline-flex gap-1 w-100" href="#pod" role="button" data-bs-toggle="collapse"
+                data-bs-target="#pod" aria-expanded="false">
+                <div class="w-100"
+                    style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                    Podia<i class="fa-solid fa-caret-down text-dark"></i>
+                </div>
+            </button>
+
+            <div class="website collapse mat" id="pod">
+                <p><a href="">Jobs</a></p>
+                <p><a href="">About</a></p>
+                <p><a href="">Branding</a></p>
+                <p><a href="">Reviews</a></p>
+                <p><a href="">Refer-a-creator</a></p>
+                <p><a href="">Affiliates</a></p>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-4 mb-3">
+
+
+            <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                class=" accordion-button d-inline-flex gap-1 w-100" href="#jhyt" role="button" data-bs-toggle="collapse"
+                data-bs-target="#jhyt" aria-expanded="false">
+                <div class="w-100"
+                    style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                    Social<i class="fa-solid fa-caret-down text-dark"></i>
+                </div>
+            </button>
+
+            <div class="website collapse mat" id="jhyt">
+                <p><a href="">
+                        Twitter</a></p>
+                <p><a href="">Facebook</a></p>
+                <p><a href="">Instagram</a></p>
+                <p><a href="">YouTube</a></p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <nav aria-label="Page navigation example">
+        <h3 class="text-center">OTHER PROJECTS</h3>
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="Mattermark.html">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="Aptible.html">2</a></li>
+            <li class="page-item "><a class="page-link" href="chipotle.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="Mattermark.html">4</a></li>
+
+        </ul>
+        <ul class="pagination justify-content-center">
+            <li class="page-item active "><a class="page-link" href="podia.html">5</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">6</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">7</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">8</a></li>
+            <li class="page-item disabled">
+                <a class="page-link " href="chipotle.html">Next</a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function mat() {
+            document.getElementById("jav").src = 'home-website_builder-checkout.png'
+        }
+        function kat() {
+            document.getElementById("jav").src = 'opi.jpg'
+        }
+        function nat() {
+            document.getElementById("jav").src = 'ki.jpg'
+        }
+
+
+        // second section
+        function mag() {
+            document.getElementById("kav").src = 'Podia_Email_templates.png'
+        }
+        function kag() {
+            document.getElementById("kav").src = 'Data_in_one_place.png'
+        }
+        function nag() {
+            document.getElementById("kav").src = 'jp.jpg'
+        }
+
+        // third section
+        function map() {
+            document.getElementById("jap").src = 'home-digital_products-webinars.png'
+        }
+        function kap() {
+            document.getElementById("jap").src = 'home-digital_products-downloads.png'
+        }
+        function nap() {
+            document.getElementById("jap").src = 'kop.jpg'
+        }
+        function tap() {
+            document.getElementById("jap").src = 'lop.jpg'
+        }
+
+        // fouth section
+        function mal() {
+            document.getElementById("jal").src = 'lpk.jpg'
+        }
+        function kal() {
+            document.getElementById("jal").src = 'poiu.jpg'
+        }
+        function nal() {
+            document.getElementById("jal").src = 'home-community-mastermind.png'
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
