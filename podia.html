@@ -48,15 +48,18 @@
             position: relative;
         }
 
-        .modal {
+        /* .modal {
             visibility: hidden;
             position: absolute;
+
         }
 
         .fade {
             visibility: hidden;
             position: absolute;
-        }
+        } */
+
+
 
         .ray {}
 
@@ -342,18 +345,25 @@
             justify-content: space-evenly;
             align-items: center;
             padding: 0;
+
+
+
+            position: fixed;
+            bottom: 10px;
+            z-index: 9;
         }
 
         .lik {
-            display: inline-block;
+            display: ;
             font-size: 35px;
+
         }
 
         .bi {
             width: 5%;
         }
 
-       
+
 
 
         .page-link {
@@ -406,15 +416,15 @@
                 position: relative;
             }
 
-            .modal {
+            /* .modal {
                 visibility: visible;
-                position: absolute;
+                position: relative;
 
             }
 
             .fade {
                 visibility: visible;
-                position: absolute;
+                position: relative;
             }
 
 
@@ -425,9 +435,9 @@
 
             .modal-body .dropdown-menu {
                 position: relative;
-            }
+            } */
 
-            .modal-footer button {
+            .offcanvas-footer button {
                 color: white;
                 text-decoration: none;
                 background: rgb(75, 42, 173);
@@ -617,11 +627,15 @@
                 margin-top: 50px;
                 margin-bottom: 50px;
             }
+
             .fade {
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
                 padding: 0;
+                position: fixed;
+                bottom: 0px;
+                z-index: 9;
             }
 
             .lik {
@@ -649,7 +663,9 @@
 <body>
 
 
-   
+
+
+
 
     <nav class="w-100 navbar-expand-lg " style="position: fixed;top: 0px;z-index: 4; background: rgb(255, 255, 255);">
         <div class="container">
@@ -906,11 +922,16 @@
 
                 </div>
                 <div class="d-flex justify-content-end align-items-center w-100 nav-footer" role="search">
-                    <h4><a href="">Login</a></h4>
+                    <h4><a href="" style="font-weight: bold;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Login</a></h4>
                     <a href="#">Sign up free</a>
 
-                    <button type="button" class=" dropdown-toggle border-0 bg-body-light" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="background: none;">menu
+                    <button type="button" class=" border-0 bg-body-light" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcan" style="background: none;font-weight: bold;">
+                        
+                            
+                           
+                            <i class="fa-solid fa-bars" style="font-size: 25px;"></i>
+                       
                     </button>
 
 
@@ -922,8 +943,201 @@
 
     </nav>
 
+    <div class="offcanvas offcanvas-start m-0 w-100" tabindex="-1" id="offcan" aria-labelledby="offcanvasRightLabel">
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="offcanvas-header">
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class=" mb-2 ">
+                <div class="container-fluid mt-4 mb-3">
+
+
+                    <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                        class=" accordion-button d-inline-flex gap-1 w-100" href="#website" role="button"
+                        data-bs-toggle="collapse" data-bs-target="#website" aria-expanded="false">
+                        <div class="w-100"
+                            style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                            Website <i class="fa-solid fa-caret-down text-dark"></i>
+                        </div>
+                    </button>
+
+                    <div class="website collapse mat" id="website">
+                        <div class="kat pt-4">
+                            <h5>PLATFORM</h5>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Website
+                                builder</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Website
+                                examples</a>
+
+
+                        </div>
+
+                        <div class="kat pt-4">
+                            <h5>FEATURES</h5>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Landing
+                                pages</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Link in bio
+                                pages</a>
+
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Portfolio
+                                websites</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Integrations</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid mt-4 mb-3">
+
+
+                    <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                        class=" accordion-button d-inline-flex gap-1 w-100" href="#email" role="button"
+                        data-bs-toggle="collapse" data-bs-target="#email" aria-expanded="false">
+                        <div class="w-100"
+                            style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                            Email <i class="fa-solid fa-caret-down text-dark"></i>
+                        </div>
+                    </button>
+
+                    <div class="website collapse mat" id="email">
+                        <div class="kat pt-4">
+                            <h5>PLATFORM</h5>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">
+                                Email marketing</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Email
+                                examples</a>
+
+
+                        </div>
+
+                        <div class="kat pt-4">
+                            <h5>FEATURES</h5>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Email
+                                templates</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Email
+                                designer</a>
+
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Email
+                                forms</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Email
+                                analytics</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Newsletters</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Automations</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Segmentation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid mt-4 mb-3">
+
+
+                    <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                        class=" accordion-button d-inline-flex gap-1 w-100" href="#sell" role="button"
+                        data-bs-toggle="collapse" data-bs-target="#sell" aria-expanded="false">
+                        <div class="w-100"
+                            style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                            Sell <i class="fa-solid fa-caret-down text-dark"></i>
+                        </div>
+                    </button>
+
+                    <div class="website collapse mat" id="sell">
+                        <div class="kat pt-4">
+                            <h5>PLATFORM</h5>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Online
+                                courses</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Digital
+                                downloads </a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Community</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Checkout
+                            </a>
+
+
+                        </div>
+
+                        <div class="kat pt-4">
+                            <h5>FEATURES</h5>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Multimedia
+                                products</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Presell
+                                products</a>
+
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Upsells</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Coaching</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Webinars</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Affiliates</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid mt-4 mb-3">
+                    <div class="d-inline-flex gap-1 w-100" style="font-size: 25px; color: black;">
+                        <h4><a href="#" style="color: black;text-decoration: none;">Pricing</a></h4>
+                    </div>
+                </div>
+
+                <div class="container-fluid mt-4 mb-3" style="background:;">
+
+
+                    <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                        class=" accordion-button d-inline-flex gap-1 w-100" href="#Reso" role="button"
+                        data-bs-toggle="collapse" data-bs-target="#Reso" aria-expanded="false">
+                        <div class="w-100"
+                            style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                            Resourses <i class="fa-solid fa-caret-down text-dark"></i>
+                        </div>
+                    </button>
+
+                    <div class="website collapse mat" id="Reso">
+                        <div class="kat pt-4">
+                            <h5>FREE RESOURSES</h5>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Resource
+                                center</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Hire a
+                                Podia Pro</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Creator
+                                Advice Library</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Podia demo
+                                site
+                            </a>
+
+
+                        </div>
+
+                        <div class="kat pt-4">
+
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Creator
+                                stories</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Free
+                                tools</a>
+
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Podia
+                                Creator Community</a>
+                            <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Help
+                                center</a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+            <div class="offcanvas-footer" style="display: flex;align-items: flex-end;margin-top: 150px;">
+                <a href="" class="w-100"><button href="" class="w-100 border-0" style="">Sign up free</button></a>
+
+            </div>
+
+        </div>
+
+
+        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable  modal-fullscreen-xl-down">
             <div class="modal-content">
                 <div class="modal-header">
@@ -931,200 +1145,11 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class=" mb-2 ">
-                        <div class="container-fluid mt-4 mb-3">
-
-
-                            <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
-                                class=" accordion-button d-inline-flex gap-1 w-100" href="#website" role="button"
-                                data-bs-toggle="collapse" data-bs-target="#website" aria-expanded="false">
-                                <div class="w-100"
-                                    style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
-                                    Website <i class="fa-solid fa-caret-down text-dark"></i>
-                                </div>
-                            </button>
-
-                            <div class="website collapse mat" id="website">
-                                <div class="kat pt-4">
-                                    <h5>PLATFORM</h5>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Website
-                                        builder</a>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Website
-                                        examples</a>
-
-
-                                </div>
-
-                                <div class="kat pt-4">
-                                    <h5>FEATURES</h5>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Landing
-                                        pages</a>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Link in bio
-                                        pages</a>
-
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Portfolio
-                                        websites</a>
-                                    <a class="" href="#"
-                                        style="text-decoration: none;color: rgb(97,93,91);">Integrations</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="container-fluid mt-4 mb-3">
-
-
-                            <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
-                                class=" accordion-button d-inline-flex gap-1 w-100" href="#email" role="button"
-                                data-bs-toggle="collapse" data-bs-target="#email" aria-expanded="false">
-                                <div class="w-100"
-                                    style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
-                                    Email <i class="fa-solid fa-caret-down text-dark"></i>
-                                </div>
-                            </button>
-
-                            <div class="website collapse mat" id="email">
-                                <div class="kat pt-4">
-                                    <h5>PLATFORM</h5>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">
-                                        Email marketing</a>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Email
-                                        examples</a>
-
-
-                                </div>
-
-                                <div class="kat pt-4">
-                                    <h5>FEATURES</h5>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Email
-                                        templates</a>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Email
-                                        designer</a>
-
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Email
-                                        forms</a>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Email
-                                        analytics</a>
-                                    <a class="" href="#"
-                                        style="text-decoration: none;color: rgb(97,93,91);">Newsletters</a>
-                                    <a class="" href="#"
-                                        style="text-decoration: none;color: rgb(97,93,91);">Automations</a>
-                                    <a class="" href="#"
-                                        style="text-decoration: none;color: rgb(97,93,91);">Segmentation</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="container-fluid mt-4 mb-3">
-
-
-                            <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
-                                class=" accordion-button d-inline-flex gap-1 w-100" href="#sell" role="button"
-                                data-bs-toggle="collapse" data-bs-target="#sell" aria-expanded="false">
-                                <div class="w-100"
-                                    style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
-                                    Sell <i class="fa-solid fa-caret-down text-dark"></i>
-                                </div>
-                            </button>
-
-                            <div class="website collapse mat" id="sell">
-                                <div class="kat pt-4">
-                                    <h5>PLATFORM</h5>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Online
-                                        courses</a>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Digital
-                                        downloads </a>
-                                    <a class="" href="#"
-                                        style="text-decoration: none;color: rgb(97,93,91);">Community</a>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Checkout
-                                    </a>
-
-
-                                </div>
-
-                                <div class="kat pt-4">
-                                    <h5>FEATURES</h5>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Multimedia
-                                        products</a>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Presell
-                                        products</a>
-
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Upsells</a>
-                                    <a class="" href="#"
-                                        style="text-decoration: none;color: rgb(97,93,91);">Coaching</a>
-                                    <a class="" href="#"
-                                        style="text-decoration: none;color: rgb(97,93,91);">Webinars</a>
-                                    <a class="" href="#"
-                                        style="text-decoration: none;color: rgb(97,93,91);">Affiliates</a>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="container-fluid mt-4 mb-3">
-                            <div class="d-inline-flex gap-1 w-100" style="font-size: 25px; color: black;">
-                                <h4><a href="#" style="color: black;text-decoration: none;">Pricing</a></h4>
-                            </div>
-                        </div>
-
-                        <div class="container-fluid mt-4 mb-3" style="background:;">
-
-
-                            <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
-                                class=" accordion-button d-inline-flex gap-1 w-100" href="#Reso" role="button"
-                                data-bs-toggle="collapse" data-bs-target="#Reso" aria-expanded="false">
-                                <div class="w-100"
-                                    style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
-                                    Resourses <i class="fa-solid fa-caret-down text-dark"></i>
-                                </div>
-                            </button>
-
-                            <div class="website collapse mat" id="Reso">
-                                <div class="kat pt-4">
-                                    <h5>FREE RESOURSES</h5>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Resource
-                                        center</a>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Hire a
-                                        Podia Pro</a>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Creator
-                                        Advice Library</a>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Podia demo
-                                        site
-                                    </a>
-
-
-                                </div>
-
-                                <div class="kat pt-4">
-
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Creator
-                                        stories</a>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Free
-                                        tools</a>
-
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Podia
-                                        Creator Community</a>
-                                    <a class="" href="#" style="text-decoration: none;color: rgb(97,93,91);">Help
-                                        center</a>
-
-
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-
-
-                    </div>
+                    
                 </div>
-                <div class="modal-footer">
-                    <a href="" class="w-100"><button href="" class="w-100 border-0" style="">Sign up free</button></a>
-
-                </div>
+                
             </div>
-        </div>
+        </div> -->
 
 
 
@@ -1824,6 +1849,37 @@
 
 
 
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check-circle-fill" viewBox="0 0 16 16">
+            <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+        </symbol>
+        <symbol id="info-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+        </symbol>
+        <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+            <path
+                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </symbol>
+    </svg>
+
+
+
+    <div class="alert alert-success alert-dismissible-bottom fade show " role="alert">
+        <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Info:" style="color: blue;">
+            <use xlink:href="#info-fill" />
+        </svg>
+        <div class="lik text-center" style="color: black;">
+            CAVEAT: This is a student's project and not any sort of attempt to clone the existing webpage
+            <button type="button" class="btn-close text-danger" data-bs-dismiss="alert" aria-label="Close"
+                style="position: relative; top: 30px; float: right;z-index: ;"></button>
+        </div>
+    </div>
+
+
+
     <nav aria-label="Page navigation example">
         <h3 class="text-center">OTHER PROJECTS</h3>
         <ul class="pagination justify-content-center">
@@ -1847,6 +1903,8 @@
 
         </ul>
     </nav>
+
+
 
 
 
