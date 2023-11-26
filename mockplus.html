@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(signin-bg.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+            width: 100%;
+            height: 100%;
+            /* overflow: hidden; */
+
+
+        }
+
+        .navbar {
+            position: relative;
+            top: 20px;
+        }
+
+        .bgcolor {
+            width: 100%;
+            height: 100%;
+            background: rgba(12, 12, 12, 0.423);
+            position: fixed;
+
+        }
+
+        .bp {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            height: 100%;
+            margin: 10% 0% 0% 0%;
+        }
+
+        .lkp {
+            width: 100%;
+            background: white;
+            width: fit-content;
+            padding: 35px 30px;
+            border-radius: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        .lkp tr {
+            width: 100%;
+        }
+
+        .lkp td {
+            width: 100%;
+        }
+
+        .by {
+            margin-bottom: 100px;
+        }
+
+        .se {
+            width: 100%;
+        }
+
+        input {
+            width: 100%;
+            margin-top: 30px;
+            height: 50px;
+            border-radius: 10px;
+            border: 1px solid rgb(196, 196, 196);
+            padding: 0px 10px;
+        }
+
+        .kl {
+            width: 100%;
+            margin-top: 30px;
+            height: 50px;
+            border: none;
+            background: rgb(254, 64, 102);
+            border-radius: 10px;
+        }
+
+        .mi {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ml {
+            visibility: hidden;
+            position: absolute;
+        }
+
+        .fa-chevron-left {
+            margin: 5px 5px 0px 0px;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        .mak {
+            /* position: fixed;
+            bottom: 0px; */
+            margin-top: 170px;
+        }
+
+        .mak p {
+            color: rgb(202, 202, 202);
+        }
+
+        .fade {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0;
+        }
+
+        .lik {
+            display: inline-block;
+            font-size: 35px;
+        }
+
+        .bi {
+            width: 5%;
+        }
+
+        .page-link {
+            font-size: 20px;
+            padding: 9px 20px;
+
+        }
+
+        @media screen and (max-width:992px) {
+            .bp {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                width: 100%;
+                height: 100%;
+                margin: 10% 0% 0% 0%;
+            }
+
+            .by {
+                visibility: visible;
+                position: relative;
+            }
+
+            .lkp {
+                margin: auto;
+            }
+
+            .pol {
+                margin: auto;
+                text-align: center;
+            }
+
+            .fade {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 0;
+            }
+
+            .lik {
+                display: inline-block;
+                font-size: 17px;
+            }
+
+            .bi {
+                width: 12%;
+            }
+
+            .page-link {
+                font-size: 20px;
+                padding: 9px 20px;
+            }
+        }
+
+        @media screen and (max-width:564px) {
+            body {
+                background-image: url(signin-bg.webp);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                background-position-x: -350px;
+
+                width: 100%;
+                height: 100%;
+
+
+            }
+
+            .bp {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                width: 100%;
+                height: 100%;
+                margin: 15% 0% 0% 0%;
+            }
+
+            form {
+                width: 100%;
+                background: white;
+                width: fit-content;
+                padding: 35px 30px;
+                border-radius: 20px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            .mi {
+                display: none;
+            }
+
+            .lkp tr {
+                width: 100%;
+            }
+
+            .lkp td {
+                width: 100%;
+            }
+
+            .by {
+                visibility: hidden;
+                position: absolute;
+            }
+
+            .se {
+                width: 100%;
+            }
+
+            .ml {
+                visibility: visible;
+                position: relative;
+                margin-top: 25%;
+                margin-bottom: 100px;
+            }
+
+            .lm {
+                margin: auto;
+                width: 100%;
+            }
+
+            .lm input {
+                border-radius: 10px;
+                border: 1px solid rgb(196, 196, 196);
+                padding: 0px 10px;
+                height: 50px;
+            }
+
+            .lm button {
+                border-radius: 10px;
+                color: white;
+                height: 50px;
+
+            }
+
+            .huy {
+                display: flex;
+                align-items: center;
+            }
+
+            .mkn {
+                display: flex;
+                text-decoration: none;
+                color: grey;
+                margin-top: 35px;
+            }
+
+            .mak p {
+                color: rgb(202, 202, 202);
+                text-align: center;
+            }
+
+            .fade {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 0;
+            }
+
+            .lik {
+                display: inline-block;
+                font-size: 17px;
+            }
+
+            .bi {
+                width: 12%;
+            }
+
+            .page-link {
+                font-size: 20px;
+                padding: 9px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgcolor" style="z-index: -9;">
+
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check-circle-fill" viewBox="0 0 16 16">
+            <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+        </symbol>
+        <symbol id="info-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+        </symbol>
+        <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+            <path
+                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </symbol>
+    </svg>
+
+
+
+    <div class="alert alert-danger alert-dismissible-bottom fade show " role="alert">
+        <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Info:" style="color: blue;">
+            <use xlink:href="#info-fill" />
+        </svg>
+        <div class="lik text-center" style="color: black;">
+            CAVEAT: This is a student's project and not any sort of attempt to clone the existing webpage
+            <button type="button" class="btn-close text-danger" data-bs-dismiss="alert" aria-label="Close"
+                style="position: relative; top: 30px; float: right;"></button>
+        </div>
+    </div>
+    <nav class="navbar ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="sign-logo2.png" alt="logo" width="120" height="24">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container by" style="">
+        <div class=" bp container-fluid">
+            <div class="mi" style="color: white;">
+                <div class="pol">
+                    <h2>Design + Collaboration, all in Mockplus</h2>
+                    <p>A virtual center for designers, devs, PMs, and all design parties to perform their duties in
+                        unison.
+                        At least 200% faster with Mockplus.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container se">
+                <form action="" style="" class="lkp">
+                    <table style="">
+                        <tr>
+                            <td>
+                                <h1>Forgot your password?</h1>
+                            </td>
+                        </tr>
+                        <tr style="">
+                            <td style="">
+                                <input type="email" placeholder="Enter your email">
+                            </td>
+                        </tr>
+                        <tr style="">
+                            <td style="">
+                                <a href="#"><button class="kl" style="color: white;">Next</button></a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <hr style="margin-top: 45px;">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="display: flex;align-items: center;">
+                                <a href="#"
+                                    style="display: flex; text-decoration: none; color: grey; margin-top: 35px;"> <i
+                                        class="fa-solid fa-chevron-left"></i>
+                                    <p>Back to sign in</p>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="container ml">
+        <div class="container-fluid">
+            <form action="" style="" class="lm">
+                <table style="">
+                    <tr>
+                        <td>
+                            <h1>Forgot your password?</h1>
+                        </td>
+                    </tr>
+                    <tr style="">
+                        <td style="">
+                            <input type="email" placeholder="Enter your email">
+                        </td>
+                    </tr>
+                    <tr style="">
+                        <td style="">
+                            <a href="#"><button class="kl" style="">Next</button></a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <hr style="margin-top: 45px;">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="" class="huy">
+                            <a href="#" style="" class="mkn"> <i class="fa-solid fa-chevron-left"></i>
+                                <p>Back to sign in</p>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <style>
+
+    </style>
+
+
+    <nav aria-label="Page navigation example">
+        <h3 class="text-center text-light">OTHER PROJECTS</h3>
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="podia.html">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="Aptible.html">2</a></li>
+            <li class="page-item "><a class="page-link" href="chipotle.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="Mattermark.html">4</a></li>
+
+        </ul>
+        <ul class="pagination justify-content-center">
+            <li class="page-item "><a class="page-link" href="podia.html">5</a></li>
+            <li class="page-item active"><a class="page-link" href="mockplus.html">6</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">7</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">8</a></li>
+            <li class="page-item disabled">
+                <a class="page-link disabled" href="">Next</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="container ">
+        <div class="container-fluid mak">
+            <p>
+                &copy;2014-2022 Mockplus Technology Co., Ltd. All rights reserved.
+                Privacy Policy Terms of Service
+            </p>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
