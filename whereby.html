@@ -1,0 +1,2726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            overflow-x: hidden;
+            padding: 65px 0px 0px 0px;
+        }
+
+        body p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: black;
+        }
+
+        .navs a {
+            color: black;
+            text-decoration: none;
+            font-size: 23px;
+            margin: 0px 0px;
+            padding: 40px 60px;
+            height: 100%;
+
+
+            z-index:
+
+        }
+
+        .navbar {
+            background: rgb(248, 219, 213);
+            position: fixed;
+            top: 0;
+            width: 100%;
+
+            transition: all 1s ease;
+            z-index: 9;
+        }
+
+        .navbar:hover {
+            background: white;
+            transition: all 1s ease;
+        }
+
+        .lak h1 {
+            font-size: 90px;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: -5px;
+
+        }
+
+        /* .navs hr {
+                  color: black;
+                  background-color: black;
+              } */
+
+
+        /* .po1>span {
+                  top: 70px;
+                  position: absolute;
+      
+                  z-index: 5;
+                  width: 100px;
+                  visibility: hidden;
+              }
+      
+              .po2>span {
+                  top: 70px;
+                  position: absolute;
+      
+                  z-index: 5;
+                  width: 100px;
+                  visibility: hidden;
+              }
+      
+              .po3>span {
+                  top: 70px;
+                  position: absolute;
+      
+                  z-index: 5;
+                  width: 100px;
+                  visibility: hidden;
+              }
+      
+              .po4>span {
+                  top: 70px;
+                  position: absolute;
+      
+                  z-index: 5;
+                  width: 100px;
+                  visibility: hidden;
+              } */
+
+
+
+
+
+
+
+        /* .po1:hover .po1>span {
+                  visibility: visible;
+                  position: absolute;
+                  transition: all 700ms 0s ease-out;
+              } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* .po1:hover {} */
+
+        .po1:hover .a {
+            transform: rotate(180deg);
+
+            transition: all 700ms 0s ease-out;
+        }
+
+        .po2:hover .b {
+            transform: rotate(180deg);
+
+            transition: all 700ms 0s ease-out;
+        }
+
+        .po3:hover .c {
+            transform: rotate(180deg);
+
+            transition: all 700ms 0s ease-out;
+        }
+
+        .po4:hover .d {
+            transform: rotate(180deg);
+
+            transition: all 700ms 0s ease-out;
+        }
+
+        .navs,
+        .man {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+
+        .fa-chevron-down {
+            font-size: 18px;
+        }
+
+
+        .lolg {
+            display: flex;
+
+            width: fit-content;
+        }
+
+        .lolg button {
+            visibility: hidden;
+            position: absolute;
+        }
+
+        .log {
+            text-decoration: none;
+            color: rgb(43, 24, 155);
+            font-size: 23px;
+            font-weight: 500;
+            border: 2px solid rgb(43, 24, 155);
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin-right: 10px;
+        }
+
+        .Try {
+            text-decoration: none;
+            color: white;
+            font-size: 23px;
+            font-weight: 500;
+            border-radius: 10px;
+            padding: 10px 20px;
+            background: rgb(43, 24, 155);
+        }
+
+        .Try:active {
+            transform: scale(0.9);
+
+        }
+
+        .Try:hover {
+            background: rgb(29, 15, 107);
+        }
+
+        .lk {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+        }
+
+        .jk {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+
+            border: 1px solid rgb(43, 24, 155);
+            border-radius: 10px;
+            padding: 20px 40px;
+        }
+
+        .jk h5 {
+            font-size: 18px;
+        }
+
+        .mk {
+            width: 100%;
+            margin: auto;
+        }
+
+        .mk img {
+            width: 100%;
+        }
+
+        .ml {
+            width: 70%;
+            margin: auto;
+        }
+
+        .ml img {
+            width: 100%;
+        }
+
+        .row {
+            border-top: 1px solid;
+        }
+
+        .jp {
+            border-left: 1px solid;
+
+        }
+
+        /* nav bar dropdown */
+
+        .mab {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            margin: auto;
+            background: white;
+            top: 190px;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 4;
+        }
+
+
+
+        .po1:hover .mab {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            margin: auto;
+            background: white;
+            top: 100px;
+            visibility: visible;
+            opacity: 1;
+            transition: all 0.7s;
+
+        }
+
+        .mak {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            margin: auto;
+            background: white;
+            top: 190px;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 4;
+        }
+
+        .po2:hover .mak {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            margin: auto;
+            background: white;
+            top: 100px;
+            visibility: visible;
+            opacity: 1;
+            transition: all 0.7s;
+
+        }
+
+        .may {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            margin: auto;
+            background: white;
+            top: 190px;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 4;
+        }
+
+        .po3:hover .may {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            margin: auto;
+            background: white;
+            top: 100px;
+            visibility: visible;
+            opacity: 1;
+            transition: all 0.7s;
+
+        }
+
+        .mat {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            margin: auto;
+            background: white;
+            top: 190px;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 4;
+        }
+
+        .po4:hover .mat {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            margin: auto;
+            background: white;
+            top: 100px;
+            visibility: visible;
+            opacity: 1;
+            transition: all 0.7s;
+
+        }
+
+        .col-9,
+        .col-3 {
+            padding: 45px 35px;
+        }
+
+        .rage {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 35px;
+        }
+
+        .rage h3 {
+            margin: 25px 0px;
+        }
+
+        .offcanvas {
+            visibility: hidden;
+            position: absolute;
+        }
+
+        .lop {
+
+            position: relative;
+            top: 200px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .lak {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .lak h1 {
+            margin: auto;
+
+        }
+
+        .lok {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+        }
+
+        .loo {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            top: 450px;
+
+        }
+
+        .pok {
+            position: relative;
+            top: 15px;
+            left: 150px;
+
+        }
+
+        .jok {
+            background: rgb(248, 219, 213);
+            height: 600px;
+            width: 100%;
+            position: relative;
+        }
+
+
+
+        .kok {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            position: relative;
+            top: 0;
+            right: 150px;
+        }
+
+        .pok2 {
+            position: relative;
+            top: 15px;
+            left: 100px;
+
+        }
+
+
+
+
+
+        .kok2 {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            position: relative;
+            top: 0;
+            right: 100px;
+        }
+
+        .imone {
+            width: 100px;
+            position: absolute;
+            top: 50px;
+            left: 0px;
+        }
+
+        .imone img {
+            width: 100%;
+        }
+
+        .imtwo {
+            width: 120px;
+            position: absolute;
+            top: 100px;
+            left: 0px;
+
+        }
+
+        .imtwo img {
+            width: 100%;
+        }
+
+        .imthree {
+            width: 100px;
+            position: absolute;
+            top: 180px;
+            left: 2px;
+
+        }
+
+        .imthree img {
+            width: 100%;
+        }
+
+        .imfour {
+            width: 130px;
+            position: absolute;
+            top: 120px;
+            right: 70px;
+            z-index: 4;
+
+        }
+
+        .imfour img {
+            width: 100%;
+            animation: plane 1.5s 0s infinite ease-in-out alternate;
+
+
+        }
+
+        .imfive {
+            width: 130px;
+            position: absolute;
+            top: 120px;
+            right: 5px;
+            z-index: 1;
+
+        }
+
+        .imfive img {
+            width: 100%;
+            animation: cur2 1.5s 0s infinite ease-in-out alternate;
+
+
+        }
+
+        @keyframes plane {
+            from {
+                transform: rotate(-7deg);
+            }
+
+            to {
+                transform: rotate(7deg)
+            }
+        }
+
+        @keyframes cur2 {
+            from {
+                transform: rotate(7deg);
+            }
+
+            to {
+                transform: rotate(-7deg)
+            }
+        }
+
+
+
+
+
+
+
+
+        .imsix {
+            width: 90px;
+            position: absolute;
+            top: 47px;
+            left: -20px;
+
+
+        }
+
+        .imsix img {
+            width: 100%;
+        }
+
+        .imseven {
+            width: 120px;
+            position: absolute;
+            top: 100px;
+            left: 0px;
+
+        }
+
+        .imseven img {
+            width: 100%;
+        }
+
+        .imeight {
+            width: 190px;
+            position: absolute;
+            top: 120px;
+            left: 29px;
+            animation: plane2 2s 0s infinite ease-in-out alternate;
+
+
+        }
+
+        .imeight img {
+            width: 100%;
+        }
+
+        .imnine {
+            width: 120px;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            animation: cur3 2s 0s infinite ease-in-out alternate;
+
+
+        }
+
+        .imnine img {
+            width: 100%;
+        }
+
+        @keyframes plane2 {
+            from {
+                transform: rotate(10deg);
+            }
+
+            to {
+                transform: rotate(-10deg)
+            }
+        }
+
+        @keyframes cur3 {
+            from {
+                transform: rotate(-10deg);
+            }
+
+            to {
+                transform: rotate(10deg)
+            }
+        }
+
+        .imten {
+            width: 90px;
+            position: absolute;
+            top: 120px;
+            right: 100px;
+
+        }
+
+        .imten img {
+            width: 100%;
+
+
+        }
+
+        .imelev {
+            width: 120px;
+            position: absolute;
+            top: 120px;
+            right: 0px;
+
+        }
+
+        .imelev img {
+            width: 100%;
+
+
+        }
+
+        .imtwlv {
+            width: 150px;
+            position: absolute;
+            top: 230px;
+            right: 0px;
+
+        }
+
+        .imtwlv img {
+            width: 100%;
+
+
+        }
+
+        .clash {
+            background: rgb(248, 219, 213);
+            padding: 70px 0px;
+
+
+        }
+
+        .image {
+            width: 90%;
+            margin: auto;
+        }
+
+        .image img {
+            width: 100%;
+            margin-top: 35px;
+        }
+
+        .flow {
+            width: 100%;
+        }
+
+        .flow video {
+            margin: auto;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .vid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 50px;
+            margin-top: 60px;
+        }
+
+        .glow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .glow h1 {
+            font-family: 'Times New Roman', Times, serif;
+
+            letter-spacing: -2.5px;
+            font-size: 57px;
+        }
+
+        .hoi h3 {
+            margin-top: 20px;
+        }
+
+        .hoi h4 {
+            margin-top: 10px;
+        }
+
+        .cont {
+            margin-top: 40px;
+
+
+        }
+
+        .bird {
+            width: 10%;
+            position: absolute;
+        }
+
+        .bird img {
+            width: 100%;
+
+            margin: 8px 0px 0px 0px;
+        }
+
+        .to {
+            margin: 50px 0px 0px 0px;
+        }
+
+        .max {
+            margin: 50px 0px 0px 0px;
+        }
+
+        .maximg {
+            margin: auto;
+            width: fit-content;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+
+        }
+
+        .maximg img {
+            padding: 25px;
+            margin: auto;
+        }
+
+        .mag h1 {
+            font-size: 70px;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: -0.5px;
+            width: fit-content;
+            margin: auto;
+            color: black;
+        }
+
+
+        .track {
+            margin: 65px 0px 0px 0px;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+        }
+
+        .peci {
+            width: fit-content;
+            margin: auto;
+        }
+
+        .sect {
+            width: 89%;
+            margin: auto;
+        }
+
+        .sect img {
+            width: 100%;
+        }
+
+        .sect2 {
+            width: 95%;
+            margin: auto;
+        }
+
+        .sect2 img {
+            width: 100%;
+        }
+
+
+
+        .tec {
+            width: fit-content;
+            margin: auto;
+        }
+
+        .tec h4,
+        h3,
+        h5 {
+            width: fit-content;
+            text-align: center;
+            margin: auto;
+            padding: 10px 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .tec h3 {
+            font-size: 30px
+        }
+
+        .tec h4 {
+            font-size: 20px
+        }
+
+        .tec a {
+            color: rgb(31, 66, 31);
+            margin: auto;
+
+        }
+
+        .comp {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 50px;
+            background: rgb(248, 219, 213);
+            padding: 50px;
+            border-radius: 20px;
+            margin-top: 170px;
+        }
+
+        .comp-con {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+
+        .comp-flex {}
+
+        .comp-con .h1 {
+            font-size: 69px;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: -5px;
+            color: black;
+
+        }
+
+        .comp-con p {
+            font-size: 25px;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .comp-con a {
+            font-size: 20px;
+            margin: 0px 0px 20px 0px;
+        }
+
+        .compimg {
+            width: 100%;
+            margin: auto;
+        }
+
+        .compimg img {
+            width: 100%;
+            margin: auto;
+        }
+
+        .conp {
+            display: grid;
+            grid-template-columns: repeat(1, auto);
+        }
+
+        .monk h2,
+        h5 {
+            text-align: center;
+            color: black;
+
+
+        }
+
+        .monk {
+            margin: auto;
+        }
+
+        .fluk {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 200px;
+        }
+
+        .pnk {
+            width: 150px;
+            position: absolute;
+
+        }
+
+        .pnk img {
+            width: 100%;
+            margin: auto;
+        }
+
+        .fourdv {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 70px;
+            margin: 150px 0px 0px 0px;
+        }
+
+        .jak {
+            width: 100%;
+        }
+
+        .jak img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0px 0px 9px grey;
+        }
+
+        .fourdv p {
+            width: fit-content;
+            text-align: left;
+        }
+
+        .fourbtn {
+            width: fit-content;
+            margin: auto;
+            padding-top: 50px;
+        }
+
+        .flas {
+
+            padding: 50px;
+
+
+
+        }
+
+        .flask {
+            background: rgb(248, 219, 213);
+            padding-bottom: 100px;
+
+
+        }
+
+        .flask .h1 {
+            margin: auto;
+            text-align: center;
+            padding-top: 300px;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: -2px;
+            font-size: 50px;
+
+
+        }
+
+        .flask p {
+            color: black;
+        }
+
+        .founder-info {
+            margin: auto;
+            width: fit-content;
+            display: flex;
+            padding-top: 150px;
+
+        }
+
+        .founder-info img {
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+
+        .klom {
+            font-weight: bold;
+            font-size: 20px;
+            margin: 10px 0 0 0;
+            padding: 0;
+        }
+
+        .mp {
+            background: rgb(248, 219, 213);
+        }
+
+        .carousel-indicators {}
+
+        .carousel-indicators button {
+            height: 10px !important;
+            width: 10px !important;
+            border-radius: 50%;
+            background-color: black !important;
+
+
+
+        }
+
+        .car-move {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+
+
+        }
+
+        .contf {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+
+
+        }
+
+        .contf span {}
+
+        .btn1c,
+        .btn2c {
+            background: none;
+            border: none;
+            margin: 0px 40px;
+
+        }
+
+        .jam {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgb(232, 232, 232);
+            padding-top: 100px;
+            height: 400px;
+        }
+
+        .footer-con {
+            display: grid;
+            grid-template-columns: repeat(6, auto);
+            margin: 200px 0 100px 0;
+
+
+        }
+
+        .footer h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+            color: black;
+
+        }
+
+        .footer p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            padding: 10px 0px;
+
+        }
+
+        .footer a {
+            color: rgb(68, 68, 68);
+            text-decoration: none;
+
+        }
+
+        .footer a:hover {
+            color: black;
+            text-decoration: underline;
+            transition: all 1s 0s ease;
+
+        }
+        .fade {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0;
+
+
+
+            position: fixed;
+            bottom: 30px;
+            z-index: 9;
+        }
+
+        .lik {
+            display: ;
+            font-size: 35px;
+
+        }
+
+        .bi {
+            width: 5%;
+        }
+
+
+
+
+        .page-link {
+            font-size: 20px;
+            padding: 9px 20px;
+        }
+
+        .jam img {}
+
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width:1200px) {
+
+            .navs,
+            .man {
+                display: none;
+
+            }
+
+
+            .offcanvas {
+                visibility: visible;
+                position: absolute;
+            }
+
+
+            .lolg {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+
+            .lolg button {
+                visibility: visible;
+                position: relative;
+            }
+
+            .lk {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 30px;
+            }
+
+            .jk {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 5px;
+
+                border: 1px solid rgb(43, 24, 155);
+                border-radius: 10px;
+                padding: 20px 40px;
+            }
+
+            .jk h5 {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .mk {
+                width: 100%;
+                margin: auto;
+            }
+
+            .mk img {
+                width: 100%;
+            }
+
+            .ml {
+                width: 70%;
+                margin: auto;
+            }
+
+            .ml img {
+                width: 100%;
+            }
+
+            .row {
+                border-top: 1px solid;
+            }
+
+            .jp {
+                border-left: 1px solid;
+
+            }
+
+            .rage {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 35px;
+            }
+
+            .rage h3 {
+                margin: 25px 0px;
+            }
+
+            .fa-chevron-down {
+                font-size: 10px;
+            }
+
+            .lop {
+
+                position: absolute;
+                top: 250px;
+                width: 100%;
+            }
+
+            .lok {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                position: absolute;
+
+            }
+
+            .loo {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                position: absolute;
+
+
+            }
+
+            .lak {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            .lak h1 {
+                font-size: 60px;
+                font-family: 'Times New Roman', Times, serif;
+                letter-spacing: -2px;
+                margin: auto;
+
+            }
+
+            .imone {
+                width: 100px;
+                position: absolute;
+                top: 50px;
+                left: 0px;
+            }
+
+            .imone img {
+                width: 100%;
+            }
+
+            .imtwo {
+                width: 80px;
+                position: absolute;
+                top: 100px;
+                left: 0px;
+
+            }
+
+            .imtwo img {
+                width: 100%;
+            }
+
+            .imthree {
+                width: 80px;
+                position: absolute;
+                top: 150px;
+                left: 0px;
+
+            }
+
+            .imthree img {
+                width: 100%;
+            }
+
+            .imfour {
+                width: 100px;
+                position: absolute;
+                top: 120px;
+                right: 60px;
+
+            }
+
+            .imfour img {
+                width: 100%;
+                animation: plane 2s 0s infinite ease-in-out alternate;
+
+            }
+
+            .imfive {
+                width: 100px;
+                position: absolute;
+                top: 120px;
+                right: 5px;
+
+            }
+
+            .imfive img {
+                width: 100%;
+                animation: cur2 2s 0s infinite ease-in-out alternate;
+
+            }
+
+            @keyframes plane {
+                from {
+                    transform: rotate(-7deg);
+                }
+
+                to {
+                    transform: rotate(7deg)
+                }
+            }
+
+            @keyframes cur2 {
+                from {
+                    transform: rotate(7deg);
+                }
+
+                to {
+                    transform: rotate(-7deg)
+                }
+            }
+
+
+
+
+            .pok {
+                position: relative;
+                top: 15px;
+                left: 0;
+
+            }
+
+            .pok2 {
+                position: relative;
+                top: 15px;
+                left: 0;
+
+            }
+
+            .jok {
+                background: rgb(248, 219, 213);
+                height: 600px;
+                width: 100%;
+                position: relative;
+            }
+
+
+
+            .kok {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+
+            .kok2 {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+
+
+
+            .imsix {
+                width: 90px;
+                position: absolute;
+                top: 47px;
+                left: 0px;
+
+
+            }
+
+            .imsix img {
+                width: 100%;
+            }
+
+            .imseven {
+                width: 100px;
+                position: absolute;
+                top: 100px;
+                left: 0px;
+
+            }
+
+            .imseven img {
+                width: 100%;
+            }
+
+            .imeight {
+                width: 120px;
+                position: absolute;
+                top: 120px;
+                left: 29px;
+                animation: plane2 2s 0s infinite ease-in-out alternate;
+
+
+            }
+
+            .imeight img {
+                width: 100%;
+            }
+
+            .imnine {
+                width: 100px;
+                position: absolute;
+                top: 130px;
+                left: 100px;
+                animation: cur3 2s 0s infinite ease-in-out alternate;
+
+
+            }
+
+            .imnine img {
+                width: 100%;
+            }
+
+            @keyframes plane2 {
+                from {
+                    transform: rotate(10deg);
+                }
+
+                to {
+                    transform: rotate(-10deg)
+                }
+            }
+
+            @keyframes cur3 {
+                from {
+                    transform: rotate(-10deg);
+                }
+
+                to {
+                    transform: rotate(10deg)
+                }
+            }
+
+            .imten {
+                width: 90px;
+                position: absolute;
+                top: 120px;
+                right: 90px;
+
+            }
+
+            .imten img {
+                width: 100%;
+
+
+            }
+
+            .imelev {
+                width: 100px;
+                position: absolute;
+                top: 120px;
+                right: 0px;
+
+            }
+
+            .imelev img {
+                width: 100%;
+
+
+            }
+
+            .imtwlv {
+                width: 150px;
+                position: absolute;
+                top: 210px;
+                right: 0px;
+
+            }
+
+            .imtwlv img {
+                width: 100%;
+
+
+            }
+
+
+
+
+            .vid {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+
+            .cont {
+                margin-top: 40px;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 10px;
+
+            }
+
+            .hoi a {
+                padding: 10px 50px;
+            }
+
+            .hoi .log {
+                border: 1px solid;
+            }
+
+            .hoi a,
+            h4,
+            h3,
+            h1 {
+                width: fit-content;
+                margin: auto;
+                text-align: center;
+
+            }
+
+            .maximg {
+                margin: auto;
+                width: fit-content;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+
+            .glow h1 {
+                font-family: 'Times New Roman', Times, serif;
+
+                letter-spacing: -2.5px;
+                font-size: 40px;
+            }
+
+            .track {
+                margin: 65px 0px 0px 0px;
+                display: grid;
+                grid-template-columns: repeat(1, auto);
+            }
+
+            .tec h3 {
+                font-size: 30px
+            }
+
+            .tec h4 {
+                font-size: 17px
+            }
+
+            .mag h1 {
+                font-size: 30px;
+                font-family: 'Times New Roman', Times, serif;
+                letter-spacing: -0.5px;
+                width: fit-content;
+                margin: auto;
+                color: black;
+            }
+
+            .comp {
+                display: grid;
+                grid-template-columns: repeat(1, auto);
+                gap: 50px;
+            }
+
+            .comp-con {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+            }
+
+            .comp-flex {}
+
+            .comp-con .h1 {
+                font-size: 38px;
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                letter-spacing: -1px;
+            }
+
+            .comp-con p {
+                font-size: 20px;
+                text-align: center;
+                letter-spacing: -1px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            .comp-con a {
+                font-size: 20px;
+                margin: 0px 0px 20px 0px;
+            }
+
+            .compimg {
+                width: 100%;
+                margin: auto;
+            }
+
+            .compimg img {
+                width: 100%;
+                margin: auto;
+            }
+
+            .conp {
+                display: grid;
+                grid-template-columns: repeat(1, auto);
+                margin: auto;
+            }
+
+            .conp a {
+                margin: auto;
+
+            }
+
+            .conp .lty {
+                padding: 0px 0px 30px 0px;
+            }
+
+            .fluk {
+                display: flex;
+                flex-direction: column;
+                margin-top: 150px;
+            }
+
+            .pnk {
+                position: relative;
+                margin: auto;
+            }
+
+            .pnk img {
+                width: 100px;
+                height: 70px;
+            }
+
+            .contf {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+
+            }
+
+            .jag {
+                visibility: hidden;
+                position: absolute;
+            }
+
+
+
+        }
+
+        @media screen and (max-width:768px) {
+            .moz {
+                z-index: -1;
+            }
+
+            .fourdv {
+                display: grid;
+                grid-template-columns: repeat(1, auto);
+                gap: 70px;
+                margin: 150px 0px 0px 0px;
+            }
+
+            .flask .h1 {
+                margin: auto;
+                text-align: center;
+                padding-top: 300px;
+                font-family: 'Times New Roman', Times, serif;
+                letter-spacing: -1px;
+                font-size: 21px;
+
+
+            }
+
+            .jam {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                background: rgb(232, 232, 232);
+                padding-top: 100px;
+                height: 650px;
+            }
+
+            .fade {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 0;
+                position: fixed;
+                bottom: 0px;
+                z-index: 9;
+            }
+
+            .lik {
+
+                display: inline-block;
+                font-size: 17px;
+            }
+
+            .bi {
+                width: 12%;
+            }
+
+            .page-link {
+                font-size: 20px;
+                padding: 9px 20px;
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            .lak h1 {
+                font-size: 40px;
+                font-family: 'Times New Roman', Times, serif;
+                letter-spacing: -2px;
+                margin: auto;
+
+            }
+
+            .lak h4 {
+                font-size: 15px;
+
+                margin: auto;
+                padding: 20px 0px 0px 0px;
+
+            }
+
+            .comp-con p {
+                font-size: 15px;
+                letter-spacing: -0.8px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar " style="">
+        <div class="container-fluid">
+            <div class=" lolg">
+                <a class="navbar-brand" href="#">
+                    <img src="wherebylogo.svg" alt="logo" width="150" height="70">
+                </a>
+                <button type="button" class=" border-0 bg-body-light" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcan" style="background: none;font-weight: bold;">
+
+
+
+                    <i class="fa-solid fa-bars" style="font-size: 25px;"></i>
+
+                </button>
+
+
+            </div>
+
+            <div class=" navs">
+                <a href="" class="po1 " id="lk"> Products <i class="fa-solid fa-chevron-down a"></i>
+                    <div class="container-fluid mab" id="">
+                        <div class="row container-fluid jak">
+                            <div class="col-9 ">
+                                <h2>Choose the right Whereby for you</h2>
+                                <div class="lk">
+                                    <div class="jk">
+                                        <div class="mk"><img src="pot.webp" alt=""></div>
+                                        <div>
+                                            <h5>Whereby Embedded</h5>
+                                            <h5>
+                                                Integrate real-time video into your product via our API</h5>
+                                        </div>
+                                    </div>
+                                    <div class="jk">
+                                        <div class="mk"><img src="pol.webp" alt=""></div>
+                                        <div>
+                                            <h5>Whereby Meetings</h5>
+                                            <h5>
+
+                                                Have better video calls, with no downloads and the same link every time.
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-3 jp">
+                                <h2><i class="fa-solid fa-bars" style="color: rgb(43, 24, 155);"></i> Features</h2>
+                                <h2><i class="fa-solid fa-bullhorn" style="color: rgb(43, 24, 155);"></i> What's New
+                                </h2>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </a>
+                <a href="" class="po2"> Pricing <i class="fa-solid fa-chevron-down b"></i>
+                    <div class="container-fluid mak" id="">
+                        <div class="row container-fluid jak">
+                            <div class="col-9 ">
+                                <h2>Which Whereby product would you like to see pricing for?</h2>
+                                <div class="lk">
+                                    <div class="jk">
+                                        <div class="mk"><img src="pot.webp" alt=""></div>
+                                        <div>
+                                            <h5>Whereby Embedded</h5>
+                                            <h5>
+                                                Integrate real-time video into your product via our API</h5>
+                                        </div>
+                                    </div>
+                                    <div class="jk">
+                                        <div class="mk"><img src="pol.webp" alt=""></div>
+                                        <div>
+                                            <h5>Whereby Meetings</h5>
+                                            <h5>
+
+                                                Have better video calls, with no downloads and the same link every time.
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-3 jp">
+                                <h2><i class="fa-solid fa-calculator" style="color: rgb(43, 24, 155);"></i> Rate
+                                    Calculator</h2>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </a>
+                <a href="" class="po3"> Developers <i class="fa-solid fa-chevron-down c"></i>
+                    <div class="container-fluid may">
+                        <div class="row container-fluid">
+                            <div class="col-6 rage" style="padding: 25px;">
+                                <div>
+                                    <h3>Build</h3>
+                                    <h3><i class="fa-regular fa-file" style="color: rgb(43, 24, 155);"></i> Developer
+                                        docs</h3>
+                                    <h3><i class="fa-solid fa-gear" style="color: rgb(43, 24, 155);"></i> Rest API
+                                        Referense</h3>
+                                    <h3><i class="fa-solid fa-message" style="color: rgb(43, 24, 155);"></i> Embedded
+                                        FAQs</h3>
+                                    <h3><i class="fa-solid fa-tv" style="color: rgb(43, 24, 155);"></i> Tutorials</h3>
+                                </div>
+                                <div>
+                                    <h3>SDKs</h3>
+                                    <h3><i class="bi bi-apple" style="color: rgb(43, 24, 155);"></i> iOS</h3>
+                                    <h3><i class="bi bi-android2" style="color: rgb(43, 24, 155);"></i> Android</h3>
+                                    <h3><i class="bi bi-globe2" style="color: rgb(43, 24, 155);"></i> Web</h3>
+
+                                </div>
+
+                            </div>
+                            <div class="col-6" style="border-left: 1px solid grey;padding: 25px;">
+                                <div class="jk" style="border: none;">
+                                    <div class="ml"><img src="tuto.webp" alt=""></div>
+                                    <div>
+                                        <h5 style="font-size: 25px;">Latest Tutorials</h5>
+                                        <h5 style="font-size: 20px;">
+                                            How to Build a Custom Video Call App With the Whereby Browser SDK</h5>
+                                    </div>
+                                </div>
+                                <div class="jk" style="border: none;">
+                                    <div class="ml"><img src="devc.webp" alt=""></div>
+                                    <div>
+                                        <h5 style="font-size: 25px;">Developer Community</h5>
+                                        <h5 style="font-size: 20px;">
+
+                                            Join our discord community to connect and collaborate with other builders
+                                            using Whereby
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="po4"> Resourses <i class="fa-solid fa-chevron-down d"></i>
+                    <div class="container-fluid mat">
+                        <div class="row container-fluid">
+                            <div class="col-6 rage" style="padding: 25px;">
+                                <div>
+                                    <h3>Discover</h3>
+                                    <h3><i class="bi bi-file-richtext" style="color: rgb(43, 24, 155);"></i> Blog</h3>
+                                    <h3><i class="bi bi-file-person" style="color: rgb(43, 24, 155);"></i> Customer
+                                        stories</h3>
+                                    <h3><i class="bi bi-book-half" style="color: rgb(43, 24, 155);"></i> E-books</h3>
+                                    <h3><i class="bi bi-webcam-fill" style="color: rgb(43, 24, 155);"></i> Webiner</h3>
+                                </div>
+                                <div>
+                                    <h3>Support</h3>
+                                    <h3><i class="bi bi-file-text" style="color: rgb(43, 24, 155);"></i> Support center
+                                    </h3>
+                                    <h3><i class="bi bi-envelope" style="color: rgb(43, 24, 155);"></i> Contact support
+                                    </h3>
+                                    <h3><i class="bi bi-broadcast" style="color: rgb(43, 24, 155);"></i> Status</h3>
+
+                                </div>
+
+                            </div>
+                            <div class="col-6" style="border-left: 1px solid grey;padding: 25px;">
+                                <div class="jk" style="border: none;">
+                                    <div class="ml"><img src="bon.webp" alt=""></div>
+                                    <div>
+                                        <h5 style="font-size: 25px;">From our Blog</h5>
+                                        <h5 style="font-size: 20px;">
+                                            Revolutionizing Healthcare: The Power of Video Call Technology in
+                                            Transforming Medical Services</h5>
+                                    </div>
+                                </div>
+                                <div class="jk" style="border: none;">
+                                    <div class="ml"><img src="spo.webp" alt=""></div>
+                                    <div>
+                                        <h5 style="font-size: 25px;">Customer Spotlight</h5>
+                                        <h5 style="font-size: 20px;">
+
+                                            How Wellnite is Powering a Mental Health Revolution with Whereby
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+            <div class=" man" role="search">
+                <a href="#" class="log">Log in</a>
+                <a href="#" class=" Try">Try for free</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start m-0 w-100" tabindex="-1" id="offcan" aria-labelledby="offcanvasRightLabel">
+
+        <div class="offcanvas-header">
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class=" mb-2 ">
+                <div class="container-fluid my-5">
+
+
+                    <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                        class=" accordion-button d-inline-flex gap-1 w-100" href="#web" role="button"
+                        data-bs-toggle="collapse" data-bs-target="#web" aria-expanded="false">
+                        <div class="w-100"
+                            style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                            Products <i class="fa-solid fa-chevron-down text-dark"></i>
+                        </div>
+                    </button>
+
+                    <div class="website collapse " id="web">
+                        <div class=" ">
+                            <h2>Choose the right Whereby for you</h2>
+                            <div class="lk">
+                                <div class="jk">
+                                    <div class="mk"><img src="pot.webp" alt=""></div>
+                                    <div>
+                                        <h5>Whereby Embedded</h5>
+                                        <h5>
+                                            Integrate real-time video into your product via our API</h5>
+                                    </div>
+                                </div>
+                                <div class="jk">
+                                    <div class="mk"><img src="pol.webp" alt=""></div>
+                                    <div>
+                                        <h5>Whereby Meetings</h5>
+                                        <h5>
+
+                                            Have better video calls, with no downloads and the same link every time.
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class=" jp">
+                            <h2><i class="fa-solid fa-bars" style="color: rgb(43, 24, 155);"></i> Features</h2>
+                            <h2><i class="fa-solid fa-bullhorn" style="color: rgb(43, 24, 155);"></i> What's New
+                            </h2>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid my-5">
+
+
+                    <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                        class=" accordion-button d-inline-flex gap-1 w-100" href="#email" role="button"
+                        data-bs-toggle="collapse" data-bs-target="#email" aria-expanded="false">
+                        <div class="w-100"
+                            style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                            Pricing <i class="fa-solid fa-chevron-down text-dark"></i>
+                        </div>
+                    </button>
+
+                    <div class="website collapse " id="email">
+                        <div class="">
+                            <h2>Which Whereby product would you like to see pricing for?</h2>
+                            <div class="lk">
+                                <div class="jk">
+                                    <div class="mk"><img src="pot.webp" alt=""></div>
+                                    <div>
+                                        <h5>Whereby Embedded</h5>
+                                        <h5>
+                                            Integrate real-time video into your product via our API</h5>
+                                    </div>
+                                </div>
+                                <div class="jk">
+                                    <div class="mk"><img src="pol.webp" alt=""></div>
+                                    <div>
+                                        <h5>Whereby Meetings</h5>
+                                        <h5>
+
+                                            Have better video calls, with no downloads and the same link every time.
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="jp">
+                            <h2>
+                                <i class="fa-solid fa-calculator" style="color: rgb(43, 24, 155);"></i>
+                                / Rate
+                                Calculator
+                            </h2>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid my-5">
+
+
+                    <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                        class=" accordion-button d-inline-flex gap-1 w-100" href="#sell" role="button"
+                        data-bs-toggle="collapse" data-bs-target="#sell" aria-expanded="false">
+                        <div class="w-100"
+                            style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                            Developers <i class="fa-solid fa-chevron-down text-dark"></i>
+                        </div>
+                    </button>
+
+                    <div class="website collapse " id="sell">
+                        <div class=" rage" style="padding: 25px;">
+                            <div>
+                                <h3>Build</h3>
+                                <h3><i class="fa-regular fa-file" style="color: rgb(43, 24, 155);"></i> Developer
+                                    docs</h3>
+                                <h3><i class="fa-solid fa-gear" style="color: rgb(43, 24, 155);"></i> Rest API
+                                    Referense</h3>
+                                <h3><i class="fa-solid fa-message" style="color: rgb(43, 24, 155);"></i> Embedded
+                                    FAQs</h3>
+                                <h3><i class="fa-solid fa-tv" style="color: rgb(43, 24, 155);"></i> Tutorials</h3>
+                            </div>
+                            <div>
+                                <h3>SDKs</h3>
+                                <h3><i class="bi bi-apple" style="color: rgb(43, 24, 155);"></i> iOS</h3>
+                                <h3><i class="bi bi-android2" style="color: rgb(43, 24, 155);"></i> Android</h3>
+                                <h3><i class="bi bi-globe2" style="color: rgb(43, 24, 155);"></i> Web</h3>
+
+                            </div>
+
+                        </div>
+                        <div class="" style="padding: 25px;">
+                            <div class="jk" style="border: none;">
+                                <div class="ml"><img src="tuto.webp" alt=""></div>
+                                <div>
+                                    <h5 style="font-size: 25px;">Latest Tutorials</h5>
+                                    <h5 style="font-size: 20px;">
+                                        How to Build a Custom Video Call App With the Whereby Browser SDK</h5>
+                                </div>
+                            </div>
+                            <div class="jk" style="border: none;">
+                                <div class="ml"><img src="devc.webp" alt=""></div>
+                                <div>
+                                    <h5 style="font-size: 25px;">Developer Community</h5>
+                                    <h5 style="font-size: 20px;">
+
+                                        Join our discord community to connect and collaborate with other builders
+                                        using Whereby
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="container-fluid my-5" style="background:;">
+
+
+                    <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
+                        class=" accordion-button d-inline-flex gap-1 w-100" href="#Reso" role="button"
+                        data-bs-toggle="collapse" data-bs-target="#Reso" aria-expanded="false">
+                        <div class="w-100"
+                            style="display: flex;justify-content: space-between;align-items: center; font-size: 25px; color: black;">
+                            Resourses <i class="fa-solid fa-chevron-down text-dark"></i>
+                        </div>
+                    </button>
+
+                    <div class="website collapse" id="Reso">
+                        <div class="col-6 rage" style="padding: 25px;width: 100%;">
+                            <div>
+                                <h3>Discover</h3>
+                                <h3><i class="bi bi-file-richtext" style="color: rgb(43, 24, 155);"></i> Blog</h3>
+                                <h3><i class="bi bi-file-person" style="color: rgb(43, 24, 155);"></i> Customer
+                                    stories</h3>
+                                <h3><i class="bi bi-book-half" style="color: rgb(43, 24, 155);"></i> E-books</h3>
+                                <h3><i class="bi bi-webcam-fill" style="color: rgb(43, 24, 155);"></i> Webiner</h3>
+                            </div>
+                            <div>
+                                <h3>Support</h3>
+                                <h3><i class="bi bi-file-text" style="color: rgb(43, 24, 155);"></i> Support center
+                                </h3>
+                                <h3><i class="bi bi-envelope" style="color: rgb(43, 24, 155);"></i> Contact support
+                                </h3>
+                                <h3><i class="bi bi-broadcast" style="color: rgb(43, 24, 155);"></i> Status</h3>
+
+                            </div>
+
+                        </div>
+                        <div class="col-6" style="padding: 25px;width: 100%;">
+                            <div class="jk" style="border: none;">
+                                <div class="ml"><img src="bon.webp" alt=""></div>
+                                <div>
+                                    <h5 style="font-size: 25px;">From our Blog</h5>
+                                    <h5 style="font-size: 20px;">
+                                        Revolutionizing Healthcare: The Power of Video Call Technology in
+                                        Transforming Medical Services</h5>
+                                </div>
+                            </div>
+                            <div class="jk" style="border: none;">
+                                <div class="ml"><img src="spo.webp" alt=""></div>
+                                <div>
+                                    <h5 style="font-size: 25px;">Customer Spotlight</h5>
+                                    <h5 style="font-size: 20px;">
+
+                                        How Wellnite is Powering a Mental Health Revolution with Whereby
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+            <div class="offcanvas-footer" style="display:grid;grid-template-columns: repeat(1,1fr);margin-top: 150px;">
+                <a href="#" class="log w-100 text-center mt-3">Log in</a>
+                <a href="#" class=" Try w-100 text-center mt-3">Try for free</a>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    <style>
+
+    </style>
+
+
+    <div class=" jok">
+        <!-- <div class="container"> -->
+        <!-- <div class="container"> -->
+        <div class=" lok">
+            <div class="pok">
+                <div class="imone"><img src="cur1.webp" alt=""></div>
+                <div class="imtwo"><img src="doc1.webp" alt=""></div>
+                <div class="imthree"><img src="til.webp" alt=""></div>
+
+            </div>
+            <div class="kok">
+                <div class="imfour"><img src="pla1.webp" alt=""></div>
+                <div class="imfive"><img src="cur2.webp" alt=""></div>
+
+            </div>
+        </div>
+        <div class=" lop">
+            <div class="lak">
+                <div>
+                    <h1>Build your dream <br> video call solution</h1>
+                    <h4>Swap out corporate-looking video calls for a calm, user-friendly <br> option, seamlessly
+                        integrated into your platform via our API and <br> SDK. Tailored for Telehealth, Digital
+                        Mental Health, and more. </h4>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class=" loo">
+            <div class="pok2">
+                <div class="imsix"><img src="kkk.png" alt=""></div>
+                <div class="imseven"><img src="doc3.webp" alt=""></div>
+                <div class="imeight"><img src="cur3.webp" alt=""></div>
+                <div class="imnine"><img src="pla2.webp" alt=""></div>
+
+            </div>
+            <div class="kok2">
+                <div class="imten"><img src="cur4.webp" alt=""></div>
+                <div class="imelev"><img src="doc4.webp" alt=""></div>
+                <div class="imtwlv"><img src="kml.webp" alt=""></div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="clash">
+        <div class="container">
+            <div class="image"><img src="imageop.png" alt=""></div>
+        </div>
+    </div>
+
+
+    <div class="">
+        <div class="container vid">
+            <div class=" flow">
+                <video src="vid.mp4" loop autoplay plays-inline></video>
+            </div>
+            <div class="glow">
+                <div class="hoi">
+                    <h1>The easiest way to add video calls into your platform</h1>
+                    <h3>
+                        Get started in minutes with just a few lines of code. Fully branded, customizable and seamlessly
+                        integrated into your platform using our API and SDK.
+                    </h3>
+                    <h4>
+                        <a href="#">Discover More</a>
+                    </h4>
+                    <div class="cont">
+                        <a href="#" class=" Try">Try for free</a>
+                        <a href="#" class="log">Talk to sales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container " style="border: none;">
+        <div class="container-fluid to">
+            <div class="row " style="border: none;">
+                <div class="col-lg-2 col-lg-6 bird" style="border: none;"><img src="birdcur.webp" alt=""></div>
+                <div class="col-lg-10 col-lg-6 m-auto" style="border: none;">
+                    <h5 class="text-center fs-3 mt-3    ">Trusted by 5+ million people at companies like</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="container">
+        <div class="container-fluid max">
+            <div class="maximg">
+                <img src="umbro.svg" alt="" width="250px">
+                <img src="inded.svg" alt="" width="180px">
+                <img src="tebra.svg" alt="" width="220px">
+                <img src="edu.webp" alt="" width="180px">
+                <img src="accur.svg" alt="" width="180px">
+                <img src="wellx.webp" alt="" width="180px">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mag">
+        <div>
+            <h1>Industries thriving with <br> embedded video calls</h1>
+        </div>
+        <div class="track">
+            <div class="peci">
+                <div class="sect"><img src="xray.webp" alt=""></div>
+                <div class="tec">
+                    <h3>Telehealth</h4>
+                        <h4>Offer secure, reliable video calls to connect <br> practitioners & patients anywhere,
+                            anytime.</h5>
+                            <h5><a href="#">Read more</a></h5>
+                </div>
+
+            </div>
+            <div class="peci">
+                <div class="sect sect2"><img src="x2.webp" alt=""></div>
+                <div class="tec">
+                    <h3>Digital Mental Health</h4>
+                        <h4>Increase patient trust with calm, user-friendly <br> teletherapy calls.</h5>
+                            <h5><a href="#">Read more</a></h5>
+                </div>
+
+            </div>
+            <div class="peci">
+                <div class="sect"><img src="x3.webp" alt=""></div>
+                <div class="tec tec2">
+                    <h3>eLearning</h3>
+                    <h4>eLearning
+                        Integrate engaging and fun virtual classroom <br> experiences for students and teachers.
+                    </h4>
+                    <h5><a href="#">Read more</a></h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container comp">
+        <div class="comp-con">
+            <div class="comp-flex">
+                <p class="h1 ">Looking for simple <br> video meetings?</p>
+                <p>
+                    If you want to host video calls in your browser with no <br> downloads, check out Whereby Meetings.
+
+                </p>
+                <div class="conp">
+                    <a href="#" class="lty">Discover More</a>
+                    <a href="#" class=" Try" style="width: fit-content;">Try for free</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="compimg">
+            <img src="compimg.webp" alt="">
+        </div>
+    </div>
+
+    <div class="container fluk">
+        <div class="pnk">
+            <img src="thindog.webp" alt="" height="90">
+        </div>
+        <div class="monk">
+            <h2 style="font-size: 50px;font-family: 'Times New Roman', Times, serif;letter-spacing: -2px;">Delightful
+                video calls</h2>
+            <h5 style="font-size: 20px;letter-spacing: -1px;">Increase customer trust and confidence by embedding secure
+                video calls inside your service.</h5>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <div class="fourdv">
+            <div style="width: fit-content;">
+                <div class="jak">
+                    <img src="klo.webp" alt="">
+                </div>
+
+                <p style="font-size: 20px;font-weight: bold;margin-top: 30px;">Security and privacy focused</p>
+                <p style="font-size: 20px;">All content is encrypted, we're GDPR and ISO27001 certified <br> and can be
+                    implemented with HIPAA compliance.</p>
+
+            </div>
+            <div style="width: fit-content;">
+                <div class="jak">
+                    <img src="peep.webp" alt="">
+                </div>
+
+                <p style="font-size: 20px;font-weight: bold;margin-top: 30px;">Superior Reliability</p>
+                <p style="font-size: 20px;">Our infrastructure is scalable to support you as you grow with a <br>
+                    consistently high quality video call experience.</p>
+
+            </div>
+            <div style="width: fit-content;">
+                <div class="jak">
+                    <img src="yellowgalvid.webp" alt="">
+                </div>
+
+                <p style="font-size: 20px;font-weight: bold;margin-top: 30px;">User-friendly</p>
+                <p style="font-size: 20px;">Provide a calm, easy-to-use experience packed with features and <br> fully
+                    customizable to fit your brand and needs.</p>
+
+            </div>
+            <div style="width: fit-content;">
+                <div class="jak">
+                    <img src="emoji.webp" alt="">
+                </div>
+
+                <p style="font-size: 20px;font-weight: bold;margin-top: 30px;">Friendly & helpful team</p>
+                <p style="font-size: 20px;">We want to help you grow! We offer resources to ensure you get started
+                    quickly, build successfully and in turn support your users.</p>
+
+            </div>
+        </div>
+        <div class="fourbtn">
+            <a href="#" class=" Try" style="width: fit-content;padding: 10px 55px;">Try for free</a>
+        </div>
+    </div>
+
+
+
+
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+
+        <div class="carousel-inner">
+            <div class="carousel-indicators" style="">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-item active">
+                <div class="container flas d-block w-100">
+                    <div class="container flask">
+                        <div style="width: 100%;position: relative;">
+                            <img src="1XdK3pOvviV2Ttf183L3Svlm1Pc.webp" alt="" width="200" height="100"
+                                style="position: absolute;left: 0px;">
+
+                            <img src="olpk.webp" alt="" width="300" height="200" style="position: absolute;right: 0px;">
+                        </div>
+                        <div
+                            style="width: 100%;margin: auto;position: relative; display: flex;justify-content: center;align-items: center;">
+                            <img src="well.webp" alt="" width="100" height="80"
+                                style="position: absolute;top: 150px;margin: auto;">
+                        </div>
+                        <p class="h1">“Whereby’s tools have been a game changer for us. <br> We can create
+                            HIPAA-compliant video
+                            rooms
+                            for <br>
+                            every single session. It’s perfectly compliant with <br> every rule and regulation.”</p>
+                        <div class="founder-info">
+                            <div>
+                                <img src="paul.webp" alt="" width="70" height="70">
+                            </div>
+                            <div>
+                                <p class="klom">Paulo González</p>
+                                <p>CEO & Co-founder – Wellnite</p>
+                            </div>
+
+                        </div>
+                        <div style="width: 100%;position: relative;" class="mp">
+                            <img src="klp.webp" alt="" width="200" height="100" style="position: absolute;left: 0px;">
+
+                            <img src="iop.webp" alt="" width="250" height="250"
+                                style="position: absolute;right: 0px;top: -150px;" class="moz">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container flas d-block w-100">
+                    <div class="container flask">
+                        <div style="width: 100%;position: relative;">
+                            <img src="1XdK3pOvviV2Ttf183L3Svlm1Pc.webp" alt="" width="200" height="100"
+                                style="position: absolute;left: 0px;">
+
+                            <img src="olpk.webp" alt="" width="300" height="200" style="position: absolute;right: 0px;">
+                        </div>
+                        <div
+                            style="width: 100%;margin: auto;position: relative; display: flex;justify-content: center;align-items: center;">
+                            <img src="espa.webp" alt="" width="200" height="80"
+                                style="position: absolute;top: 150px;margin:auto;">
+                        </div>
+                        <p class="h1">"Within two hours, our developer was able to <br> implement more than he had in
+                            the eight months <br> prior with Agora."</p>
+                        <div class="founder-info">
+                            <div>
+                                <img src="spai.webp" alt="" width="70" height="70">
+                            </div>
+                            <div>
+                                <p class="klom">Andrew Mowat</p>
+                                <p>CEO & Co-founder – EduSpark</p>
+                            </div>
+
+                        </div>
+                        <div style="width: 100%;position: relative;" class="mp">
+                            <img src="klp.webp" alt="" width="200" height="100" style="position: absolute;left: 0px;">
+
+                            <img src="iop.webp" alt="" width="250" height="250"
+                                style="position: absolute;right: 0px;top: -150px;" class="moz">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container flas d-block w-100">
+                    <div class="container flask">
+                        <div style="width: 100%;position: relative;">
+                            <img src="1XdK3pOvviV2Ttf183L3Svlm1Pc.webp" alt="" width="200" height="100"
+                                style="position: absolute;left: 0px;">
+
+                            <img src="olpk.webp" alt="" width="300" height="200" style="position: absolute;right: 0px;">
+                        </div>
+                        <div
+                            style="width: 100%;margin: auto;position: relative; display: flex;justify-content: center;align-items: center;">
+                            <img src="rx.svg" alt="" width="200" height="80"
+                                style="position: absolute;top: 150px;margin:auto;">
+                        </div>
+                        <p class="h1">"With Whereby, neither physicians nor their <br> patients need to download an app
+                            or remember a <br> specific login, they can jump right into a video call — <br> saving admin
+                            time from eating into clinic <br> appointments."</p>
+                        <div class="founder-info">
+                            <div>
+                                <img src="donTKDJpr81usrrEt3dDqWX71k4Ljs.webp" alt="" width="70" height="70">
+                            </div>
+                            <div>
+                                <p class="klom">Donnie Belfon</p>
+                                <p>Product Manager – accuRx</p>
+                            </div>
+
+                        </div>
+                        <div style="width: 100%;position: relative;" class="mp">
+                            <img src="klp.webp" alt="" width="200" height="100" style="position: absolute;left: 0px;">
+
+                            <img src="iop.webp" alt="" width="250" height="250"
+                                style="position: absolute;right: 0px;top: -150px;" class="moz">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="car-move">
+            <div class="contf">
+                <button class="btn1c" style="color: black !important;" type="button"
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class=""><i class="fa-solid fa-arrow-left"
+                            style="color: black !important; font-size: 25px;"></i></span>
+
+                </button>
+
+                <button class="btn2c" style="color: black !important;" type="button"
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class=""><i class="fa-solid fa-arrow-right"
+                            style="color: black !important; font-size: 25px;"></i></span>
+
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid jam" style="position: relative;">
+        <img src="ladysit.webp" alt="" width="520" class="jag">
+        <div style="margin: auto;width: 100%;">
+            <p
+                style="width: fit-content;font-size: 60px;text-align: center;margin: auto;font-family: 'Times New Roman', Times, serif;padding-bottom: 30px;">
+                Get started today</p>
+            <div style="width: fit-content;margin: auto;">
+                <a href="#" class=" Try" style="width: fit-content;padding: 10px 55px;margin: auto;">Try for free</a>
+            </div>
+
+        </div>
+        <img src="manstand.webp" alt="" width="520">
+    </div>
+
+    <div class="container-fluid footer-con">
+        <div class="footer">
+            <h2>About</h2>
+            <p><a href="">About us</a></p>
+            <p><a href="">Our vision</a></p>
+            <p><a href="">Careers</a></p>
+            <p><a href="">Press</a></p>
+        </div>
+        <div class="footer">
+            <h2>Product</h2>
+            <p><a href="">Embedded</a></p>
+            <p><a href="">Meetings</a></p>
+            <p><a href="">What's New</a></p>
+            <p><a href="">Status</a></p>
+            <p><a href="">Reference Docs</a></p>
+        </div>
+        <div class="footer">
+            <h2>pricing</h2>
+            <p><a href="">For Embedded</a></p>
+            <p><a href="">For Meetings</a></p>
+        </div>
+        <div class="footer">
+            <h2>Social</h2>
+            <p><a href="">Blog</a></p>
+            <p><a href="">Twitter</a></p>
+            <p><a href="">LinkedIn</a></p>
+            <p><a href="">Instagram</a></p>
+            <p><a href="">Facebook</a></p>
+        </div>
+        <div class="footer">
+            <h2>Support</h2>
+            <p><a href="">Support Center</a></p>
+            <p><a href="">privacy policy</a></p>
+            <p><a href="">Terms of Service</a></p>
+            <p><a href="">Cookie Policy</a></p>
+            <p><a href="">Cookie Settings</a></p>
+            <p><a href="">GDPR Statement</a></p>
+            <p><a href="">Security</a></p>
+            <p><a href="">Sitemap</a></p>
+        </div>
+        <div class="footer">
+            <h2>Get in touch</h2>
+            <p><a href="">Contact Support</a></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check-circle-fill" viewBox="0 0 16 16">
+            <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+        </symbol>
+        <symbol id="info-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+        </symbol>
+        <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+            <path
+                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </symbol>
+    </svg>
+
+
+
+    <div class="alert alert-success alert-dismissible-bottom fade show " role="alert">
+        <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Info:" style="color: blue;">
+            <use xlink:href="#info-fill" />
+        </svg>
+        <div class="lik text-center" style="color: black;">
+            CAVEAT: This is a student's project and not any sort of attempt to clone the existing webpage
+            <button type="button" class="btn-close text-danger" data-bs-dismiss="alert" aria-label="Close"
+                style="position: relative; top: 30px; float: right;z-index: ;"></button>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <h3 class="text-center text-dark">OTHER PROJECTS</h3>
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="mockplus.html">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="Aptible.html">2</a></li>
+            <li class="page-item "><a class="page-link" href="chipotle.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="Mattermark.html">4</a></li>
+
+        </ul>
+        <ul class="pagination justify-content-center">
+            <li class="page-item "><a class="page-link" href="podia.html">5</a></li>
+            <li class="page-item "><a class="page-link" href="mockplus.html">6</a></li>
+            <li class="page-item active"><a class=" page-link" href="whereby.html">7</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">8</a></li>
+            <li class="page-item disabled">
+                <a class="page-link disabled" href="">Next</a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
