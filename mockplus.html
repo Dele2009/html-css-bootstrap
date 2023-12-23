@@ -17,7 +17,7 @@
 
             width: 100%;
             height: 100%;
-            /* overflow: hidden; */
+           
 
 
         }
@@ -354,7 +354,7 @@
         </div>
     </nav>
 
-    <div class="container by" style="">
+    <div class="container by">
         <div class=" bp container-fluid">
             <div class="mi" style="color: white;">
                 <div class="pol">
@@ -367,21 +367,22 @@
             </div>
 
             <div class="container se">
-                <form action="" style="" class="lkp">
-                    <table style="">
+                <form action="" class="lkp" id="userform">
+                    <table>
                         <tr>
                             <td style="width: 100%;">
                                 <h1>Forgot your password?</h1>
                             </td>
                         </tr>
-                        <tr style="">
-                            <td style="">
-                                <input type="email" placeholder="Enter your email">
+                        <tr>
+                            <td>
+                                <input type="email" placeholder="Enter your email" id="email" oninput="formvalidate()">
+                                <span id="errormessage"></span>
                             </td>
                         </tr>
-                        <tr style="">
-                            <td style="">
-                                <a href="#"><button class="kl" style="color: white;">Next</button></a>
+                        <tr>
+                            <td>
+                                <button type="submit" class="kl" style="color: white;">Next</button>
                             </td>
                         </tr>
 
@@ -416,21 +417,22 @@
 
     <div class="container ml">
         <div class="container-fluid">
-            <form action="" style="" class="lm">
-                <table style="">
+            <form action=""  class="lm" id="userformsmall">
+                <table >
                     <tr>
                         <td>
                             <h1>Forgot your password?</h1>
                         </td>
                     </tr>
-                    <tr style="">
-                        <td style="">
-                            <input type="email" placeholder="Enter your email">
+                    <tr >
+                        <td >
+                            <input type="email" placeholder="Enter your email" id="emailsmall" oninput="formvalidatesmall()">
+                            <span id="errormessagesmall"></span>
                         </td>
                     </tr>
-                    <tr style="">
-                        <td style="">
-                            <a href="#"><button class="kl" style="">Next</button></a>
+                    <tr >
+                        <td >
+                            <button type="submit" class="kl" >Next</button>
                         </td>
                     </tr>
 
@@ -441,8 +443,8 @@
                     </tr>
 
                     <tr>
-                        <td style="" class="huy">
-                            <a href="#" style="" class="mkn"> <i class="fa-solid fa-chevron-left"></i>
+                        <td  class="huy">
+                            <a href="#"  class="mkn"> <i class="fa-solid fa-chevron-left"></i>
                                 <p>Back to sign in</p>
                             </a>
                         </td>
@@ -455,9 +457,7 @@
 
 
 
-    <style>
 
-    </style>
 
 
     <nav aria-label="Page navigation example">
@@ -476,7 +476,7 @@
             <li class="page-item "><a class="page-link" href="podia.html">5</a></li>
             <li class="page-item active"><a class="page-link" href="mockplus.html">6</a></li>
             <li class="page-item"><a class="page-link" href="whereby.html">7</a></li>
-            <li class="page-item disabled"><a class="page-link" href="#">8</a></li>
+            <li class="page-item"><a class="page-link" href="UXPin.html">8</a></li>
             <li class="page-item ">
                 <a class="page-link" href="whereby.html">Next</a>
             </li>
@@ -495,6 +495,106 @@
 
 
     </div>
+
+
+    <script>
+        let form = document.getElementById('userform');
+        let useremail = document.getElementById('email');
+        let error = document.getElementById('errormessage');
+        let emailformat = /^\w+@[a-z]+\.[a-z]{2,3}$/;
+        let process;
+
+        let formsmall = document.getElementById('userformsmall');
+        let useremailsmall = document.getElementById('emailsmall');
+        let errorsmall = document.getElementById('errormessagesmall');
+        let emailformatsmall = /^\w+@[a-z]+\.[a-z]{2,3}$/;
+        let processsmall;
+
+        
+
+
+
+        function formvalidate() {
+            if (!useremail.value) {
+                checkers('Please type your email.', 'red', '1.5px solid red', false);
+            }
+            else if (!useremail.value.match(emailformat)) {
+                checkers('This is not a valid Email address.', 'red', '1.5px solid red', false);
+            }
+            else {
+                process = true
+
+                if (process) {
+                    checkers('Ok ✔', 'green', '1.5px solid green');
+
+                }
+
+            }
+
+        }
+
+        function checkers(message, color, border, val) {
+            error.textContent = message;
+            error.style.color = color;
+            useremail.style.outline = border;
+            process = val;
+        }
+
+        form.addEventListener('submit', function (load) {
+
+            process = true
+            formvalidate();
+
+
+            if (process == false) {
+                load.preventDefault();
+            }
+
+
+
+
+        })
+
+        function formvalidatesmall() {
+            if (!useremailsmall.value) {
+                checkerssmall('Please type your email.', 'red', '1.5px solid red', false);
+            }
+            else if (!useremailsmall.value.match(emailformatsmall)) {
+                checkerssmall('This is not a valid Email address.', 'red', '1.5px solid red', false);
+            }
+            else {
+                processsmall = true
+
+                if (processsmall) {
+                    checkerssmall('Ok ✔', 'green', '1.5px solid green');
+
+                }
+
+            }
+
+        }
+        function checkerssmall(message, color, border, val) {
+            error.textContent = message;
+            error.style.color = color;
+            useremail.style.outline = border;
+            process = val;
+        }
+
+        formsmall.addEventListener('submit', function (loadsmall) {
+
+            processsmall = true
+            formvalidatesmall();
+
+
+            if (processsmall == false) {
+                loadsmall.preventDefault();
+            }
+
+
+
+
+        })
+    </script>
 
 
 

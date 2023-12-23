@@ -33,7 +33,7 @@
             height: 100%;
 
 
-            z-index:
+           
 
         }
 
@@ -63,73 +63,7 @@
 
         }
 
-        /* .navs hr {
-                  color: black;
-                  background-color: black;
-              } */
-
-
-        /* .po1>span {
-                  top: 70px;
-                  position: absolute;
-      
-                  z-index: 5;
-                  width: 100px;
-                  visibility: hidden;
-              }
-      
-              .po2>span {
-                  top: 70px;
-                  position: absolute;
-      
-                  z-index: 5;
-                  width: 100px;
-                  visibility: hidden;
-              }
-      
-              .po3>span {
-                  top: 70px;
-                  position: absolute;
-      
-                  z-index: 5;
-                  width: 100px;
-                  visibility: hidden;
-              }
-      
-              .po4>span {
-                  top: 70px;
-                  position: absolute;
-      
-                  z-index: 5;
-                  width: 100px;
-                  visibility: hidden;
-              } */
-
-
-
-
-
-
-
-        /* .po1:hover .po1>span {
-                  visibility: visible;
-                  position: absolute;
-                  transition: all 700ms 0s ease-out;
-              } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* .po1:hover {} */
+       
 
         .po1:hover .a {
             transform: rotate(180deg);
@@ -248,11 +182,11 @@
         }
 
         .row {
-            border-top: 1px solid;
+            border-top: 1px solid rgba(176, 176, 176, 0.333);
         }
 
         .jp {
-            border-left: 1px solid;
+            border-left: 1px solid rgba(176, 176, 176, 0.333);
 
         }
 
@@ -278,7 +212,7 @@
             width: 100%;
             margin: auto;
             background: white;
-            top: 100px;
+            top: 80px;
             visibility: visible;
             opacity: 1;
             transition: all 0.7s;
@@ -303,7 +237,7 @@
             width: 100%;
             margin: auto;
             background: white;
-            top: 100px;
+            top: 80px;
             visibility: visible;
             opacity: 1;
             transition: all 0.7s;
@@ -328,7 +262,7 @@
             width: 100%;
             margin: auto;
             background: white;
-            top: 100px;
+            top: 80px;
             visibility: visible;
             opacity: 1;
             transition: all 0.7s;
@@ -353,7 +287,7 @@
             width: 100%;
             margin: auto;
             background: white;
-            top: 100px;
+            top: 80px;
             visibility: visible;
             opacity: 1;
             transition: all 0.7s;
@@ -851,7 +785,7 @@
             margin: auto;
         }
 
-        .comp-flex {}
+      
 
         .comp-con .h1 {
             font-size: 69px;
@@ -947,6 +881,7 @@
         .flas {
 
             padding: 50px;
+            margin-top: 50px;
 
 
 
@@ -955,6 +890,7 @@
         .flask {
             background: rgb(248, 219, 213);
             padding-bottom: 100px;
+            border-radius: 30px;
 
 
         }
@@ -998,7 +934,7 @@
             background: rgb(248, 219, 213);
         }
 
-        .carousel-indicators {}
+       
 
         .carousel-indicators button {
             height: 10px !important;
@@ -1027,7 +963,7 @@
 
         }
 
-        .contf span {}
+       
 
         .btn1c,
         .btn2c {
@@ -1044,6 +980,7 @@
             background: rgb(232, 232, 232);
             padding-top: 100px;
             height: 400px;
+            margin-top: 200px;
         }
 
         .klma {
@@ -1100,7 +1037,7 @@
         }
 
         .lik {
-            display: ;
+
             font-size: 35px;
 
         }
@@ -1117,7 +1054,7 @@
             padding: 9px 20px;
         }
 
-        .jam img {}
+      
 
 
 
@@ -1142,7 +1079,7 @@
                 visibility: visible;
                 position: absolute;
             }
-            
+
 
 
             .lolg {
@@ -1586,7 +1523,7 @@
                 margin: auto;
             }
 
-            .comp-flex {}
+            
 
             .comp-con .h1 {
                 font-size: 38px;
@@ -1738,6 +1675,10 @@
         }
 
         @media screen and (max-width:500px) {
+            .body {
+                text-align: left;
+            }
+
             .lak h1 {
                 font-size: 40px;
                 font-family: 'Times New Roman', Times, serif;
@@ -1770,6 +1711,15 @@
             }
 
 
+            .flas {
+
+                padding: 15px;
+
+
+
+            }
+
+
 
 
 
@@ -1779,9 +1729,9 @@
     </style>
 </head>
 
-<body>
+<body class="body">
     <div class="vat">
-        <nav class="navbar " style="">
+        <nav class="navbar">
             <div class="container-fluid">
                 <div class=" lolg">
                     <a class="navbar-brand" href="#">
@@ -1800,7 +1750,8 @@
                 </div>
 
                 <div class=" navs">
-                    <a href="" class="po1 " id="lk"> Products <i class="fa-solid fa-chevron-down a"></i>
+                    <div class="po1 ">
+                        <a href=""  id="lk"> Products <i class="fa-solid fa-chevron-down a"></i></a>
                         <div class="container-fluid mab" id="">
                             <div class="row container-fluid jak">
                                 <div class="col-9 ">
@@ -1844,8 +1795,9 @@
 
 
 
-                    </a>
-                    <a href="" class="po2"> Pricing <i class="fa-solid fa-chevron-down b"></i>
+                    </div>
+                    <div  class="po2">
+                        <a href=""> Pricing <i class="fa-solid fa-chevron-down b"></i></a>
                         <div class="container-fluid mak" id="">
                             <div class="row container-fluid jak">
                                 <div class="col-9 ">
@@ -1885,8 +1837,9 @@
                             </div>
                         </div>
 
-                    </a>
-                    <a href="" class="po3"> Developers <i class="fa-solid fa-chevron-down c"></i>
+                    </div>
+                    <div  class="po3">
+                        <a href=""> Developers <i class="fa-solid fa-chevron-down c"></i></a>
                         <div class="container-fluid may">
                             <div class="row container-fluid">
                                 <div class="col-6 rage" style="padding: 25px;">
@@ -1912,7 +1865,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-6" style="border-left: 1px solid grey;padding: 25px;">
+                                <div class="col-6 jp" style="padding: 25px;">
                                     <div class="jk" style="border: none;">
                                         <div class="ml"><img src="tuto.webp" alt=""></div>
                                         <div>
@@ -1936,8 +1889,9 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
-                    <a href="" class="po4"> Resourses <i class="fa-solid fa-chevron-down d"></i>
+                    </div>
+                    <div  class="po4">
+                        <a href=""> Resourses <i class="fa-solid fa-chevron-down d"></i></a>
                         <div class="container-fluid mat">
                             <div class="row container-fluid">
                                 <div class="col-6 rage" style="padding: 25px;">
@@ -1965,7 +1919,7 @@
                                     </div>
 
                                 </div>
-                                <div class="col-6" style="border-left: 1px solid grey;padding: 25px;">
+                                <div class="col-6 jp" style="padding: 25px;">
                                     <div class="jk" style="border: none;">
                                         <div class="ml"><img src="bon.webp" alt=""></div>
                                         <div>
@@ -1989,7 +1943,7 @@
                             </div>
                         </div>
 
-                    </a>
+                    </div>
                 </div>
                 <div class=" man" role="search">
                     <a href="#" class="log">Log in</a>
@@ -1997,6 +1951,8 @@
                 </div>
             </div>
         </nav>
+
+        <!-- offcanvas -->
         <div class="offcanvas offcanvas-top m-0 w-100 h-100" tabindex="-1" id="offcan"
             aria-labelledby="offcanvasRightLabel">
 
@@ -2166,7 +2122,7 @@
 
 
 
-                    <div class="container-fluid my-5" style="background:;">
+                    <div class="container-fluid my-5" >
 
 
                         <button style="text-decoration: none;color: rgb(97,93,91);width: 200px;"
@@ -2311,7 +2267,7 @@
         <div class="">
             <div class="container vid">
                 <div class=" flow">
-                    <video src="vid.mp4" loop autoplay ></video>
+                    <video src="vid.mp4" loop autoplay></video>
                 </div>
                 <div class="glow">
                     <div class="hoi">
@@ -2408,7 +2364,7 @@
 
                     </p>
                     <div class="conp">
-                        <a href="#" class="lty"  style="color: rgb(112, 6, 242);">Discover More</a>
+                        <a href="#" class="lty" style="color: rgb(112, 6, 242);">Discover More</a>
                         <a href="#" class=" Try" style="width: fit-content;">Try for free</a>
                     </div>
                 </div>
@@ -2491,7 +2447,7 @@
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
 
             <div class="carousel-inner">
-                <div class="carousel-indicators" style="">
+                <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
@@ -2514,11 +2470,11 @@
                                 <img src="well.webp" alt="" width="100" height="80"
                                     style="position: absolute;top: 150px;margin: auto;">
                             </div>
-                            <p class="h1">“Whereby’s tools have been a game changer for us. <br> We can create
+                            <p class="h1">“Whereby’s tools have been a game changer for us. We can create
                                 HIPAA-compliant video
                                 rooms
-                                for <br>
-                                every single session. It’s perfectly compliant with <br> every rule and regulation.”</p>
+                                for
+                                every single session. It’s perfectly compliant with every rule and regulation.”</p>
                             <div class="founder-info">
                                 <div>
                                     <img src="paul.webp" alt="" width="70" height="70">
@@ -2551,13 +2507,13 @@
                                     style="position: absolute;right: 0px;">
                             </div>
                             <div
-                                style="width: 100%;margin: auto;position: relative; display: flex;justify-content: center;align-items: center;">
+                                style="width: 100%;margin: auto;position:tive; display: flex;justify-content: center;align-items: center;">
                                 <img src="espa.webp" alt="" width="200" height="80"
                                     style="position: absolute;top: 150px;margin:auto;">
                             </div>
-                            <p class="h1">"Within two hours, our developer was able to <br> implement more than he had
+                            <p class="h1">"Within two hours, our developer was able to implement more than he had
                                 in
-                                the eight months <br> prior with Agora."</p>
+                                the eight months prior with Agora."</p>
                             <div class="founder-info">
                                 <div>
                                     <img src="spai.webp" alt="" width="70" height="70">
@@ -2594,11 +2550,11 @@
                                 <img src="rx.svg" alt="" width="200" height="80"
                                     style="position: absolute;top: 150px;margin:auto;">
                             </div>
-                            <p class="h1">"With Whereby, neither physicians nor their <br> patients need to download an
+                            <p class="h1">"With Whereby, neither physicians nor their patients need to download an
                                 app
-                                or remember a <br> specific login, they can jump right into a video call — <br> saving
+                                or remember a specific login, they can jump right into a video call — saving
                                 admin
-                                time from eating into clinic <br> appointments."</p>
+                                time from eating into clinic appointments."</p>
                             <div class="founder-info">
                                 <div>
                                     <img src="donTKDJpr81usrrEt3dDqWX71k4Ljs.webp" alt="" width="70" height="70">
@@ -2751,7 +2707,7 @@
             <div class="lik text-center" style="color: black;">
                 CAVEAT: This is a student's project and not any sort of attempt to clone the existing webpage
                 <button type="button" class="btn-close text-danger" data-bs-dismiss="alert" aria-label="Close"
-                    style="position: relative; top: 30px; float: right;z-index: ;"></button>
+                    style="position: relative; top: 30px; float: right;"></button>
             </div>
         </div>
         <nav aria-label="Page navigation example">
@@ -2770,9 +2726,9 @@
                 <li class="page-item "><a class="page-link" href="podia.html">5</a></li>
                 <li class="page-item "><a class="page-link" href="mockplus.html">6</a></li>
                 <li class="page-item active"><a class=" page-link" href="whereby.html">7</a></li>
-                <li class="page-item disabled"><a class="page-link" href="#">8</a></li>
-                <li class="page-item disabled">
-                    <a class="page-link disabled" href="">Next</a>
+                <li class="page-item"><a class="page-link" href="UXPin.html">8</a></li>
+                <li class="page-item ">
+                    <a class="page-link" href="UXPin.html">Next</a>
                 </li>
 
             </ul>

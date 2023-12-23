@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-uxpin.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>UXPin</title>
+    <style>
+        body {
+            padding: 100px 0px 0px 0px;
+
+        }
+
+        body a {
+            text-decoration: none;
+        }
+
+        .cahaty {
+            overflow: hidden;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 0px 150px 0px 150px;
+
+
+            border-bottom: 0.1px solid rgb(199, 199, 199);
+            width: 100%;
+            z-index: 12;
+        }
+
+        .page-cont {
+            z-index: 3;
+            overflow-x: hidden;
+
+        }
+
+
+
+        .flow {
+            overflow-x: hidden;
+        }
+
+        .nav-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 80px;
+
+            & img {
+                width: 120px;
+                height: 60px;
+            }
+
+            & span {
+                margin-left: -12px;
+            }
+
+            & span a {
+                text-decoration: none;
+
+            }
+
+            & span a small {
+                padding-top: 13px;
+                color: grey;
+            }
+
+            & span a p {
+                padding-top: 9px;
+                font-size: 20px;
+                color: grey;
+            }
+
+            & .logo-bar {
+                display: flex;
+
+            }
+
+            & .logo-bar .colpa {
+                visibility: hidden;
+                position: absolute;
+
+            }
+
+        }
+
+        .nav-content {
+            visibility: visible;
+            position: relative;
+
+
+            & ul {
+                display: flex;
+                align-items: center;
+            }
+
+            & li {
+                list-style-type: none;
+                width: 100px;
+
+            }
+
+            & a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+
+        .nav-button {
+            margin-left: 80px;
+
+            & button {
+                background: rgb(0, 108, 255);
+                color: white;
+                width: 100px;
+                border: none;
+                padding: 10px 0px;
+                font-weight: 500;
+            }
+        }
+
+        .drop {
+            visibility: hidden;
+            position: absolute;
+        }
+
+        .card {
+            border: none;
+        }
+
+        figure {
+            position: relative;
+        }
+
+        figure img {
+            z-index: -3;
+
+
+        }
+
+        figure .color {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            z-index: 4;
+
+
+        }
+
+        figure .color:hover {
+            background: rgba(29, 239, 225, 0.57);
+        }
+
+        .acticles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 40px;
+        }
+
+        .artic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .whole {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 60px 0px 0px 0px;
+        }
+
+        .midd-section {
+            overflow-x: hidden;
+
+        }
+
+        .row-sect {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 30px;
+            position: relative;
+            left: 0;
+
+        }
+
+        .blck-sect {
+            background: black;
+            height: 270px;
+            position: relative;
+
+            padding: 0px 0px 0px 400px;
+        }
+
+        .blck-sect-inn {
+            display: flex;
+            justify-content: flex-end;
+            /* position: relative; */
+            /* grid-template-columns: repeat(2, auto); */
+        }
+
+        .ebook1 {
+            width: 200px;
+
+            position: relative;
+            right: 150px;
+
+            & .pok {
+                position: absolute;
+                width: 100%;
+
+                height: 285px;
+                z-index: 9;
+
+            }
+
+            & .pok:hover {
+                background-color: rgba(29, 239, 225, 0.57);
+            }
+
+            & img {
+                width: 100%;
+                position: absolute;
+            }
+        }
+
+        .img-side-cont {
+            width: 200px;
+            z-index: 9;
+
+            & a {
+                color: white;
+                text-decoration: none;
+
+            }
+        }
+
+        .img-artc {
+            width: 200px;
+
+
+            & .img-artc-inn {
+                width: 200px;
+                height: 270px;
+                position: relative;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                }
+
+                & .pok {
+                    position: absolute;
+                    width: 100%;
+
+                    height: 100%;
+                    z-index: 9;
+
+
+
+                }
+
+                & .pok:hover {
+                    background-color: rgba(29, 239, 225, 0.57);
+                }
+            }
+
+            & .img-artc-inn-text {
+                & h6 {
+                    color: rgb(13, 110, 253);
+                    font-size: 15px;
+                }
+
+                & .img-artc-link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    & a {
+                        border: 1px solid rgb(170, 207, 242);
+
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+                        padding: 7px 0px;
+                        font-weight: 600;
+                    }
+
+                    & a:hover {
+                        background: rgb(13, 110, 253);
+                        color: white;
+                        transition: all 1s 0s ease;
+                    }
+
+
+                }
+            }
+
+        }
+
+        /* .sect-ar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        } */
+
+        .sec-arct {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            place-items: center;
+
+
+            margin-top: 60px;
+        }
+
+        .fm-1 {
+            margin-top: 20px;
+        }
+
+        .fm-2 {
+            margin-top: 20px;
+        }
+
+        .backj {
+            background-image: url(book-landing-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            padding: 60px;
+            margin-top: 100px;
+
+        }
+
+        .logo-back {
+            color: white;
+            border: 2px solid white;
+            width: fit-content;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 25px 5px;
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+
+
+        }
+
+
+        .logo-back h1 {
+            letter-spacing: -4px;
+
+
+        }
+
+        .backg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 0px 250px;
+        }
+
+        .backdown {
+            color: white;
+            width: 900px;
+
+
+            & p {
+                margin: 0px 0px 50px 0px;
+                font-size: 17px;
+            }
+
+            & a {
+                color: white;
+                background: rgb(13, 110, 253);
+                padding: 10px 20px;
+            }
+        }
+
+        .follows {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            gap: 10px;
+
+            & .follows-sec {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid rgba(146, 145, 145, 0.61);
+                padding: 0;
+                width: 300px;
+
+                & p {
+                    color: rgba(146, 145, 145, 0.61);
+                }
+
+            }
+
+            & .fa-square-facebook {
+                font-size: 35px;
+                color: blue;
+            }
+
+            & .fa-square-facebook:hover {
+                color: rgba(0, 0, 255, 0.778);
+            }
+
+
+            & .fa-twitter {
+                font-size: 35px;
+                color: rgb(100, 212, 249);
+            }
+
+            & .dribb {
+                background: rgb(238, 58, 88);
+                color: white;
+                text-decoration: none;
+                padding: 2.5px 5px;
+            }
+
+            & .down {
+                margin: 10px 0px 30px 0px;
+            }
+        }
+
+        .footer-end {
+            margin-top: 90px;
+
+            background: rgb(40, 52, 66);
+
+            & .gradient {
+               
+                background-image: url(strip.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 2.5px;
+            }
+
+        }
+
+
+
+        .footer-sec {
+            padding-top: 50px;
+            display: grid;
+            place-items: center;
+
+            & div {
+                display: grid;
+                place-items: center;
+
+            }
+
+            & h2 {
+                color: white;
+                text-transform: uppercase;
+            }
+
+            & p {
+                color: rgba(128, 128, 128, 0.549);
+
+                & a {
+                    color: rgba(128, 128, 128, 0.549);
+                    text-decoration: underline;
+                }
+
+                & a:hover {
+                    text-decoration: none;
+
+                }
+            }
+
+            & form {
+                margin-bottom: 20px;
+            }
+
+            & form .frmdiv {
+                display: flex;
+                gap: 20px;
+
+            }
+
+            & form .frmdiv input {
+                padding: 10px 90px 10px 20px;
+                border: none;
+                outline: none;
+            }
+
+            & form .frmdiv button {
+                padding: 11px 40px;
+                background: rgb(255, 94, 49);
+                color: white;
+                border: none;
+                font-weight: bold;
+            }
+
+
+
+
+
+
+
+        }
+        #errormessage{
+            position: absolute;
+            transform:translate(-65px,30px) ;
+        }
+
+        .bottom {
+            & h3 {
+                color: rgba(255, 255, 255, 0.647);
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+        }
+
+        .links-footer {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+
+            & div {
+                display: grid;
+                width: fit-content;
+
+                & a {
+                    color: rgba(255, 255, 255, 0.373);
+                    font-size: 13px;
+                }
+
+                & a:hover {
+                    text-decoration: underline;
+                }
+
+                & h4 {
+                    color: white;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .bottom-flow {
+            color: white;
+            display: grid;
+            place-items: center;
+            margin-top: 100px;
+            margin-bottom: 90px;
+
+            & .polk {
+                border: 1px solid white;
+                padding: 12px 5px 0px 5px;
+                color: white;
+                display: flex;
+                align-items: center;
+                width: fit-content;
+            }
+
+        }
+
+        .fade {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0;
+
+
+
+            position: fixed;
+            bottom: 30px;
+            z-index: 9;
+        }
+
+        .lik {
+
+            font-size: 35px;
+
+        }
+
+        .bi {
+            width: 5%;
+        }
+
+
+
+
+        .page-link {
+            font-size: 20px;
+            padding: 9px 20px;
+        }
+
+        @media screen and (max-width:1200px) {
+            body {
+                padding: 100px 0px 0px 0px;
+
+            }
+
+            .navbar {
+                padding: 0px 0px 0px 0px;
+            }
+
+            .nav-img {
+                width: 100%;
+
+                & img {
+                    width: 100px;
+                    height: 60px;
+                }
+
+                & .logo-bar {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                & .logo-bar .colpa {
+                    visibility: visible;
+                    position: relative;
+
+
+
+
+                }
+
+                & .colpa .fa-bars {
+                    font-size: 25px;
+
+                }
+
+                & .colpa button {
+                    margin: 10px 0px 0px 0px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                    position: relative;
+                    right: 0;
+                }
+            }
+
+            .nav-content {
+                visibility: hidden;
+                position: absolute;
+
+            }
+
+            .nav-button {
+                visibility: hidden;
+                position: absolute;
+            }
+
+            .drop {
+                visibility: visible;
+                position: fixed;
+                top: 68px;
+                z-index: 7;
+                background: rgb(207, 222, 239);
+            }
+
+            .nav-content2 {
+                padding: 0;
+
+
+
+                & ul {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 0;
+
+
+
+                }
+
+                & li {
+                    list-style-type: none;
+
+                    /* border-top: 1px solid grey; */
+                    border-bottom: 1px solid grey;
+                    padding: 6px 0px 6px 30px;
+
+                }
+
+                & a {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+
+            .acticles {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 70px;
+            }
+
+            .whole {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .sec-arct {
+                display: grid;
+                grid-template-columns: repeat(2, auto);
+                place-items: center;
+                margin-top: 60px;
+            }
+
+            .midd-section {
+                overflow-x: hidden;
+
+
+            }
+
+            .clov {
+                overflow-x: auto;
+            }
+
+            .follows {
+                display: grid;
+                grid-template-columns: repeat(3, auto);
+
+                gap: 10px;
+                width: 100%;
+                overflow-x: auto;
+
+                & .follows-sec {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid rgba(146, 145, 145, 0.61);
+                    padding: 0;
+                    width: 300px;
+
+                    & p {
+                        color: rgba(146, 145, 145, 0.61);
+                    }
+
+                }
+
+                & .fa-square-facebook {
+                    font-size: 35px;
+                    color: blue;
+                }
+
+                & .fa-square-facebook:hover {
+                    color: rgba(0, 0, 255, 0.778);
+                }
+
+
+                & .fa-twitter {
+                    font-size: 35px;
+                    color: rgb(100, 212, 249);
+                }
+
+                & .dribb {
+                    background: rgb(238, 58, 88);
+                    color: white;
+                    text-decoration: none;
+                    padding: 2.5px 5px;
+                }
+
+                & .down {
+                    margin: 10px 0px 30px 0px;
+                }
+            }
+
+            .fade {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 0;
+                position: fixed;
+                bottom: 0px;
+                z-index: 9;
+            }
+
+            .lik {
+
+                display: inline-block;
+                font-size: 17px;
+            }
+
+            .bi {
+                width: 12%;
+            }
+
+            .page-link {
+                font-size: 20px;
+                padding: 9px 20px;
+            }
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width:560px) {
+            .nav-img {
+
+
+                & img {
+                    width: 80px;
+                    height: 40px;
+                }
+
+                & span {
+                    margin-left: -12px;
+                }
+
+                & span a {
+                    text-decoration: none;
+
+                }
+
+                & span a small {
+                    padding-top: 15px;
+                    color: grey;
+                    font-size: 8px;
+                }
+
+                & span a p {
+                    padding-top: 9px;
+                    font-size: 17px;
+                    color: grey;
+                }
+
+                & .logo-bar {
+                    display: flex;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+
+                }
+
+                & .logo-bar .colpa {
+                    position: relative;
+                    padding-left: 50px;
+                }
+
+                & .colpa button {
+                    margin: 4px 0px 0px 56px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                }
+
+                & .colpa .fa-bars {
+                    font-size: 17px;
+
+                }
+
+
+            }
+            .drop {
+                visibility: visible;
+                position: fixed;
+                top: 50px;
+                z-index: 7;
+                background:rgb(207, 222, 239);
+            }
+
+            .acticles {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 70px;
+            }
+
+            .blck-sect {
+                background: black;
+                height: 270px;
+                position: relative;
+
+                padding: 0px 0px 0px 200px;
+            }
+
+            .sec-ar {
+                overflow-x: hidden;
+            }
+
+            .sec-arct {
+                display: grid;
+                grid-template-columns: repeat(4, auto);
+                grid-gap: 30px;
+                overflow-x: auto;
+
+                margin-top: 60px;
+            }
+
+            .backg {
+                /* display: grid;
+                place-items: center; */
+                display: grid;
+                grid-template-columns: repeat(1, auto);
+                place-items: center;
+
+                padding: 0px;
+
+                gap: 40px;
+            }
+
+            .backdown {
+                color: white;
+                width: 700px;
+
+
+                & p {
+                    margin: 0px 0px 50px 0px;
+                    font-size: 17px;
+                    text-align: center;
+                    padding: 0px 150px;
+                }
+
+                & .hui {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                & .hyu {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                & a {
+                    color: white;
+                    background: rgb(13, 110, 253);
+                    padding: 10px 20px;
+                }
+            }
+
+            .jamp {
+                text-align: center;
+            }
+
+            .follows {
+                display: grid;
+                grid-template-columns: repeat(1, auto);
+                gap: 40px;
+                place-items: center;
+                overflow-x: hidden;
+
+                & .follows-sec {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid rgba(146, 145, 145, 0.61);
+                    padding: 20px;
+                    width: 300px;
+
+                    & p {
+                        color: rgba(146, 145, 145, 0.61);
+                    }
+
+                }
+
+                & .fa-square-facebook {
+                    font-size: 35px;
+                    color: blue;
+                }
+
+                & .fa-square-facebook:hover {
+                    color: rgba(0, 0, 255, 0.778);
+                }
+
+
+                & .fa-twitter {
+                    font-size: 35px;
+                    color: rgb(100, 212, 249);
+                }
+
+                & .dribb {
+                    background: rgb(238, 58, 88);
+                    color: white;
+                    text-decoration: none;
+                    padding: 2.5px 5px;
+                }
+
+                & .down {
+                    margin: 10px 0px 30px 0px;
+                }
+            }
+
+            .footer-sec {
+
+                display: grid;
+                place-items: center;
+
+                & div {
+                    display: grid;
+                    place-items: center;
+
+                }
+
+                & h2 {
+                    color: white;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                & p {
+                    color: rgba(128, 128, 128, 0.549);
+                    text-align: center;
+
+                    & a {
+                        color: rgba(128, 128, 128, 0.549);
+                        text-decoration: underline;
+                    }
+
+                    & a:hover {
+                        text-decoration: none;
+
+                    }
+                }
+
+                & form {
+                    margin-bottom: 20px;
+                }
+
+                & form .frmdiv {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+
+                }
+
+                & form .frmdiv input {
+                    padding: 10px 90px 10px 20px;
+                    border: none;
+                    outline: none;
+                }
+
+                & form .frmdiv button {
+                    padding: 11px 40px;
+                    background: rgb(255, 94, 49);
+                    color: white;
+                    border: none;
+                    font-weight: bold;
+                }
+
+
+
+
+
+
+
+            }
+
+            .links-footer {
+                display: grid;
+                grid-template-columns: repeat(1, auto);
+                gap: 40px;
+
+                & div {
+                    display: grid;
+                    width: fit-content;
+
+                    & a {
+                        color: rgba(255, 255, 255, 0.373);
+                        font-size: 13px;
+                    }
+
+                    & a:hover {
+                        text-decoration: underline;
+                    }
+
+                    & h4 {
+                        color: white;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .bottom-flow {
+                color: white;
+                display: grid;
+                place-items: center;
+                margin-top: 100px;
+
+                & .polk {
+                    border: 1px solid white;
+                    padding: 12px 5px 0px 5px;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    width: fit-content;
+                }
+
+            }
+
+        }
+
+        @media screen and (max-width:370px) {
+            .backdown {
+
+
+
+
+                & .stren {
+                    padding: 0px 200px;
+                }
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <main class="cahaty"> -->
+    <nav class="flow">
+        <div class="navbar navbar-expand-lg  d-flex  justify-content-between align-items-center">
+            <div class=" nav-img  ">
+                <div class="logo-bar">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a class="navbar-brand" href="#">
+                            <img src="uxpin-logo.jpg" alt="logo" title="STUDIO by UXPin">
+                        </a>
+                        <span title="Try UXPin">
+                            <a href="" title="Try UXPin" class="d-flex justify-content-center text-dark ">
+                                <small>by</small>
+                                <P>UXPin</P>
+                            </a>
+
+                        </span>
+                    </div>
+                    <div class="colpa">
+                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#mycollapse">
+                            <i class="fa-solid fa-bars"></i>MENU
+                        </button>
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <div class="nav-content">
+                <ul class="">
+                    <li>
+                        <a href="#">Webinars</a>
+                    </li>
+                    <li>
+                        <a href="#">e-Books</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Merge</a>
+                    </li>
+                    <li>
+                        <a href="#">Search</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="nav-button">
+                <button>
+                    Try UXPin
+                </button>
+            </div>
+            <div></div>
+
+
+        </div>
+        <div class="collapse drop w-100" id="mycollapse">
+            <div class="nav-content2">
+
+                <ul class="">
+                    <li>
+                        <a href="#">Webinars</a>
+                    </li>
+                    <li>
+                        <a href="#">e-Books</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Merge</a>
+                    </li>
+                    <li>
+                        <a href="#">Search</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main class="page-cont">
+        <div class="whole">
+            <div>
+                <div class="container">
+                    <section class="blog">
+                        <h1>BLOG POSTS</h1>
+                    </section>
+                </div>
+                <div class="artic">
+                    <div class="container acticles">
+                        <div class="card" style="width: 18rem;">
+                            <figure>
+                                <a href="#" class="color">
+
+                                </a>
+
+                                <img src="plo.webp" class="card-img-top" alt="...">
+                            </figure>
+                            <div class="card-body">
+                                <h5 class="card-title">Top UX Design Tools to Try Before 2023 Ends</h5>
+                                <span><small>by UXPin</small></span>
+                                <p class="card-text">User Experience (UX) design is all about ensuring that the
+                                    relationship
+                                    between
+                                    the user and the digital product is positive. Thankfully, with the many modern
+                                    tools
+                                    out
+                                    there,
+                                    teams of designers can easily collaborate on a design in real-time as well as
+                                    test
+                                    its
+                                    usability
+                                    and make iterations to designs. However, not all UX design (…)</p>
+                                <a href="#" class="">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <figure>
+                                <a href="#" class="color">
+
+                                </a>
+
+                                <img src="Design-conferences-290x180.png.webp" class="card-img-top" alt="...">
+                            </figure>
+                            <div class="card-body">
+                                <h5 class="card-title">Best Design Conferences in 2024 </h5>
+                                <span><small>by UXPin</small></span>
+                                <p class="card-text">One of the best things about being a part of the design
+                                    community
+                                    is
+                                    that
+                                    most
+                                    designers love to exchange ideas, spread knowledge, and share their experiences
+                                    regardless
+                                    of
+                                    their seniority level. You can be a starting designer or an established thought
+                                    leader,
+                                    and
+                                    it’s
+                                    almost a given that you find a design conference that (…) </p>
+                                <a href="#" class="">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <figure>
+                                <a href="#" class="color">
+
+                                </a>
+
+                                <img src="UI-design-trends-290x180.png.webp" class="card-img-top" alt="...">
+                            </figure>
+                            <div class="card-body">
+                                <h5 class="card-title">10 UX UI Design Trends that Will Dominate 2024 </h5>
+                                <span><small>by UXPin</small></span>
+                                <p class="card-text">Personalization, scrollytelling, data storytelling, and
+                                    buttonless
+                                    UIs
+                                    are
+                                    some
+                                    of the most exciting 2023 UI design trends. Our research has also noticed an
+                                    interesting
+                                    UX
+                                    UI
+                                    trend toward larger screens, with Instagram improving its desktop experience to
+                                    accommodate
+                                    the
+                                    growing demand. Create high-quality, fully functioning prototypes to test your
+                                    UI
+                                    design
+                                    ideas
+                                    with UXPin. Sign (…) </p>
+                                <a href="#" class="">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <figure>
+                                <a href="#" class="color">
+
+                                </a>
+
+                                <img src="App-icon-design-290x180.png.webp" class="card-img-top" alt="...">
+                            </figure>
+                            <div class="card-body">
+                                <h5 class="card-title">App Icon Design – 5 Amazing Ideas from Tech Companies </h5>
+                                <span><small>by UXPin</small></span>
+                                <p class="card-text">One of the most critical choices any app development company
+                                    will
+                                    make
+                                    is
+                                    the
+                                    design of the app icon. Good icons are inviting and will increase interaction,
+                                    while
+                                    a
+                                    bad
+                                    design can slow down adoption and make users less likely to use it. Their first
+                                    impression
+                                    will
+                                    be your app’s icon – it’s what they’ll (…) </p>
+                                <a href="#" class="">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <figure>
+                                <a href="#" class="color">
+
+                                </a>
+
+                                <img src="AdobeXD-Alternative-290x180.png.webp" class="card-img-top" alt="...">
+                            </figure>
+                            <div class="card-body">
+                                <h5 class="card-title">The Code-Based Adobe XD Alternative – UXPin Merge </h5>
+                                <span><small>by UXPin</small></span>
+                                <p class="card-text">Overwhelmed by the plethora of Adobe XD alternatives? Are you
+                                    looking
+                                    for
+                                    an
+                                    upgrade to Adobe XD rather than a copy of your existing workspace? Discover why
+                                    UXPin is
+                                    the
+                                    best Adobe XD alternative and the benefits of using a code-based design
+                                    platform. We
+                                    also
+                                    introduce Merge and how this revolutionary technology bridges the gap (…) </p>
+                                <a href="#" class="">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <figure>
+                                <a href="#" class="color">
+
+                                </a>
+
+                                <img src="ux-architect-vs-ux-designer-290x180.png.webp" class="card-img-top" alt="...">
+
+
+                            </figure>
+                            <div class="card-body">
+                                <h5 class="card-title"> ux architect vs ux designer
+                                    UX Architect vs. UX Designer – What’s the Difference? </h5>
+                                <span><small>by UXPin</small></span>
+                                <p class="card-text">A UX Architect is a person responsible for the structure of the
+                                    product
+                                    and
+                                    user flow. She or he works on the verge of UX design and engineering. This role
+                                    has
+                                    emerged
+                                    as
+                                    the UX space is continually growing and evolving, with new UX roles and
+                                    departments
+                                    popping
+                                    up
+                                    from time to time. We’ll explore (…) </p>
+                                <a href="#" class="">Read more</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+    <section class="midd-section">
+        <div class="mid-section container-fluid">
+            <div class="container">
+                <div class="link">
+                    <div class="link-pop">
+                        <a href="#">See all post</a>
+                    </div>
+                </div>
+
+                <div class="container-fluid midd-section">
+                    <div class="container">
+                        <h1>E-BOOKS & WHITEPAPERS</h1>
+                    </div>
+                    <div class="clov">
+                        <div class="row-sect">
+                            <div class="container blck-sect">
+                                <div class="container-fluid blck-sect-inn">
+                                    <div class="ebook1">
+                                        <img src="ebook_cover-1.png.webp" alt="">
+                                        <a href="" class="pok"></a>
+
+                                    </div>
+                                    <section class="img-side-cont">
+                                        <h4><a href="#">Design Systems & DesignOps in the Enterprise</a></h4>
+                                        <h6><a href="#">Spot opportunities and challenges for increasing the impact
+                                                of
+                                                design
+                                                systems and DesignOps in enterprises.</a></h6>
+                                        <button>Get it now</button>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="img-artc">
+                                <div class="img-artc-inn">
+                                    <img src="cover_studio_271x384.png.webp" alt="">
+                                    <a href="" class="pok"></a>
+
+                                </div>
+                                <div class="img-artc-inn-text">
+                                    <h6>DesignOps Pillar: How We Work Together</h6>
+                                    <div class="img-artc-link">
+                                        <a href="">Get it now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-artc">
+                                <div class="img-artc-inn">
+                                    <img src="designops101.png.webp" alt="">
+                                    <a href="" class="pok"></a>
+
+                                </div>
+                                <div class="img-artc-inn-text">
+                                    <h6>DesignOps 101: Guide to Design Operations</h6>
+                                    <div class="img-artc-link">
+                                        <a href="#">Get it now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container sect-ar">
+                    <div class="container sec-arct">
+                        <div class="img-artc">
+                            <div class="img-artc-inn">
+                                <img src="2020DT_Ebook_Studio_small.png.webp" alt="">
+                                <a href="" class="pok"></a>
+
+                            </div>
+                            <div class="img-artc-inn-text">
+                                <h6>Design Trends 2020</h6>
+                                <div class="img-artc-link fm-1">
+                                    <a href="#">Get it now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-artc">
+                            <div class="img-artc-inn">
+                                <img src="not-facebook-the-book-1-min.png.webp" alt="">
+                                <a href="" class="pok"></a>
+
+                            </div>
+                            <div class="img-artc-inn-text">
+                                <h6>Web Design Trends 2019</h6>
+                                <div class="img-artc-link fm-2">
+                                    <a href="#">Get it now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="img-artc">
+                            <div class="img-artc-inn">
+                                <img src="not-facebook-the-book.png.webp" alt="">
+                                <a href="" class="pok"></a>
+
+                            </div>
+                            <div class="img-artc-inn-text">
+                                <h6>Web Design Trends 2018</h6>
+                                <div class="img-artc-link fm-2">
+                                    <a href="#">Get it now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="img-artc">
+                            <div class="img-artc-inn">
+                                <img src="booku.webp" alt="">
+                                <a href="" class="pok"></a>
+
+                            </div>
+                            <div class="img-artc-inn-text">
+                                <h6>not facebook the book
+                                    Creating a Design System Quickly With UXPin</h6>
+                                <div class="img-artc-link">
+                                    <a href="#">Get it now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="backj">
+            <div class="container backg">
+                <div class="logo-back">
+                    <h1>UXPin</h1>
+
+                </div>
+
+
+
+                <div class="container backdown">
+                    <div class="hui">
+                        <p style="color: rgba(128, 128, 128, 0.541);">STILL HUNGRY FOR THE DESIGN?
+                            _____________________________________</p>
+                        <p class="stren">UXPin is a product design platform used by the best designers on the planet.
+                            Let your
+                            team
+                            easily
+                            design, collaborate, and present from low-fidelity wireframes to fully-interactive
+                            prototypes.
+                        </p>
+                    </div>
+                    <div class="hyu">
+                        <a href="">Start your free trial</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="container">
+            <div class="container-fluid jamp">
+                <h1>FOLLOW US</h1>
+            </div>
+            <div class="container-fluid follows">
+                <div class="follows-sec">
+                    <p>WE ARE ON.....</p>
+                    <i class="fa-brands fa-square-facebook down"></i>
+                    <a href="" class="face">like</a>
+                </div>
+                <div class="follows-sec">
+                    <p>DON'T MISS OUT LATEST TWEETS</p>
+                    <i class="fa-brands fa-twitter down"></i>
+                    <a href="">follow @uxpin</a>
+                </div>
+                <div class="follows-sec">
+                    <p>....AND HOT SHOTS ON DRIBBBLE!</p>
+                    <img src="dribbble.png" alt="" width="80" class=" down">
+                    <a href="" class="dribb"><i class="fa-brands fa-dribbble"></i>dribbble.com/uxpin</a>
+                </div>
+            </div>
+        </div>
+
+        <div class=" footer-end">
+            <div class=" gradient"></div>
+            <div class="footer-sec">
+                <div>
+                    <h2>Subscribe to our newsletter </h2>
+                    <p>
+                        Free e-Books Free UI Kits Design Articles
+                    </p>
+
+                    <form action="" id="userform">
+                        <div class="frmdiv">
+                            <div>
+                                <input type="text" placeholder="Email address" id="email" oninput="formvalidate()">
+                                <span id="errormessage"></span>
+                            </div>
+                            <button type="submit">Sign me up!</button>
+                        </div>
+
+                    </form>
+                    <p>We protect your data with care – just as described in <a href=""> Privacy Policy.</a></p>
+
+                </div>
+
+            </div>
+            <div class="bottom container">
+                <h3>Definitive Content</h3>
+
+                <div class="links-footer">
+                    <div>
+                        <h4>e-Books</h4>
+                        <a href="">Design Trends 2020 </a>
+                        <a href="">Web Design Trends 2019 </a>
+                        <a href="">Web Design Trends 2018 </a>
+                        <a href="">Creating a Design System Quickly With UXPin </a>
+                        <a href="">Scaling Design Thinking in the Enterprise </a>
+                        <a href="">Product Development for Distributed Teams </a>
+                    </div>
+                    <div>
+                        <h4>Blogs</h4>
+                        <a href="">UX Design Process – An Actionable, 7-Step Guide </a>
+                        <a href="">Calculator Design – How to Prototype a Functioning Calcul</a>
+                        <a href="">Top UX Design Tools to Try Before 2023 Ends </a>
+                        <a href="">Best Design Conferences in 2024 </a>
+                        <a href="">10 UX UI Design Trends that Will Dominate 2024</a>
+                        <a href="">App Icon Design – 5 Amazing Ideas from Tech Companies </a>
+                    </div>
+                    <div>
+                        <h4>Webinars</h4>
+                        <a href="">Strategies for Building A Resilient DesignOps Practice</a>
+                        <a href="">Overcome Challenges of Scaling a Design System</a>
+                        <a href="">Enterprise Design System – How to Build and Scale</a>
+                        <a href="">Opening Keynote | Design Value Conference</a>
+                        <a href="">DesignOps Layers of Impact | Design Value Conference</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-flow">
+                <div class="polk">
+                    <p>UXPin</p>
+                </div>
+                <p>Privacy &copy; 2010 - 2023 UXPin Sp. z o.o.</p>
+            </div>
+        </div>
+
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+            <symbol id="check-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+            </symbol>
+            <symbol id="info-fill" viewBox="0 0 16 16">
+                <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+            </symbol>
+            <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </symbol>
+        </svg>
+
+        <div class="alert alert-success alert-dismissible-bottom fade show " role="alert">
+            <svg class="bi flex-shrink-0 me-2" role="img" aria-label="Info:" style="color: blue;">
+                <use xlink:href="#info-fill" />
+            </svg>
+            <div class="lik text-center" style="color: black;">
+                CAVEAT: This is a student's project and not any sort of attempt to clone the existing webpage
+                <button type="button" class="btn-close text-danger" data-bs-dismiss="alert" aria-label="Close"
+                    style="position: relative; top: 30px; float: right;"></button>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example">
+            <h3 class="text-center text-dark">OTHER PROJECTS</h3>
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="whereby.html">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="Aptible.html">2</a></li>
+                <li class="page-item "><a class="page-link" href="chipotle.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="Mattermark.html">4</a></li>
+
+            </ul>
+            <ul class="pagination justify-content-center">
+                <li class="page-item "><a class="page-link" href="podia.html">5</a></li>
+                <li class="page-item "><a class="page-link" href="mockplus.html">6</a></li>
+                <li class="page-item "><a class=" page-link" href="whereby.html">7</a></li>
+                <li class="page-item active"><a class="page-link" href="UXPin.html">8</a></li>
+                <li class="page-item disabled ">
+                    <a class="page-link disabled" href="UXPin.html">Next</a>
+                </li>
+
+            </ul>
+        </nav>
+
+
+
+
+
+
+    </section>
+
+    <script>
+        let form = document.getElementById('userform');
+        let useremail = document.getElementById('email');
+        let error = document.getElementById('errormessage');
+        let emailformat = /^\w+@[a-z]+\.[a-z]{2,3}$/;
+        let process;
+
+        function formvalidate() {
+            if (!useremail.value) {
+                checkers('Please type your email.', 'red', '1px solid red', false);
+            }
+            else if (!useremail.value.match(emailformat)) {
+                checkers('This is not a valid Email address.', 'red', '1px solid red', false);
+            }
+            else {
+                process = true
+                if (process) {
+                    checkers('Ok ✔', 'green', '1px solid green');
+
+                }
+            }
+
+        }
+
+        function checkers(message, color, border, val) {
+            error.textContent = message;
+            error.style.color = color;
+            useremail.style.outline = border;
+            process = val;
+        }
+
+        form.addEventListener('submit', function (load) {
+            process = true
+            formvalidate();
+            if (process == false) {
+                load.preventDefault();
+            }
+        })
+
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

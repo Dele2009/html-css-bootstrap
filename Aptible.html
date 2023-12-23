@@ -144,6 +144,26 @@
 
         }
 
+        .flow-tippp {
+            background: black;
+            position: absolute;
+            padding-left: 10px;
+            border-radius: 5px;
+            transform: translate(500px, 0px);
+
+            & div {
+
+                padding: 6px;
+                background: black;
+                position: absolute;
+                width: fit-content;
+                transform: rotate(45deg) translate(-9px, 15px);
+
+
+
+            }
+        }
+
         .fade {
             display: flex;
             justify-content: space-evenly;
@@ -326,39 +346,57 @@
                                 infrastructure, so you can focus on what matters:<strong>your product.</strong></p>
                         </div>
                         <div class="opl">
-                            <div class="mol">
-                                <div class="input-group mb-0 border-bottom border-1 lk" style="border: none;">
-                                    <span class="input-group-text border-0  p-3" id="basic-addon1"
-                                        style="background: white; ">Name</span>
-                                    <input type="text" class="form-control border-0 rounded-0 p-3" aria-label="Username"
-                                        aria-describedby="basic-addon1">
+                            <form action="" id="myform">
+                                <div class="mol">
+                                    <div class="input-group mb-0 border-bottom border-1 lk" style="border: none;">
+                                        <span class="input-group-text border-0  p-3" id="basic-addon1"
+                                            style="background: white; ">Name</span>
+                                        <input type="text" class="form-control border-0 rounded-0 p-3"
+                                            aria-label="Username" aria-describedby="basic-addon1" id="inputname"
+                                            oninput="namevalidate()">
+                                        <span class="input-group-text border-0  p-3" id="basic-addon1"
+                                            style="background: white; "><img src="" alt="" id="namemes"
+                                                width="25"></span>
+                                        
 
+                                    </div>
+                                    <div class="input-group mb-0 border-bottom border-1" style="border: none;">
+                                        <span class="input-group-text border-0  p-3" id="basic-addon1"
+                                            style="background: white;">Company</span>
+                                        <input type="text" class="form-control border-0 rounded-0 p-3"
+                                            aria-label="Username" aria-describedby="basic-addon1" id="inputcom"
+                                            oninput="compvalidate()">
+                                        <span class="input-group-text border-0  p-3" id="basic-addon1"
+                                            style="background: white; "><img src="" alt="" id="compmes"
+                                                width="25"></span>
+
+                                    </div>
+                                    <div class="input-group mb-0 border-bottom border-1" style="border: none;">
+                                        <span class="input-group-text border-0 rounded-0 p-3" id="basic-addon1"
+                                            style="background: white;">Email</span>
+                                        <input type="text" class="form-control border-0 rounded-0 p-3"
+                                            aria-label="Username" aria-describedby="basic-addon1" id="inputemail"
+                                            oninput="emailvalidate()">
+                                        <span class="input-group-text border-0 rounded-0 p-3" id="basic-addon1"
+                                            style="background: white;"><img src="" alt="" id="emames" width="25"></span>
+
+                                    </div>
+                                    <div class="input-group mb-0 border-bottom border-1" style="border: none;">
+                                        <span class="input-group-text border-0 rounded-0 p-3" id="basic-addon1"
+                                            style="background: white;">Password</span>
+                                        <input type="text" class="form-control border-0 rounded-0 p-3"
+                                            aria-label="Username" aria-describedby="basic-addon1" id="inputpass"
+                                            oninput="passvalidate()">
+                                        <span class="input-group-text border-0 rounded-0 p-3" id="basic-addon1"
+                                            style="background: white;"><img src="" alt="" id="passmes"
+                                                width="25"></span>
+
+                                    </div>
                                 </div>
-                                <div class="input-group mb-0 border-bottom border-1" style="border: none;">
-                                    <span class="input-group-text border-0  p-3" id="basic-addon1"
-                                        style="background: white;">Company</span>
-                                    <input type="text" class="form-control border-0 rounded-0 p-3" aria-label="Username"
-                                        aria-describedby="basic-addon1">
 
-                                </div>
-                                <div class="input-group mb-0 border-bottom border-1" style="border: none;">
-                                    <span class="input-group-text border-0 rounded-0 p-3" id="basic-addon1"
-                                        style="background: white;">Email</span>
-                                    <input type="text" class="form-control border-0 rounded-0 p-3" aria-label="Username"
-                                        aria-describedby="basic-addon1">
 
-                                </div>
-                                <div class="input-group mb-0 border-bottom border-1" style="border: none;">
-                                    <span class="input-group-text border-0 rounded-0 p-3" id="basic-addon1"
-                                        style="background: white;">Password</span>
-                                    <input type="text" class="form-control border-0 rounded-0 p-3" aria-label="Username"
-                                        aria-describedby="basic-addon1">
-
-                                </div>
-                            </div>
-
-                            <button class="mt-4 p-2 w-100 border-0 rounded-3" style=" ;">Create Account</button>
-
+                                <button class="mt-4 p-2 w-100 border-0 rounded-3" type="submit">Create Account</button>
+                            </form>
                             <p>If you already have an account, you can <a href="">log in here.</a></p>
                             <p>By submitting this form, I confirm that I have read and agree to Aptible's <a
                                     href="">Terms of Service</a> and <a href=""> Privacy Policy.</a></p>
@@ -390,13 +428,98 @@
             <li class="page-item "><a class="page-link" href="podia.html">5</a></li>
             <li class="page-item "><a class="page-link" href="mockplus.html">6</a></li>
             <li class="page-item"><a class="page-link" href="whereby.html">7</a></li>
-            <li class="page-item disabled"><a class="page-link" href="#">8</a></li>
+            <li class="page-item "><a class="page-link" href="UXPin.html">8</a></li>
             <li class="page-item ">
                 <a class="page-link " href="chipotle.html">Next</a>
             </li>
 
         </ul>
     </nav>
+
+    <script>
+
+        const nameformat = /^[a-zA-Z\s]+$/;
+        const emailformat = /^\w+@[a-z]+\.[a-z]{2,3}$/;
+        const passformat = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#\$%\^&])[a-zA-Z0-9!@#\$%\^&]{3,15}$/;
+       
+
+
+
+        let nameinp = document.getElementById('inputname');
+        let cominp = document.getElementById('inputcom');
+        let emailinp = document.getElementById('inputemail');
+        let passinp = document.getElementById('inputpass');
+
+        let namemess = document.getElementById('namemes');
+        let compmes = document.getElementById('compmes');
+        let emailmes = document.getElementById('emames');
+        let passmes = document.getElementById('passmes');
+
+        let process;
+
+        function namevalidate() {
+            if (!nameinp.value) {
+                namemess.src = 'wrongthin.jpg';
+                process = false;
+            } else if (!nameinp.value.match(nameformat) || nameinp.value.length < 3 || nameinp.value.length > 15) {
+                namemess.src = 'wrongthin.jpg';
+                process = false;
+            } else {
+                namemess.src = 'thin-green-check.svg';
+                
+            }
+        }
+
+        function compvalidate() {
+            if (!cominp.value.match(nameformat) || !cominp.value) {
+                compmes.src = 'wrongthin.jpg';
+                process = false;
+            }
+            else {
+                compmes.src = 'thin-green-check.svg';
+                
+            }
+        }
+        function emailvalidate() {
+            if (!emailinp.value.match(emailformat) || !emailinp.value) {
+                emailmes.src = 'wrongthin.jpg';
+                process = false;
+            }
+            else {
+                emailmes.src = 'thin-green-check.svg';
+                
+
+            }
+        }
+        function passvalidate() {
+            if (!passinp.value.match(passformat)) {
+                passmes.src = 'wrongthin.jpg';
+                process = false;
+            }
+            else {
+                passmes.src = 'thin-green-check.svg';
+                
+
+            }
+        }
+
+        document.getElementById('myform').addEventListener('submit', (loall) => {
+            process = true;
+            namevalidate();
+            compvalidate();
+            emailvalidate();
+            passvalidate();
+            if (process == false) {
+                loall.preventDefault();
+            }
+
+
+
+        })
+
+
+
+    </script>
 
 
 
