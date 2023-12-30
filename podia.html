@@ -81,6 +81,9 @@
 
         .weg {
             padding: 20px;
+             & h5{
+                color: rgb(103, 50, 50);
+             }
         }
 
 
@@ -132,6 +135,16 @@
 
         .bill .accordion-body {
             font-size: 16px;
+        }
+        .bill p{
+            font-size: 30px;
+            font-weight: 500;
+        }
+        .bill h2{
+            font-size: 25px;
+        }
+        .bill h4{
+            font-size: 18px;
         }
 
 
@@ -217,6 +230,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 50px;
+           
             padding-top: 60px;
         }
 
@@ -239,7 +253,7 @@
         }
 
         .mad {
-            box-shadow: 0px 0px 7px black;
+            box-shadow: 0px 0px 15px rgb(169, 169, 169);
             background: white;
         }
 
@@ -262,8 +276,9 @@
         }
 
         .mad a:hover .fa-arrow-right {
-            padding-left: 10px;
-            transition: all 1s 0s ease;
+            /* padding-left: 10px; */
+            transform: translate(15px ,0px);
+            transition: all 1s 0s ease-in-out;
         }
 
         .nak {
@@ -555,6 +570,10 @@
                 grid-template-columns: repeat(1, 1fr);
                 grid-gap: 50px;
                 padding-top: 60px;
+                place-items: center;
+            }
+            .man .container-fluid .mad{
+                margin:auto;
             }
 
             .mkl {
