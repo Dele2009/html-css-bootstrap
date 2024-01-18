@@ -21,15 +21,15 @@
 
         body {
             padding: 0px 0px 0px 0px;
-             overflow-x: hidden;
-           
+            overflow-x: hidden;
+
         }
 
         body a {
             text-decoration: none;
         }
 
-        body a:hover {
+        .text-underline a:hover {
             text-decoration: underline;
 
         }
@@ -46,9 +46,54 @@
         }
 
         .navbar-nav a {
-            color: #451400;
+            color: rgb(146, 27, 19);
             font-size: 25px;
             font-weight: bold;
+            text-decoration: none;
+        }
+        .navbar-nav a:hover{
+            color: rgb(146, 27, 19) !important;
+        }
+        
+
+        .navbar-nav li:hover a::after {
+            content: "";
+            background: hsl(27, 79%, 40%);
+            display: block;
+           
+            padding: 2px 0px;
+            position: absolute;
+            border-radius: 30px;
+            
+            
+
+            animation: direct 250ms 0s 1 ease-in-out forwards;
+            /* transition: animation 1s 0s ease-in-out; */
+
+        }
+
+        @keyframes direct {
+            0% {
+                width: 0px;
+            }
+
+            25% {
+                width: 10px;
+            }
+
+            50% {
+                width: 20px;
+
+            }
+
+            75% {
+                width: 30px;
+            }
+
+            100% {
+                width: 50px;
+            }
+
         }
 
         .end {
@@ -126,7 +171,7 @@
             justify-content: center;
         }
 
-        
+
 
         .chac .me {
             display: flex;
@@ -182,7 +227,7 @@
             grid-gap: 90px;
         }
 
-      
+
 
         .clue .fuo {
             margin: 0px auto;
@@ -219,6 +264,10 @@
             font-size: 13px;
         }
 
+        .down-link h3 a{
+            text-decoration: none;
+        }
+
         .maker {
             display: flex;
             justify-content: space-evenly;
@@ -242,11 +291,11 @@
         .bi {
             width: 5%;
         }
-       
-        .page-link{
+
+        .page-link {
             font-size: 20px;
             padding: 9px 20px;
-            
+
         }
 
 
@@ -274,7 +323,8 @@
 
                 margin-top: 10px;
             }
-            .mak h5>a{
+
+            .mak h5>a {
                 color: #CBA750;
                 text-decoration: underline;
 
@@ -305,7 +355,7 @@
 
 
         @media screen and (max-width:992px) {
-           
+
 
             .kil {
                 visibility: hidden;
@@ -327,14 +377,14 @@
                 justify-content: center;
             }
 
-          
+
             .kilo {
                 width: 100%;
                 visibility: visible;
                 position: relative;
             }
 
-           
+
 
             .chai {
                 visibility: hidden;
@@ -484,10 +534,10 @@
                 width: 12%;
             }
 
-            .page-link{
-            font-size: 20px;
-            padding: 9px 20px;
-        }
+            .page-link {
+                font-size: 20px;
+                padding: 9px 20px;
+            }
 
             /* .star2{
                 width: 100%;
@@ -562,7 +612,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav me-auto mb-0 mb-lg-0  " >
+                    <ul class="navbar-nav me-auto mb-0 mb-lg-0  ">
 
                         <li class="nav-item">
                             <a class="nav-link" href="">MENU</a>
@@ -597,7 +647,7 @@
                 </div>
                 <div class="container-fluid mak">
                     <h2 class="text-center">EARN POINTS, COMPLETE CHALLENGES, AND REDEEM REWARDS</h2>
-                    <button class="border-0 w-100 py-3" >CREATE AN ACCOUNT</button>
+                    <button class="border-0 w-100 py-3">CREATE AN ACCOUNT</button>
                     <h5 class="text-center">ALREADY A MEMBER? <a href="#">SIGN IN</a></h5>
                 </div>
                 <div class="container-fluid fak">
@@ -630,10 +680,10 @@
         <div class="container chac">
             <div class="row">
                 <div class="col-md-2 text-end">
-                    <div><a href="" ><img src="medallion-fluted-2x.webp" alt=""></a></div>
+                    <div><a href=""><img src="medallion-fluted-2x.webp" alt=""></a></div>
                 </div>
                 <div class="col-md-6 mt-2">
-                    <h4 >JOIN CHIPOTLE REWARDS. UNLOCK FREE CHIPOTLE.</h4>
+                    <h4>JOIN CHIPOTLE REWARDS. UNLOCK FREE CHIPOTLE.</h4>
                 </div>
                 <div class="col-4 me ">
                     <button
@@ -655,252 +705,266 @@
 
     <video src="carne-asada-homepage-hero-mobile.mp4" autoplay play-inline muted loop class="maty" style="z-index: -1;">
     </video>
+    <div class="text-underline">
+        <div class="container-fluid chap">
+            <div class="container chac">
+                <div class="row">
+                    <div class="col-md-2 text-end">
+                        <div><a href=""><img src="medallion-fluted-2x.webp" alt=""></a></div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <h4>JOIN CHIPOTLE REWARDS. UNLOCK FREE CHIPOTLE.</h4>
+                    </div>
+                    <div class="col-4 me ">
+                        <button
+                            style="background: none;padding: 5px 10px ; color: #451400; font-weight: bold; border-radius: 1px solid ;">
+                            CREATE AN ACCOUNT
+                        </button>
+                        <p style="color: #451400; font-weight: 500;" class="mt-3"> OR</p>
+                        <h5><a href="index.html" style="text-decoration: underline; color: #CBA750;">SIGN IN</a></h5>
+                    </div>
+                    <div class="col-md-"></div>
+                </div>
+            </div>
+        </div>
 
-    <div class="container-fluid chap">
-        <div class="container chac">
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container-fluid">
+            <div class="container">
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container smal ">
+            <div class="card mb-3 border-3" style="max-width: 600px;  z-index: -3;">
+                <div class="row g-0">
+
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title h3">CATER YOUR <br> FRIENDSGIVING <br> FESTIVITIES</h5>
+                            <p class="card-text ps-2 pt-5">
+                                Make Friendsgiving a little <br> extra this year with a Build <br> Your Own spread of
+                                real
+                                <br> ingredients. Easy to order, <br> endlessly customizable, and <br> always made
+                                fresh.
+                            </p>
+                            <button class="mt-5" style="background: #451400; border: none;padding: 5px 9px;"><a
+                                    href="index.html" style="text-decoration: none;color: white; font-size: 28px;">ORDER
+                                    CATERING</a></button>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <video src="friendsgiving-desktop-secondary-tout.mp4" autoplay plays-inline loop muted
+                            width="100%"></video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 border-3" style="max-width: 600px;  z-index: -3;">
+                <div class="row g-0">
+
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title h3">EASIER THAN <br> WRAPPING GUAC </h5>
+                            <p class="card-text ps-2 pt-5">
+                                It’s no secret that the best <br> gifts are wrapped in foil. Give <br> a little extra
+                                this
+                                holiday <br> season with our Holiday <br> themed Chipotle Gift Cards.
+                            </p>
+                            <button class="mt-5" style="background: #451400; border: none;padding: 5px 9px;"><a href="#"
+                                    style="text-decoration: none;color: white; font-size: 28px;">BUY A GIFT
+                                    CARD</a></button>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="holiday-giftcards-secondary-tout-desktop.jpg" class="img-fluid rounded-0" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container marl">
+
+
+            <div class="card" style="max-width: 600px; z-index: -1;margin: auto;">
+                <video src="friendsgiving-mobile-secondary-tout.mp4" autoplay plays-inline loop muted
+                    width="100%"></video>
+                <div class="card-body">
+
+                    <h5 class="card-title h3">CATER YOUR FRIENDSGIVING FESTIVITIES</h5>
+                    <p class="card-text ps-2 pt-5">
+                        Make Friendsgiving a little extra this year with a Build Your Own spread of real ingredients.
+                        Easy
+                        to order, endlessly customizable, and always made fresh.
+                    </p>
+                    <button class="mt-5 ms-4 px-5" style="background: #451400; border: none;padding: 5px 9px;"><a
+                            href="#" style="text-decoration: none;color: white; font-size: 20px;">ORDER
+                            CATERING</a></button>
+                </div>
+            </div>
+
+
+            <div class="card" style="max-width: 600px; z-index: -1;margin: auto;">
+                <img src="holiday-giftcards-secondary-tout-mobile.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title h3">EASIER THAN WRAPPING GUAC </h5>
+                    <p class="card-text ps-2 pt-5">
+                        It’s no secret that the best gifts are wrapped in foil. Give a little extra this
+                        holiday season with our Holiday themed Chipotle Gift Cards.
+                    </p>
+                    <button class="mt-5 ms-4 px-5" style="background: #451400; border: none;padding: 5px 9px;"><a
+                            href="#" style="text-decoration: none;color: white; font-size: 20px;">BUY A GIFT
+                            CARD</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
             <div class="row">
-                <div class="col-md-2 text-end">
-                    <div><a href="" ><img src="medallion-fluted-2x.webp" alt=""></a></div>
+                <div class="col-12 text-center">
+                    <h3 style="color: #451400; font-weight: bold;">CROWD PLEASERS</h3>
                 </div>
-                <div class="col-md-6 ">
-                    <h4 >JOIN CHIPOTLE REWARDS. UNLOCK FREE CHIPOTLE.</h4>
-                </div>
-                <div class="col-4 me ">
-                    <button
-                        style="background: none;padding: 5px 10px ; color: #451400; font-weight: bold; border-radius: 1px solid ;">
-                        CREATE AN ACCOUNT
-                    </button>
-                    <p style="color: #451400; font-weight: 500;" class="mt-3"> OR</p>
-                    <h5><a href="index.html" style="text-decoration: underline; color: #CBA750;">SIGN IN</a></h5>
-                </div>
-                <div class="col-md-"></div>
             </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="container-fluid">
-        <div class="container">
 
         </div>
-    </div>
 
+        <div class="container loip ">
+            <div class="card "
+                style="max-width: 600px;max-height: 400px; z-index: -1; box-shadow: 0px 0px 15px gray; margin: auto;">
+                <img src="Catering.jpg" class="card-img rounded-0" alt="...">
+                <div class="card-img-overlay" style="display: flex; justify-content: center; ">
+                    <h3 class="card-title  text-light mt-5 ">CATERING</h5>
 
-
-
-
-
-
-
-
-
-
-    <div class="container smal ">
-        <div class="card mb-3 border-3" style="max-width: 600px;  z-index: -3;">
-            <div class="row g-0">
-
-                <div class="col-md-6">
-                    <div class="card-body">
-                        <h5 class="card-title h3">CATER YOUR <br> FRIENDSGIVING <br> FESTIVITIES</h5>
-                        <p class="card-text ps-2 pt-5">
-                            Make Friendsgiving a little <br> extra this year with a Build <br> Your Own spread of real
-                            <br> ingredients. Easy to order, <br> endlessly customizable, and <br> always made fresh.
-                        </p>
-                        <button class="mt-5" style="background: #451400; border: none;padding: 5px 9px;"><a href="index.html"
-                                style="text-decoration: none;color: white; font-size: 28px;">ORDER CATERING</a></button>
-
-                    </div>
                 </div>
-                <div class="col-md-6">
-                    <video src="friendsgiving-desktop-secondary-tout.mp4" autoplay plays-inline loop muted
-                        width="100%"></video>
+
+                <div class="card-body border-0 rounded-0">
+                    <h5 class="card-title">From 6 to 200 people Starting at $8.25* / personBuild Your OwnBurritos by the
+                        BoxChips & SalsaRequires 24 hours notice</h5>
+                    <button class="border-0 w-100 py text-light"
+                        style="background: #976500; font-size: 25px; font-weight: 600; ;">ORDER CATERING</button>
+
+                </div>
+            </div>
+            <div class="card "
+                style="max-width: 600px;max-height: 400px; z-index: -1; box-shadow: 0px 0px 15px gray; margin: auto;">
+                <img src="Group Ordering.jpg" class="card-img rounded-0" alt="...">
+                <div class="card-img-overlay" style="display: flex; justify-content: center;">
+                    <h3 class="card-title text-center text-light mt-5 ">GROUP ORDERING</h3>
+                    </h5>
+
+                </div>
+
+                <div class="card-body border-0 rounded-0">
+                    <h5 class="card-title">Order up to 15 meals totalNormal menu pricingFull menu Personalized meals
+                        Organizer paysOrder and eat today</h5>
+                    <button class="border-0 w-100 py text-light"
+                        style="background: #976500; font-size: 25px; font-weight: 600; margin-top: 22px;">START A GROUP
+                        ORDER</button>
+
                 </div>
             </div>
         </div>
 
-        <div class="card mb-3 border-3" style="max-width: 600px;  z-index: -3;">
-            <div class="row g-0">
-
-                <div class="col-md-6">
-                    <div class="card-body">
-                        <h5 class="card-title h3">EASIER THAN <br> WRAPPING GUAC </h5>
-                        <p class="card-text ps-2 pt-5">
-                            It’s no secret that the best <br> gifts are wrapped in foil. Give <br> a little extra this
-                            holiday <br> season with our Holiday <br> themed Chipotle Gift Cards.
-                        </p>
-                        <button class="mt-5" style="background: #451400; border: none;padding: 5px 9px;"><a href="#"
-                                style="text-decoration: none;color: white; font-size: 28px;">BUY A GIFT
-                                CARD</a></button>
-
-                    </div>
+        <div class="container blue mt-8">
+            <div class="container-fluid flue">
+                <div class="down-link">
+                    <h3><a href="" style="color: #451400;">CONTACT SUPPORT</a></h2>
+                        <h3><a href="" style="color: #451400;">CARRERS</a></h2>
+                            <h3><a href="" style="color: #451400;">CHIPOTLE GOODS</a></h2>
+                                <h3><a href="" style="color: #451400;">GIFT CARDS</a></h2>
+                                    <h3><a href="" style="color: #451400;">FUNDRAISING</a></h2>
+                                        <h3><a href="" style="color: #451400;">REWARDS</a></h2>
                 </div>
-                <div class="col-md-6">
-                    <img src="holiday-giftcards-secondary-tout-desktop.jpg" class="img-fluid rounded-0" alt="...">
+                <div>
+                    <h6><a href="" style="color: #451400;">Our values</a></p>
+                        <h6><a href="" style="color: #451400;">News & Events</a></p>
+                            <h6><a href="" style="color: #451400;">Investors</a></p>
+                                <h6><a href="" style="color: #451400;">Health & Safety</a></p>
+                                    <h6><a href="" style="color: #451400;">Cultivate Foundation </a></p>
+                                        <h6><a href="" style="color: #451400;">All locations</a></p>
+                                            <h6><a href="" style="color: #451400;">Sustainability</a></p>
                 </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container marl">
-
-
-        <div class="card" style="max-width: 600px; z-index: -1;margin: auto;">
-            <video src="friendsgiving-mobile-secondary-tout.mp4" autoplay plays-inline loop muted width="100%"></video>
-            <div class="card-body">
-
-                <h5 class="card-title h3">CATER YOUR FRIENDSGIVING FESTIVITIES</h5>
-                <p class="card-text ps-2 pt-5">
-                    Make Friendsgiving a little extra this year with a Build Your Own spread of real ingredients. Easy
-                    to order, endlessly customizable, and always made fresh.
-                </p>
-                <button class="mt-5 ms-4 px-5" style="background: #451400; border: none;padding: 5px 9px;"><a href="#"
-                        style="text-decoration: none;color: white; font-size: 20px;">ORDER CATERING</a></button>
-            </div>
-        </div>
-
-
-        <div class="card" style="max-width: 600px; z-index: -1;margin: auto;">
-            <img src="holiday-giftcards-secondary-tout-mobile.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title h3">EASIER THAN WRAPPING GUAC </h5>
-                <p class="card-text ps-2 pt-5">
-                    It’s no secret that the best gifts are wrapped in foil. Give a little extra this
-                    holiday season with our Holiday themed Chipotle Gift Cards.
-                </p>
-                <button class="mt-5 ms-4 px-5" style="background: #451400; border: none;padding: 5px 9px;"><a href="#"
-                        style="text-decoration: none;color: white; font-size: 20px;">BUY A GIFT
-                        CARD</a></button>
-            </div>
-        </div>
-    </div>
-
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h3 style="color: #451400; font-weight: bold;">CROWD PLEASERS</h3>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="container loip ">
-        <div class="card " style="max-width: 600px;max-height: 400px; z-index: -1; box-shadow: 0px 0px 15px gray; margin: auto;">
-            <img src="Catering.jpg" class="card-img rounded-0" alt="...">
-            <div class="card-img-overlay" style="display: flex; justify-content: center; ">
-                <h3 class="card-title  text-light mt-5 ">CATERING</h5>
+                <div class="mr">
+                    <h6><a href="#" style="color: #451400;text-decoration: none;font-weight: 800;">DOWNLOAD OUR APP</a>
+                    </h6>
+                    <a href="#"><img src="footer-app-download.webp" alt="" width="120px"></a>
+                    <a href="#"><img src="footer-google-play.webp" alt="" width="120px"></a>
+                </div>
+                <div class="mr kr">
+                    <h6><a href="#" style="color: #451400;text-decoration: none;font-weight: 800;">CONNECT WITH US</a>
+                    </h6>
+                    <a href=""><i
+                            style="background: #734e40; color: white; padding: 8px 9px;border-radius: 20px; font-size: 30px;"
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i
+                            style="background: #734e40; color: white; padding: 8px 9px;border-radius: 20px; font-size: 30px;"
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i
+                            style="background: #734e40; color: white; padding: 8px 9px;border-radius: 20px; font-size: 30px;"
+                            class="fa-brands fa-twitter"></i></a>
+                </div>
 
             </div>
+            <div class="container-fluid clue ">
+                <div style="width: 120px;height: 120px;" class="fuo">
+                    <img src="Freepotle_RewardsLogo-Red.svg" alt="" style="width: 100%; height: 100%;">
+                </div>
+                <h5 class="text-center" style="color: rgb(173,33,24);">JOIN REWARDS</h5>
+                <h1 class="text-center" style="color: rgb(69,20,0);">GET REWARDED</h1>
+                <p class="text-center">The Faster Way To Free Chipotle</p>
+                <h4 class="text-center mt-5"><a href="#"
+                        style="text-decoration: none;color: #451400; padding: 5px 10px; border: 1px solid #451400;margin: 0px 0px 0px 0px;">JOIN
+                        NOW</a></h4>
+                <P class="text-center"><a href="#" style="text-decoration: none;color: rgb(167,103,33);">LEARN MORE</a>
+                </P>
 
-            <div class="card-body border-0 rounded-0">
-                <h5 class="card-title">From 6 to 200 people Starting at $8.25* / personBuild Your OwnBurritos by the
-                    BoxChips & SalsaRequires 24 hours notice</h5>
-                <button class="border-0 w-100 py text-light"
-                    style="background: #976500; font-size: 25px; font-weight: 600; ;">ORDER CATERING</button>
-
-            </div>
-        </div>
-        <div class="card " style="max-width: 600px;max-height: 400px; z-index: -1; box-shadow: 0px 0px 15px gray; margin: auto;">
-            <img src="Group Ordering.jpg" class="card-img rounded-0" alt="...">
-            <div class="card-img-overlay" style="display: flex; justify-content: center;">
-                <h3 class="card-title text-center text-light mt-5 ">GROUP ORDERING</h3>
-                </h5>
-
-            </div>
-
-            <div class="card-body border-0 rounded-0" >
-                <h5 class="card-title">Order up to 15 meals totalNormal menu pricingFull menu Personalized meals
-                    Organizer paysOrder and eat today</h5>
-                <button class="border-0 w-100 py text-light"
-                    style="background: #976500; font-size: 25px; font-weight: 600; margin-top: 22px;">START A GROUP ORDER</button>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="container blue mt-8">
-        <div class="container-fluid flue">
-            <div>
-                <h3><a href="" style="color: #451400;">CONTACT SUPPORT</a></h2>
-                    <h3><a href="" style="color: #451400;">CARRERS</a></h2>
-                        <h3><a href="" style="color: #451400;">CHIPOTLE GOODS</a></h2>
-                            <h3><a href="" style="color: #451400;">GIFT CARDS</a></h2>
-                                <h3><a href="" style="color: #451400;">FUNDRAISING</a></h2>
-                                    <h3><a href="" style="color: #451400;">REWARDS</a></h2>
-            </div>
-            <div>
-                <h6><a href="" style="color: #451400;">Our values</a></p>
-                    <h6><a href="" style="color: #451400;">News & Events</a></p>
-                        <h6><a href="" style="color: #451400;">Investors</a></p>
-                            <h6><a href="" style="color: #451400;">Health & Safety</a></p>
-                                <h6><a href="" style="color: #451400;">Cultivate Foundation </a></p>
-                                    <h6><a href="" style="color: #451400;">All locations</a></p>
-                                        <h6><a href="" style="color: #451400;">Sustainability</a></p>
-            </div>
-            <div class="mr">
-                <h6><a href="#" style="color: #451400;text-decoration: none;font-weight: 800;">DOWNLOAD OUR APP</a></h6>
-                <a href="#"><img src="footer-app-download.webp" alt="" width="120px"></a>
-                <a href="#"><img src="footer-google-play.webp" alt="" width="120px"></a>
-            </div>
-            <div class="mr kr">
-                <h6><a href="#" style="color: #451400;text-decoration: none;font-weight: 800;">CONNECT WITH US</a></h6>
-                <a href=""><i
-                        style="background: #734e40; color: white; padding: 8px 9px;border-radius: 20px; font-size: 30px;"
-                        class="fa-brands fa-instagram"></i></a>
-                <a href=""><i
-                        style="background: #734e40; color: white; padding: 8px 9px;border-radius: 20px; font-size: 30px;"
-                        class="fa-brands fa-facebook"></i></a>
-                <a href=""><i
-                        style="background: #734e40; color: white; padding: 8px 9px;border-radius: 20px; font-size: 30px;"
-                        class="fa-brands fa-twitter"></i></a>
             </div>
 
         </div>
-        <div class="container-fluid clue ">
-            <div style="width: 120px;height: 120px;" class="fuo">
-                <img src="Freepotle_RewardsLogo-Red.svg" alt="" style="width: 100%; height: 100%;">
-            </div>
-            <h5 class="text-center" style="color: rgb(173,33,24);">JOIN REWARDS</h5>
-            <h1 class="text-center" style="color: rgb(69,20,0);">GET REWARDED</h1>
-            <p class="text-center">The Faster Way To Free Chipotle</p>
-            <h4 class="text-center mt-5"><a href="#"
-                    style="text-decoration: none;color: #451400; padding: 5px 10px; border: 1px solid #451400;margin: 0px 0px 0px 0px;">JOIN
-                    NOW</a></h4>
-            <P class="text-center"><a href="#" style="text-decoration: none;color: rgb(167,103,33);">LEARN MORE</a></P>
 
+        <div class="container-fluid hil">
+            <div class="container  uil">
+                <div style="width: 50px; height: 50px;">
+                    <img src="us.png" alt="" style="border-radius: 50%;width: 100%;height: 100%;">
+                </div>
+                <h4>United States</h4>
+            </div>
         </div>
 
-    </div>
-
-    <div class="container-fluid hil">
-        <div class="container  uil">
-            <div style="width: 50px; height: 50px;">
-                <img src="us.png" alt="" style="border-radius: 50%;width: 100%;height: 100%;">
-            </div>
-            <h4>United States</h4>
-        </div>
-    </div>
-
-    <div class="container-fluid baker ">
-        <div class="container maker">
-            <p><a href="#">Accessibility Statement</a></p>
-            <p><a href="#">California Transparency in Supply Chains Act</a></p>
-            <p><a href="#">Terms of Use</a></p>
-            <p><a href="#">Privacy Center</a></p>
-            <p><a href="#">Privacy Policy, including California Privacy Rights</a></p>
-            <div style="display: flex;align-items: center;">
-                <p><a href="#">Your Privacy Choices</a></p>
-                <img src="privacyoptions29x14.png" alt="" width="40px" height="20px" class="mb-3">
+        <div class="container-fluid baker ">
+            <div class="container maker">
+                <p><a href="#">Accessibility Statement</a></p>
+                <p><a href="#">California Transparency in Supply Chains Act</a></p>
+                <p><a href="#">Terms of Use</a></p>
+                <p><a href="#">Privacy Center</a></p>
+                <p><a href="#">Privacy Policy, including California Privacy Rights</a></p>
+                <div style="display: flex;align-items: center;">
+                    <p><a href="#">Your Privacy Choices</a></p>
+                    <img src="privacyoptions29x14.png" alt="" width="40px" height="20px" class="mb-3">
+                </div>
             </div>
         </div>
     </div>
